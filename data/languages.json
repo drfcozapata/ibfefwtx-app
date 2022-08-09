@@ -1,0 +1,10 @@
+[
+	{
+		"lang": "es",
+		"navbar": ["Nosotros", "Nuestro Pastor", "¿Qué creemos?", "Ministerios"]
+	},
+	{
+		"lang": "en",
+		"navbar": ["About us", "Our Pastor", "What we belief?", "Ministries"]
+	}
+]

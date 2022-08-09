@@ -1,0 +1,28 @@
+{
+	"name": "ibfefwtx-app",
+	"version": "1.0.0",
+	"description": "Web site of Faith Baptist Church, Fort Worth, Texas",
+	"author": "Francisco Zapata (Doulos Dev)",
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview"
+	},
+	"devDependencies": {
+		"@iconify-json/fa6-brands": "^1.1.5",
+		"@iconify-json/fa6-solid": "^1.1.6",
+		"@nuxtjs/tailwindcss": "^5.3.1",
+		"nuxt": "3.0.0-rc.6",
+		"unplugin-icons": "^0.14.8"
+	},
+	"keywords": [
+		"tailwindcss",
+		"nuxt",
+		"vue"
+	],
+	"dependencies": {
+		"vue-responsive-video-background-player": "^2.2.3"
+	}
+}
