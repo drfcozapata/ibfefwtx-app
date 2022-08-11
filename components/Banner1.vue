@@ -15,7 +15,7 @@
 		height: 630px;
 	}
 	.banner > div {
-		padding: 0 112px;
+		padding: 0 280px;
 	}
 	.banner p {
 		font-size: 30px;
@@ -23,9 +23,14 @@
 	.banner p span {
 		font-size: 20px;
 	}
+	@media screen and (max-width: 1200px) {
+		.banner > div {
+			padding: 0 200px;
+		}
+	}
 	@media screen and (max-width: 992px) {
 		.banner > div {
-			padding: 0 90px;
+			padding: 0 180px;
 		}
 		.banner p {
 			font-size: 27px;
@@ -36,7 +41,7 @@
 	}
 	@media screen and (max-width: 768px) {
 		.banner > div {
-			padding: 0 68px;
+			padding: 0 110px;
 		}
 		.banner p {
 			font-size: 24px;
@@ -47,7 +52,7 @@
 	}
 	@media screen and (max-width: 576px) {
 		.banner > div {
-			padding: 0 56px;
+			padding: 0 60px;
 		}
 		.banner p {
 			font-size: 23px;

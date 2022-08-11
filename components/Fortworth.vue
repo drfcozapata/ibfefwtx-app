@@ -1,7 +1,7 @@
 <template>
 	<div class="w-full flex flex-col justify-center items-center fort-worth">
 		<img
-			class="mb-10 h-96"
+			class="mb-10"
 			src="../assets/images/fort-worth-map.png"
 			alt="Mapa de Fort Worth"
 		/>
@@ -15,6 +15,29 @@
 	.fort-worth {
 		height: 630px;
 		background-color: rgb(2, 0, 51);
+	}
+	.fort-worth img {
+		height: 360px;
+	}
+	@media screen and (max-width: 992px) {
+		.fort-worth img {
+			height: 340px;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.fort-worth img {
+			height: 320px;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		.fort-worth img {
+			height: 300px;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.fort-worth img {
+			height: 260px;
+		}
 	}
 	.animated h2 {
 		font-family: 'Poppins', sans-serif;
@@ -49,6 +72,21 @@
 	@keyframes blink {
 		50% {
 			border-color: transparent;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.animated h2 {
+			font-size: 32px;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		.animated h2 {
+			font-size: 26px;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.animated h2 {
+			font-size: 20px;
 		}
 	}
 </style>

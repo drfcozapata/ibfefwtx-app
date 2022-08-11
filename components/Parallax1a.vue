@@ -1,13 +1,13 @@
 <template>
 	<div class="w-full bg-gray-100 banner">
-		<div class="w-9/12 mx-auto py-32 grid grid-cols-3 gap-9 items-start">
+		<div>
 			<div
 				class="w-full flex flex-col justify-start border-l border-b border-r rounded-t-lg rounded-b-lg banner__card hover:shadow-md"
 			>
 				<nuxt-link to="/about/pastor">
 					<div class="banner__img">
 						<img
-							class="rounded-t-lg"
+							class="rounded-t-lg img1"
 							src="../assets/images/family.jpg"
 							alt="Familia pastoral"
 						/>
@@ -37,8 +37,8 @@
 							congregación.
 						</p>
 						<p class="text-sm">
-							Mientras el pastor David conduce la Iglesia, Suely dirige el
-							Ministerio de Adoración.
+							Mientras el pastor David conduce la Iglesia, nuestra amada Suely
+							dirige el Ministerio de Adoración.
 						</p>
 					</div>
 					<hr class="my-3" />
@@ -158,11 +158,39 @@
 		height: 840px;
 		font-family: 'Montserrat';
 	}
+	.banner > div {
+		width: 75%;
+		padding: 128px 0;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		gap: 36px;
+	}
+	@media screen and (max-width: 1024px) {
+		.banner > div {
+			width: 90%;
+			gap: 22px;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.banner > div {
+			width: 96%;
+			gap: 12px;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.banner > div {
+			padding: 80px 0;
+			width: 80%;
+			flex-wrap: wrap;
+		}
+	}
 	.banner__card {
 		height: 567px;
+		background-color: #fff;
 	}
 	.banner__img {
-		width: 290px;
+		width: 100%;
 		height: 218px;
 		position: relative;
 	}
@@ -192,9 +220,13 @@
 		/* border-radius: 50%;
 		padding: 1rem 1.3rem; */
 	}
-
 	.banner__img .overlay:hover {
 		opacity: 1;
+	}
+	@media screen and (max-width: 480px) {
+		.banner__img {
+			height: 190px;
+		}
 	}
 	/* From uiverse.io */
 	button {
