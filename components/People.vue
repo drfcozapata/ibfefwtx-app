@@ -2,8 +2,8 @@
 	<div class="w-full people">
 		<img
 			class="w-full h-full object-cover"
-			src="../../assets/images/ibfe-02.jpg"
-			alt=""
+			src="../assets/images/ibfe-02.jpg"
+			alt="La gente de nuestar iglesia"
 		/>
 		<div class="bg-sky-700 text-slate-100 flex flex-col justify-center">
 			<h3 class="text-3xl font-medium uppercase mb-6">
