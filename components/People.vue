@@ -1,11 +1,11 @@
 <template>
-	<div class="w-full grid grid-cols-2 people">
+	<div class="w-full people">
 		<img
 			class="w-full h-full object-cover"
 			src="../../assets/images/ibfe-02.jpg"
 			alt=""
 		/>
-		<div class="bg-sky-700 text-slate-100 p-28 flex flex-col justify-center">
+		<div class="bg-sky-700 text-slate-100 flex flex-col justify-center">
 			<h3 class="text-3xl font-medium uppercase mb-6">
 				La iglesia no es un edificio; ¡son las personas!
 			</h3>
@@ -24,7 +24,77 @@
 <style scoped>
 	.people {
 		height: 630px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 	}
+	.people > div {
+		padding: 112px;
+	}
+	@media screen and (max-width: 992px) {
+		.people {
+			grid-template-columns: 5fr 7fr;
+		}
+		.people > div {
+			padding: 90px;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.people {
+			height: 648px;
+			display: flex;
+			flex-direction: column;
+		}
+		.people > img {
+			height: 300px;
+			object-position: bottom;
+		}
+		.people > div {
+			padding: 50px;
+		}
+		.people h3 {
+			font-size: 26px;
+		}
+		.people p {
+			font-size: 18px;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		.people {
+			height: 630px;
+		}
+		.people > img {
+			height: 280px;
+		}
+		.people > div {
+			padding: 40px;
+		}
+		.people h3 {
+			font-size: 22px;
+		}
+		.people p {
+			font-size: 16px;
+			margin-bottom: 30px;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.people {
+			height: 648px;
+		}
+		.people > img {
+			height: 270px;
+		}
+		.people > div {
+			padding: 30px;
+		}
+		.people h3 {
+			font-size: 22px;
+		}
+		.people p {
+			font-size: 16px;
+			margin-bottom: 30px;
+		}
+	}
+
 	/* From uiverse.io by @nikk7007 */
 	button {
 		padding: 1.25rem 2rem;

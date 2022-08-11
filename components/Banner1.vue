@@ -1,11 +1,11 @@
 <template>
 	<div class="w-full grid grid-cols-1 bg-gray-100 banner">
-		<div class="p-28 flex flex-col justify-center">
-			<p class="px-48 text-3xl leading-relaxed text-center mb-10">
-				"El único nunca en el que deberías enfocarte es <br />en el hecho de que
-				Dios nunca te abandonará".
+		<div class="flex flex-col justify-center">
+			<p class="leading-relaxed text-center mb-10">
+				"El único nunca en el que deberías enfocarte es en el hecho de que Dios
+				nunca te abandonará".
 			</p>
-			<p class="px-48 text-xl text-right">― Charles F. Stanley</p>
+			<p class="text-right"><span>― Charles F. Stanley</span></p>
 		</div>
 	</div>
 </template>
@@ -13,5 +13,47 @@
 <style scoped>
 	.banner {
 		height: 630px;
+	}
+	.banner > div {
+		padding: 0 112px;
+	}
+	.banner p {
+		font-size: 30px;
+	}
+	.banner p span {
+		font-size: 20px;
+	}
+	@media screen and (max-width: 992px) {
+		.banner > div {
+			padding: 0 90px;
+		}
+		.banner p {
+			font-size: 27px;
+		}
+		.banner p span {
+			font-size: 19px;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.banner > div {
+			padding: 0 68px;
+		}
+		.banner p {
+			font-size: 24px;
+		}
+		.banner p span {
+			font-size: 18px;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		.banner > div {
+			padding: 0 56px;
+		}
+		.banner p {
+			font-size: 23px;
+		}
+		.banner p span {
+			font-size: 16px;
+		}
 	}
 </style>

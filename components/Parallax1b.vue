@@ -1,10 +1,10 @@
 <template>
-	<div class="flex flex-col justify-center text-box">
-		<h3 class="px-48 text-3xl italic leading-relaxed text-center mb-10">
-			"La gracia es la aceptación de nosotros por parte de Dios. <br />La fe es
+	<div class="flex flex-col justify-center banner2">
+		<p class="italic leading-relaxed text-center mb-4">
+			"La gracia es la aceptación de nosotros por parte de Dios. La fe es
 			nuestra aceptación de que Dios nos acepta".
-		</h3>
-		<p class="mb-20 px-48 text-xl text-right">― Adrian Rogers</p>
+		</p>
+		<p class="text-right mb-8"><span>― Adrian Rogers</span></p>
 		<nuxt-link to="/ministries" class="flex justify-center">
 			<button>Conoce más</button>
 		</nuxt-link>
@@ -12,15 +12,52 @@
 </template>
 
 <style scoped>
-	.text-box {
+	.banner2 {
 		height: 630px;
 		color: white;
 		font-family: 'Open Sans', sans-serif;
+		padding: 0 112px;
 	}
-	.text-box h1 span {
-		color: transparent;
-		-webkit-text-stroke: 2px rgb(255, 196, 0);
+	.banner2 p {
+		font-size: 30px;
 	}
+	.banner2 p span {
+		font-size: 20px;
+	}
+	@media screen and (max-width: 992px) {
+		.banner2 div {
+			padding: 0 90px;
+		}
+		.banner2 p {
+			font-size: 27px;
+		}
+		.banner2 p span {
+			font-size: 19px;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.banner2 div {
+			padding: 0 68px;
+		}
+		.banner2 p {
+			font-size: 24px;
+		}
+		.banner2 p span {
+			font-size: 18px;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		.banner2 div {
+			padding: 0 40px;
+		}
+		.banner2 p {
+			font-size: 23px;
+		}
+		.banner2 p span {
+			font-size: 16px;
+		}
+	}
+
 	/* From uiverse.io by @nikk7007 */
 	button {
 		padding: 1.25rem 2rem;

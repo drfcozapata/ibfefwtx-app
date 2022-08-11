@@ -1,6 +1,6 @@
 import { NuxtLayout } from './.nuxt/components';
 <template>
-	<div class="w-full">
+	<div class="w-full relative">
 		<Head>
 			<Meta name="viewport" content="width=device-width, initial-scale=1" />
 			<Link rel="shortcut icon" type="image/png" href="ibfe-c.png" />

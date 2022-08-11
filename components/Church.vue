@@ -23,6 +23,19 @@
 		color: transparent;
 		-webkit-text-stroke: 2px rgb(255, 196, 0);
 	}
+	@media screen and (max-width: 992px) {
+		.text-box h1 {
+			font-size: 90px;
+			text-align: center;
+			line-height: 90px;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.text-box h1 {
+			font-size: 80px;
+		}
+	}
+
 	/* From uiverse.io by @nikk7007 */
 	button {
 		padding: 1.25rem 2rem;
