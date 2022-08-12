@@ -7,6 +7,7 @@
 		<Hero />
 		<Banner1 />
 		<People />
+		<!-- <Banner2 /> -->
 		<Fortworth />
 		<Parallax1 />
 	</main>

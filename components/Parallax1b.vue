@@ -1,5 +1,5 @@
 <template>
-	<div class="w-full grid grid-cols-1 banner2">
+	<div class="w-full grid grid-cols-1 parallax1b">
 		<div class="flex flex-col justify-center">
 			<p class="italic leading-relaxed text-center mb-4">
 				"La gracia es la aceptación de nosotros por parte de Dios. La fe es
@@ -14,55 +14,55 @@
 </template>
 
 <style scoped>
-	.banner2 {
+	.parallax1b {
 		height: 630px;
 		color: white;
 		font-family: 'Open Sans', sans-serif;
 	}
-	.banner2 > div {
+	.parallax1b > div {
 		padding: 0 280px;
 	}
-	.banner2 p {
+	.parallax1b p {
 		font-size: 30px;
 	}
-	.banner2 p span {
+	.parallax1b p span {
 		font-size: 20px;
 	}
 	@media screen and (max-width: 1200px) {
-		.banner2 > div {
+		.parallax1b > div {
 			padding: 0 200px;
 		}
 	}
 	@media screen and (max-width: 992px) {
-		.banner2 > div {
+		.parallax1b > div {
 			padding: 0 180px;
 		}
-		.banner2 p {
+		.parallax1b p {
 			font-size: 27px;
 		}
-		.banner2 p span {
+		.parallax1b p span {
 			font-size: 19px;
 		}
 	}
 	@media screen and (max-width: 768px) {
-		.banner2 > div {
+		.parallax1b > div {
 			padding: 0 110px;
 		}
-		.banner2 p {
+		.parallax1b p {
 			font-size: 24px;
 		}
-		.banner2 p span {
+		.parallax1b p span {
 			font-size: 18px;
 		}
 	}
 	@media screen and (max-width: 576px) {
-		.banner2 > div {
+		.parallax1b > div {
 			padding: 0 60px;
 		}
-		.banner2 p {
+		.parallax1b p {
 			font-size: 23px;
 		}
-		.banner2 p span {
+		.parallax1b p span {
 			font-size: 16px;
 		}
 	}
