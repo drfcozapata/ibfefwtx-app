@@ -103,7 +103,7 @@
 			<div
 				class="w-full flex flex-col justify-start border-l border-b border-r rounded-t-lg rounded-b-lg banner__card hover:shadow-md"
 			>
-				<nuxt-link to="/about/beliefs">
+				<nuxt-link to="/about/our-church">
 					<div class="banner__img">
 						<img
 							class="rounded-t-lg"
@@ -125,7 +125,7 @@
 				</nuxt-link>
 				<div class="p-4">
 					<div class="h-56">
-						<nuxt-link to="/about/beliefs">
+						<nuxt-link to="/about/our-church">
 							<h3 class="text-lg font-semibold text-center pb-4 text-sky-700">
 								Nuestras Creencias
 							</h3>
@@ -139,7 +139,7 @@
 						</p>
 					</div>
 					<hr class="my-3" />
-					<nuxt-link class="flex justify-center" to="/about/beliefs"
+					<nuxt-link class="flex justify-center" to="/about/our-church"
 						><button class="learn-more">
 							<span class="circle" aria-hidden="true">
 								<span class="icon arrow"></span>

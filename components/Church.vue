@@ -1,7 +1,7 @@
 <template>
 	<div class="text-box">
 		<h1 class="mb-16">Somos <span>iglesia</span></h1>
-		<nuxt-link to="/about/beliefs" class="flex justify-center">
+		<nuxt-link to="/about/our-church" class="flex justify-center">
 			<button>Conócenos</button>
 		</nuxt-link>
 	</div>

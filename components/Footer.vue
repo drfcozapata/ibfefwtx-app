@@ -1,32 +1,28 @@
 <template>
 	<footer class="w-full block bg-sky-900">
 		<div
-			class="w-10/12 py-9 mx-auto grid grid-cols-3 align-center justify-between text-slate-50"
+			class="w-10/12 py-11 mx-auto grid grid-cols-3 align-center justify-between text-slate-50"
 		>
 			<div class="flex flex-col justify-center font-15">
-				<nuxt-link class="w-36 py-1 uppercase hover:text-amber-400" to="/about"
+				<nuxt-link
+					class="w-36 py-3 uppercase hover:text-amber-400"
+					to="/about/our-church"
 					>Nosotros
 				</nuxt-link>
 				<nuxt-link
-					class="w-36 py-1 uppercase hover:text-amber-400"
+					class="w-36 py-3 uppercase hover:text-amber-400"
 					to="/ministries"
 					>Ministerios
 				</nuxt-link>
 				<nuxt-link
-					class="w-36 py-1 uppercase hover:text-amber-400"
+					class="w-36 py-3 uppercase hover:text-amber-400"
 					to="/resources"
-					>Recursos
+					>Conectarme
 				</nuxt-link>
 				<nuxt-link
-					class="w-36 py-1 uppercase hover:text-amber-400"
+					class="w-36 py-3 uppercase hover:text-amber-400"
 					to="/contact"
-					>Contáctanos</nuxt-link
-				>
-				<nuxt-link class="w-36 py-1 uppercase hover:text-amber-400" to="/faq"
-					>FAQ</nuxt-link
-				>
-				<nuxt-link class="w-36 py-1 uppercase hover:text-amber-400" to="/give"
-					>Dar</nuxt-link
+					>Recursos</nuxt-link
 				>
 			</div>
 			<div class="flex flex-col justify-center items-center">
@@ -46,7 +42,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="flex flex-col gap-4 justify-center items-end">
+			<div class="flex flex-col gap-5 justify-center items-end">
 				<nuxt-link
 					class="hover:text-amber-400"
 					href="https://facebook.com/ibfefwtx/"

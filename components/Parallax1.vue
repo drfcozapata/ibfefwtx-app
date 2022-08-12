@@ -1,5 +1,5 @@
 <template>
-	<div class="w-full relative grid grid-rows-1 parallax">
+	<div class="w-full relative parallax">
 		<div class="flex flex-col">
 			<Parallax1a />
 			<Parallax1b />

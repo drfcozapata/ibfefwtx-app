@@ -16,7 +16,9 @@
 					<div class="hamburger"></div>
 					<ul class="menu">
 						<li>
-							<nuxt-link class="block relative hover:bg-slate-800" to="/about"
+							<nuxt-link
+								class="block relative hover:bg-slate-800"
+								to="/about/our-church"
 								>Nosotros
 								<svg
 									class="fill-current w-4 h-4 arrow"
@@ -30,10 +32,10 @@
 							</nuxt-link>
 							<ul>
 								<li>
-									<nuxt-link to="/about/pastor">Nuestro Pastor</nuxt-link>
+									<nuxt-link to="/about/our-church">Nuestra Iglesia</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/about/beliefs">¿Qué creemos? </nuxt-link>
+									<nuxt-link to="/about/pastor">Conoce al Pastor</nuxt-link>
 								</li>
 							</ul>
 						</li>
@@ -54,23 +56,49 @@
 							</nuxt-link>
 							<ul>
 								<li>
-									<nuxt-link to="/ministries/proclamation"
-										>Proclamación</nuxt-link
-									>
-								</li>
-								<li>
 									<nuxt-link to="/ministries/teaching">Enseñanza</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/ministries/service">Servicio</nuxt-link>
+									<nuxt-link to="/ministries/misions">Misiones</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/ministries/fellowship"
-										>Compañerismo</nuxt-link
+									<nuxt-link to="/ministries/marriages">Matrimonios</nuxt-link>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<nuxt-link class="block hover:bg-slate-800" to="/contact"
+								>Conectarme
+								<svg
+									class="fill-current w-4 h-4 arrow"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 384 512"
+								>
+									<path
+										d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"
+									/>
+								</svg>
+							</nuxt-link>
+							<ul>
+								<li>
+									<nuxt-link to="/contact#what-to-expect"
+										>¿Qué esperar?</nuxt-link
 									>
 								</li>
 								<li>
-									<nuxt-link to="/ministries/worship">Adoración</nuxt-link>
+									<nuxt-link to="/contact#first-steps"
+										>Primeros Pasos</nuxt-link
+									>
+								</li>
+								<li>
+									<nuxt-link to="/contact#how-to-get-involved"
+										>¿Cómo involucrarme?</nuxt-link
+									>
+								</li>
+								<li>
+									<nuxt-link to="/contact/serve-you"
+										>¿Cómo podemos servirte?</nuxt-link
+									>
 								</li>
 							</ul>
 						</li>
@@ -91,47 +119,35 @@
 							</nuxt-link>
 							<ul>
 								<li>
-									<nuxt-link to="/resources/prayer">Pedir oración</nuxt-link>
+									<nuxt-link to="/resources/calendar"
+										>Calendario de Eventos</nuxt-link
+									>
 								</li>
 								<li>
-									<nuxt-link to="/resources/materials">Materiales</nuxt-link>
+									<nuxt-link to="/resources#watch-online"
+										>Ver en Línea</nuxt-link
+									>
+								</li>
+								<li>
+									<nuxt-link to="/resources#audios"
+										>Mensajes en Audio</nuxt-link
+									>
 								</li>
 							</ul>
-						</li>
-						<li>
-							<nuxt-link class="block hover:bg-slate-800" to="/contact"
-								>Contáctanos
-							</nuxt-link>
-						</li>
-						<li>
-							<nuxt-link class="block hover:bg-slate-800" to="/faq"
-								>FAQ
-							</nuxt-link>
-						</li>
-						<li>
-							<nuxt-link class="block hover:bg-slate-800" to="/give"
-								>Dar
-							</nuxt-link>
 						</li>
 					</ul>
 					<div class="dropdown-menu">
 						<p>
-							<nuxt-link to="/about">Nosotros </nuxt-link>
+							<nuxt-link to="/about/our-church">Nosotros</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/ministries">Ministerios </nuxt-link>
+							<nuxt-link to="/ministries">Ministerios</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/resources">Recursos </nuxt-link>
+							<nuxt-link to="/contact">Conectarme</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/contact">Contáctanos </nuxt-link>
-						</p>
-						<p>
-							<nuxt-link to="/faq">FAQ </nuxt-link>
-						</p>
-						<p>
-							<nuxt-link to="/give">Dar </nuxt-link>
+							<nuxt-link to="/resources">Recursos</nuxt-link>
 						</p>
 					</div>
 				</div>
@@ -142,14 +158,14 @@
 					class="text-xs hover:text-amber-400"
 					@click="doLangEs(false)"
 				>
-					English
+					<img class="w-7 h-7" src="../assets/images/english.png" alt="" />
 				</button>
 				<button
 					v-else
 					class="text-xs hover:text-amber-400"
 					@click="doLangEs(true)"
 				>
-					Español
+					<img class="w-7 h-7" src="../assets/images/spanish.png" alt="" />
 				</button>
 			</div>
 		</div>
@@ -269,7 +285,7 @@
 	.navbar ul li ul {
 		position: absolute;
 		left: 0;
-		width: 190px;
+		width: 260px;
 		background-color: rgb(12 74 110);
 		flex-direction: column;
 		display: none;
