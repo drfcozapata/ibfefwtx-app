@@ -30,4 +30,12 @@
 		background-attachment: fixed;
 		z-index: -2;
 	}
+	@media screen and (max-width: 576px) {
+		.parallax {
+			height: 2490px;
+		}
+		.parallax::before {
+			height: 2490px;
+		}
+	}
 </style>

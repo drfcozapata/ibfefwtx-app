@@ -137,17 +137,59 @@
 						</li>
 					</ul>
 					<div class="dropdown-menu">
-						<p>
+						<h3>
 							<nuxt-link to="/about/our-church">Nosotros</nuxt-link>
+						</h3>
+						<p>
+							<nuxt-link to="/about/our-church">Nuestra Iglesia</nuxt-link>
 						</p>
 						<p>
+							<nuxt-link to="/about/pastor">Conoce al Pastor</nuxt-link>
+						</p>
+						<h3>
 							<nuxt-link to="/ministries">Ministerios</nuxt-link>
+						</h3>
+						<p>
+							<nuxt-link to="/ministries/teaching">Enseñanza</nuxt-link>
 						</p>
 						<p>
+							<nuxt-link to="/ministries/misions">Misiones</nuxt-link>
+						</p>
+						<p>
+							<nuxt-link to="/ministries/marriages">Matrimonios</nuxt-link>
+						</p>
+						<h3>
 							<nuxt-link to="/contact">Conectarme</nuxt-link>
+						</h3>
+						<p>
+							<nuxt-link to="/contact#what-to-expect">¿Qué esperar?</nuxt-link>
 						</p>
 						<p>
+							<nuxt-link to="/contact#first-steps">Primeros Pasos</nuxt-link>
+						</p>
+						<p>
+							<nuxt-link to="/contact#how-to-get-involved"
+								>¿Cómo Involucrarme?</nuxt-link
+							>
+						</p>
+						<p>
+							<nuxt-link to="/contact/serve-you"
+								>¿Cómo Podemos Servirte?</nuxt-link
+							>
+						</p>
+						<h3>
 							<nuxt-link to="/resources">Recursos</nuxt-link>
+						</h3>
+						<p>
+							<nuxt-link to="/resources/calendar"
+								>Calendario de Eventos</nuxt-link
+							>
+						</p>
+						<p>
+							<nuxt-link to="/resources#watch-online">Ver en Línea</nuxt-link>
+						</p>
+						<p>
+							<nuxt-link to="/resources#audios">Mensajes en Audio</nuxt-link>
 						</p>
 					</div>
 				</div>
@@ -374,7 +416,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
-			align-items: center;
+			align-items: flex-start;
 			position: fixed;
 			background-color: rgb(248, 250, 252);
 			color: rgb(12 74 110);
@@ -383,13 +425,24 @@
 			width: 100%;
 			max-width: 300px;
 			height: 100%;
-			transition: 0.4s ease-in-out all;
+			transition: 0.5s ease-in-out all;
+			overflow-y: scroll;
 		}
-		.dropdown-menu p {
-			padding: 30px 0 0 0;
+		.dropdown-menu h3 {
+			padding: 15px 0 0 30px;
 			line-height: 2;
 			text-transform: uppercase;
-			font-weight: 400;
+			font-weight: 500;
+			color: rgb(31, 41, 55);
+		}
+		.dropdown-menu h3:first-of-type {
+			padding: 30px 0 0 30px;
+		}
+		.dropdown-menu p {
+			width: 100%;
+			padding: 5px 0 5px 60px;
+			line-height: 1;
+			text-transform: none;
 		}
 	}
 	@media screen and (max-width: 576px) {
@@ -399,6 +452,15 @@
 		}
 		.dropdown-menu {
 			max-width: 250px;
+		}
+		.dropdown-menu h3 {
+			padding: 15px 0 0 25px;
+		}
+		.dropdown-menu h3:first-of-type {
+			padding: 30px 0 0 25px;
+		}
+		.dropdown-menu p {
+			padding: 5px 0 5px 40px;
 		}
 	}
 </style>

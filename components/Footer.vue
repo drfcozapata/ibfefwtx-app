@@ -1,9 +1,7 @@
 <template>
-	<footer class="w-full block bg-sky-900">
-		<div
-			class="w-10/12 py-11 mx-auto grid grid-cols-3 align-center justify-between text-slate-50"
-		>
-			<div class="flex flex-col justify-center font-15">
+	<footer class="w-full block bg-sky-900 text-slate-50">
+		<div class="footer">
+			<div class="flex flex-col justify-center font-15 footer__left">
 				<nuxt-link
 					class="w-36 py-3 uppercase hover:text-amber-400"
 					to="/about/our-church"
@@ -25,7 +23,7 @@
 					>Recursos</nuxt-link
 				>
 			</div>
-			<div class="flex flex-col justify-center items-center">
+			<div class="flex flex-col justify-center items-center footer__mid">
 				<nuxt-link to="/">
 					<img
 						class="w-32 h-32 mb-6"
@@ -42,7 +40,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="flex flex-col gap-5 justify-center items-end">
+			<div class="flex flex-col gap-5 justify-center items-end footer__rigth">
 				<nuxt-link
 					class="hover:text-amber-400"
 					href="https://facebook.com/ibfefwtx/"
@@ -96,5 +94,43 @@
 <style scoped>
 	.font-15 {
 		font-size: 15px;
+	}
+	.footer__left {
+		grid-area: a;
+	}
+	.footer__mid {
+		grid-area: b;
+	}
+	.footer__rigth {
+		grid-area: c;
+	}
+	.footer {
+		width: 83.33%;
+		padding: 44px 0;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: auto;
+		justify-content: space-between;
+		align-content: center;
+		grid-template-areas: 'a a b b b b b b b b c c';
+	}
+	@media screen and (max-width: 480px) {
+		.footer {
+			width: 96%;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-areas:
+				'a a c c'
+				'b b b b';
+		}
+		.footer__left {
+			padding-left: 24px;
+		}
+		.footer__rigth {
+			padding-right: 24px;
+		}
+		.footer__mid {
+			padding-top: 44px;
+		}
 	}
 </style>

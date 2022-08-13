@@ -12,7 +12,7 @@ import { NuxtLayout } from './.nuxt/components';
 			/>
 		</Head>
 		<NuxtLayout>
-			<Navbar />
+			<Header />
 			<NuxtPage />
 			<Footer />
 		</NuxtLayout>
@@ -22,5 +22,25 @@ import { NuxtLayout } from './.nuxt/components';
 <style>
 	.main {
 		font-family: 'Poppins', sans serif;
+	}
+	.page-title h1 {
+		width: 83.33%;
+		margin: 56px auto;
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 40px;
+	}
+	@media screen and (max-width: 768px) {
+		.page-title h1 {
+			margin: 35px auto;
+			font-size: 38px;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		.page-title h1 {
+			width: 90%;
+			margin: 20px auto 30px auto;
+			font-size: 34px;
+		}
 	}
 </style>

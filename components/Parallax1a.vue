@@ -1,11 +1,11 @@
 <template>
-	<div class="w-full bg-gray-100 banner">
+	<div class="w-full bg-gray-100 parallax1a">
 		<div>
 			<div
-				class="w-full flex flex-col justify-start border-l border-b border-r rounded-t-lg rounded-b-lg banner__card hover:shadow-md"
+				class="w-full flex flex-col justify-start border-l border-b border-r rounded-t-lg rounded-b-lg parallax1a__card hover:shadow-md"
 			>
 				<nuxt-link to="/about/pastor">
-					<div class="banner__img">
+					<div class="parallax1a__img">
 						<img
 							class="rounded-t-lg img1"
 							src="../assets/images/family.jpg"
@@ -25,7 +25,7 @@
 					</div>
 				</nuxt-link>
 				<div class="p-4">
-					<div class="h-56">
+					<div class="parallax1a__content">
 						<nuxt-link to="/about/pastor">
 							<h3 class="text-lg font-semibold text-center pb-4 text-sky-700">
 								Nuestra Familia Pastoral
@@ -53,10 +53,10 @@
 				</div>
 			</div>
 			<div
-				class="w-full flex flex-col justify-start border-l border-b border-r rounded-t-lg rounded-b-lg banner__card hover:shadow-md"
+				class="w-full flex flex-col justify-start border-l border-b border-r rounded-t-lg rounded-b-lg parallax1a__card hover:shadow-md"
 			>
 				<nuxt-link to="/ministries">
-					<div class="banner__img">
+					<div class="parallax1a__img">
 						<img
 							class="rounded-t-lg"
 							src="../assets/images/fathers-day.jpg"
@@ -76,7 +76,7 @@
 					</div>
 				</nuxt-link>
 				<div class="p-4">
-					<div class="h-56">
+					<div class="parallax1a__content">
 						<nuxt-link to="/ministries">
 							<h3 class="text-lg font-semibold text-center pb-4 text-sky-700">
 								Nuestras Celebraciones
@@ -101,10 +101,10 @@
 				</div>
 			</div>
 			<div
-				class="w-full flex flex-col justify-start border-l border-b border-r rounded-t-lg rounded-b-lg banner__card hover:shadow-md"
+				class="w-full flex flex-col justify-start border-l border-b border-r rounded-t-lg rounded-b-lg parallax1a__card hover:shadow-md"
 			>
 				<nuxt-link to="/about/our-church">
-					<div class="banner__img">
+					<div class="parallax1a__img">
 						<img
 							class="rounded-t-lg"
 							src="../assets/images/ibfe-05.jpg"
@@ -124,7 +124,7 @@
 					</div>
 				</nuxt-link>
 				<div class="p-4">
-					<div class="h-56">
+					<div class="parallax1a__content">
 						<nuxt-link to="/about/our-church">
 							<h3 class="text-lg font-semibold text-center pb-4 text-sky-700">
 								Nuestras Creencias
@@ -154,11 +154,11 @@
 </template>
 
 <style scoped>
-	.banner {
+	.parallax1a {
 		height: 840px;
 		font-family: 'Montserrat';
 	}
-	.banner > div {
+	.parallax1a > div {
 		width: 75%;
 		padding: 128px 0;
 		margin: 0 auto;
@@ -166,39 +166,22 @@
 		flex-direction: row;
 		gap: 36px;
 	}
-	@media screen and (max-width: 1024px) {
-		.banner > div {
-			width: 90%;
-			gap: 22px;
-		}
-	}
-	@media screen and (max-width: 768px) {
-		.banner > div {
-			width: 96%;
-			gap: 12px;
-		}
-	}
-	@media screen and (max-width: 480px) {
-		.banner > div {
-			padding: 80px 0;
-			width: 80%;
-			flex-wrap: wrap;
-		}
-	}
-	.banner__card {
+	.parallax1a__card {
 		height: 567px;
 		background-color: #fff;
 	}
-	.banner__img {
+	.parallax1a__img {
 		width: 100%;
 		height: 218px;
 		position: relative;
 	}
-	.banner__img img {
+	.parallax1a__img img {
 		width: 100%;
+		height: 100%;
+		object-fit: cover;
 		display: block;
 	}
-	.banner__img .overlay {
+	.parallax1a__img .overlay {
 		position: absolute;
 		border: none;
 		top: 0;
@@ -214,18 +197,63 @@
 		backdrop-filter: blur(2px);
 		transition: opacity 0.5s;
 	}
-	.banner__img .overlay .svg {
+	.parallax1a__img .overlay .svg {
 		color: rgb(243, 244, 246);
-		/* border: 3.5px solid rgb(243, 244, 246); */
-		/* border-radius: 50%;
-		padding: 1rem 1.3rem; */
 	}
-	.banner__img .overlay:hover {
+	.parallax1a__img .overlay:hover {
 		opacity: 1;
 	}
-	@media screen and (max-width: 480px) {
-		.banner__img {
+	.parallax1a__content {
+		height: 224px;
+	}
+	@media screen and (max-width: 1024px) {
+		.parallax1a > div {
+			width: 90%;
+			gap: 22px;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.parallax1a > div {
+			width: 96%;
+			gap: 12px;
+		}
+		.parallax1a > div {
+			padding: 100px 0;
+		}
+		.parallax1a__card {
+			height: 634px;
+			background-color: #fff;
+		}
+		.parallax1a__content {
+			height: 290px;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		.parallax1a {
+			height: 1860px;
+		}
+		.parallax1a > div {
+			padding: 80px 0;
+			width: 90%;
+			flex-direction: column;
+			gap: 38px;
+		}
+		.parallax1a__img {
 			height: 190px;
+		}
+		.parallax1a__card {
+			height: 540px;
+			background-color: #fff;
+		}
+		.parallax1a__content {
+			height: 224px;
+		}
+		.parallax1a__card h3 {
+			margin-top: 20px;
+		}
+		.parallax1a__card hr {
+			margin-top: 0;
+			margin-bottom: 8px;
 		}
 	}
 	/* From uiverse.io */

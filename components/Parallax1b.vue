@@ -1,5 +1,5 @@
 <template>
-	<div class="w-full grid grid-cols-1 parallax1b">
+	<div class="w-full flex justify-center items-center parallax1b">
 		<div class="flex flex-col justify-center">
 			<p class="italic leading-relaxed text-center mb-4">
 				"La gracia es la aceptación de nosotros por parte de Dios. La fe es
