@@ -7,19 +7,31 @@
 		/>
 		<div class="bg-sky-700 text-slate-100 flex flex-col justify-center">
 			<h3 class="text-3xl font-medium uppercase mb-6">
-				La iglesia no es un edificio; ¡son las personas!
+				{{
+					lang.spaOrEngLng
+						? 'La iglesia no es un edificio; ¡son las personas!'
+						: "The church is not a building; it's the people!"
+				}}
 			</h3>
 			<p class="text-xl mb-10">
-				Jesús dijo que vino por la gente, por las personas. Siendo el buen
-				pastor, vino a buscar a quienes se habían extraviado. Su grandeza no
-				puede ser contenida por un edificio.
+				{{
+					lang.spaOrEngLng
+						? 'Jesús dijo que vino por la gente, por las personas. Siendo el buen pastor, vino a buscar a quienes se habían extraviado. Su grandeza no puede ser contenida por un edificio.'
+						: 'Jesus said that he came for the people, for the individuals. Being the good shepherd, he came to seek those who had gone lost their way. His greatness cannot be contained by a building.'
+				}}
 			</p>
 			<nuxt-link to="/ministries" class="hover:bg-light-50 hover:text-dark-800">
-				<button>Aprender más</button>
+				<button>{{ lang.spaOrEngLng ? 'Aprender más' : 'Learn more' }}</button>
 			</nuxt-link>
 		</div>
 	</div>
 </template>
+
+<script setup>
+	import { useLangStore } from '../stores/LangStore';
+
+	const lang = useLangStore();
+</script>
 
 <style scoped>
 	.people {

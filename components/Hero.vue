@@ -9,13 +9,24 @@
 			></video>
 		</div>
 		<div class="content">
-			<h1 class="mb-16">Somos <span>iglesia</span></h1>
+			<h1 class="mb-16">
+				{{ lang.spaOrEngLng ? 'Somos' : 'We are' }}
+				<span>
+					{{ lang.spaOrEngLng ? 'iglesia' : 'church' }}
+				</span>
+			</h1>
 			<nuxt-link to="/about/our-church" class="flex justify-center">
-				<button>Conócenos</button>
+				<button>{{ lang.spaOrEngLng ? 'Conócenos' : 'Meet Us' }}</button>
 			</nuxt-link>
 		</div>
 	</div>
 </template>
+
+<script setup>
+	import { useLangStore } from '../stores/LangStore';
+
+	const lang = useLangStore();
+</script>
 
 <style scoped>
 	.showcase {

@@ -2,16 +2,25 @@
 	<div class="w-full flex justify-center items-center parallax1b">
 		<div class="flex flex-col justify-center">
 			<p class="italic leading-relaxed text-center mb-4">
-				"La gracia es la aceptación de nosotros por parte de Dios. La fe es
-				nuestra aceptación de que Dios nos acepta".
+				{{
+					lang.spaOrEngLng
+						? '\u201cLa gracia es la aceptación de nosotros por parte de Dios. La fe es nuestra aceptación de que Dios nos acepta\u201d'
+						: "\u201cGrace is God's acceptance of us. Faith is our acceptance of God accepting us.\u201d"
+				}}.
 			</p>
 			<p class="text-right mb-8"><span>― Adrian Rogers</span></p>
 			<nuxt-link to="/ministries" class="flex justify-center">
-				<button>Conoce más</button>
+				<button>{{ lang.spaOrEngLng ? 'Conoce más' : 'Learn more' }}</button>
 			</nuxt-link>
 		</div>
 	</div>
 </template>
+
+<script setup>
+	import { useLangStore } from '../stores/LangStore';
+
+	const lang = useLangStore();
+</script>
 
 <style scoped>
 	.parallax1b {

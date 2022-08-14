@@ -15,53 +15,107 @@
 		</div>
 		<div class="pastor__text">
 			<h2 class="text-sky-600">David Escalona</h2>
-			<p>
-				El Pastor David tiene un deseo ferviente por alcanzar a los perdidos
-				llevando el evangelio a las calles y haciendo visible el amor de Dios
-				por medio de nuestras acciones, haciendo gala de la habilidad especial
-				que Dios le ha dado para conectar con las personas en todos los niveles
-				por medio de la palabra de Dios.
-			</p>
-			<p>
-				“Yo inspiro a las personas para crecer más como Jesús” es la frase que
-				lo identifica, haciéndola palpable cada día al servir de ejemplo e
-				inspiración para que otros puedan llegar a ser más semejantes a Jesús.
-			</p>
-			<p>
-				Esta casado con la mujer de sus sueños, la cual pedía a Dios desde muy
-				joven. Su nombre es Suely De Armas, una hermosa joven apasionada por
-				Dios, por su Palabra y por la fotografía, quien ha dedicado gran parte
-				de su vida a la música sirviendo a Dios con el hermoso talento del
-				canto.
-			</p>
-			<p>
-				Juntos, tienen un hijo de nombre Andrés, que vino a completar sus vidas.
-			</p>
-			<p>
-				El Pastor David terminó su Master en Estudios Teológicos de Southwestern
-				Baptist Theological Seminary en Diciembre del 2020. Sus hobbies e
-				intereses incluyen leer, aprender continuamente, pescar, volar drones y
-				pasar tiempo al aire libre en familia.
-			</p>
-			<P
-				>Puedes seguirle en
-				<nuxt-link
-					class="font-medium italic text-sky-600"
-					to="https://www.instagram.com/davidysue/"
-					target="_blank"
-					>Instagram</nuxt-link
+			<div v-if="lang.spaOrEngLng === true" class="spanish">
+				<p>
+					El Pastor David tiene un deseo ferviente por alcanzar a los perdidos
+					llevando el evangelio a las calles y haciendo visible el amor de Dios
+					por medio de nuestras acciones, haciendo gala de la habilidad especial
+					que Dios le ha dado para conectar con las personas en todos los
+					niveles por medio de la palabra de Dios.
+				</p>
+				<p>
+					“Yo inspiro a las personas para crecer más como Jesús” es la frase que
+					lo identifica, haciéndola palpable cada día al servir de ejemplo e
+					inspiración para que otros puedan llegar a ser más semejantes a Jesús.
+				</p>
+				<p>
+					Esta casado con la mujer de sus sueños, la cual pedía a Dios desde muy
+					joven. Su nombre es Suely De Armas, una hermosa joven apasionada por
+					Dios, por su Palabra y por la fotografía, quien ha dedicado gran parte
+					de su vida a la música sirviendo a Dios con el hermoso talento del
+					canto.
+				</p>
+				<p>
+					Juntos, tienen un hijo de nombre Andrés, que vino a completar sus
+					vidas.
+				</p>
+				<p>
+					El Pastor David terminó su Master en Estudios Teológicos de
+					Southwestern Baptist Theological Seminary en Diciembre del 2020. Sus
+					hobbies e intereses incluyen leer, aprender continuamente, pescar,
+					volar drones y pasar tiempo al aire libre en familia.
+				</p>
+				<P
+					>Puedes seguirle en
+					<nuxt-link
+						class="font-medium italic text-sky-600"
+						to="https://www.instagram.com/davidysue/"
+						target="_blank"
+						>Instagram</nuxt-link
+					>
+					o
+					<nuxt-link
+						class="font-medium italic text-sky-600"
+						to="https://twitter.com/es_edavid"
+						target="_blank"
+						>Twitter</nuxt-link
+					></P
 				>
-				o
-				<nuxt-link
-					class="font-medium italic text-sky-600"
-					to="https://twitter.com/es_edavid"
-					target="_blank"
-					>Twitter</nuxt-link
-				></P
-			>
+			</div>
+			<div v-else class="english">
+				<p>
+					Pastor David has a fervent desire to reach the lost by taking the
+					gospel to the streets and making God's love visible through our
+					actions, displaying the special ability God has given him to connect
+					with people at all levels through the word of God.
+				</p>
+				<p>
+					"I inspire people to grow more like Jesus" is the phrase that
+					identifies him, making it palpable every day as he serves as an
+					example and inspiration for others to become more like Jesus.
+				</p>
+				<p>
+					He is married to the woman of his dreams, which he asked God for since
+					he was very young. Her name is Suely De Armas, a beautiful young woman
+					passionate about God, His Word and photography, who has dedicated much
+					of her life to music serving God with the beautiful talent of singing.
+				</p>
+				<p>
+					Together, they have a son named Andres, who came to complete their
+					lives.
+				</p>
+				<p>
+					Pastor David completed his Master's degree in Theological Studies from
+					Southwestern Baptist Theological Seminary in December 2020. His
+					hobbies and interests include reading, continuous learning, fishing,
+					flying drones, and spending time outdoors with family.
+				</p>
+				<p>
+					You can follow him at.
+					<nuxt-link
+						class="font-medium italic text-sky-600"
+						to="https://www.instagram.com/davidysue/"
+						target="_blank"
+						>Instagram</nuxt-link
+					>
+					o
+					<nuxt-link
+						class="font-medium italic text-sky-600"
+						to="https://twitter.com/es_edavid"
+						target="_blank"
+						>Twitter</nuxt-link
+					>
+				</p>
+			</div>
 		</div>
 	</div>
 </template>
+
+<script setup>
+	import { useLangStore } from '../stores/LangStore';
+
+	const lang = useLangStore();
+</script>
 
 <style scoped>
 	.pastor__image {

@@ -2,13 +2,22 @@
 	<div class="w-full grid grid-cols-1 bg-gray-100 banner">
 		<div class="flex flex-col justify-center">
 			<p class="leading-relaxed text-center mb-10">
-				"El único nunca en el que deberías enfocarte es en el hecho de que Dios
-				nunca te abandonará".
+				{{
+					lang.spaOrEngLng
+						? '\u201cEl único nunca en el que deberías enfocarte es en el hecho de que Dios nunca te abandonará.\u201d'
+						: '\u201cThe only never you should focus on is that God will never let you down.\u201d'
+				}}
 			</p>
 			<p class="text-right"><span>― Charles F. Stanley</span></p>
 		</div>
 	</div>
 </template>
+
+<script setup>
+	import { useLangStore } from '../stores/LangStore';
+
+	const lang = useLangStore();
+</script>
 
 <style scoped>
 	.banner {

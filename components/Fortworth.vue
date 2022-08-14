@@ -6,10 +6,23 @@
 			alt="Mapa de Fort Worth"
 		/>
 		<div class="animated">
-			<h2>Nuestro objetivo: <span>ganar Fort Worth para Cristo</span></h2>
+			<h2>
+				{{ lang.spaOrEngLng ? 'Nuestro propósito:' : 'Our purpose:' }}
+				<span>{{
+					lang.spaOrEngLng
+						? 'ganar Fort Worth para Jesús'
+						: 'to win Fort Worth for Jesus'
+				}}</span>
+			</h2>
 		</div>
 	</div>
 </template>
+
+<script setup>
+	import { useLangStore } from '../stores/LangStore';
+
+	const lang = useLangStore();
+</script>
 
 <style scoped>
 	.fort-worth {

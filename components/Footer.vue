@@ -5,22 +5,22 @@
 				<nuxt-link
 					class="w-36 py-3 uppercase hover:text-amber-400"
 					to="/about/our-church"
-					>Nosotros
+					>{{ lang.spaOrEngLng ? 'Nosotros' : 'About Us' }}
 				</nuxt-link>
 				<nuxt-link
 					class="w-36 py-3 uppercase hover:text-amber-400"
 					to="/ministries"
-					>Ministerios
+					>{{ lang.spaOrEngLng ? 'Ministerios' : 'Ministries' }}
 				</nuxt-link>
 				<nuxt-link
 					class="w-36 py-3 uppercase hover:text-amber-400"
 					to="/resources"
-					>Conectarme
+					>{{ lang.spaOrEngLng ? 'Conectarme' : 'Connect Me' }}
 				</nuxt-link>
 				<nuxt-link
 					class="w-36 py-3 uppercase hover:text-amber-400"
 					to="/contact"
-					>Recursos</nuxt-link
+					>{{ lang.spaOrEngLng ? 'Recursos' : 'Resources' }}</nuxt-link
 				>
 			</div>
 			<div class="flex flex-col justify-center items-center footer__mid">
@@ -90,6 +90,12 @@
 		</div>
 	</footer>
 </template>
+
+<script setup>
+	import { useLangStore } from '../stores/LangStore';
+
+	const lang = useLangStore();
+</script>
 
 <style scoped>
 	.font-15 {

@@ -9,7 +9,7 @@
 						<img
 							class="rounded-t-lg img1"
 							src="../assets/images/family.jpg"
-							alt="Familia pastoral"
+							alt="{{ lang.spaOrEngLng ? 'Familia pastoral' : 'Pastoral Family' }}"
 						/>
 						<div class="rounded-t-lg overlay">
 							<svg
@@ -28,17 +28,26 @@
 					<div class="parallax1a__content">
 						<nuxt-link to="/about/pastor">
 							<h3 class="text-lg font-semibold text-center pb-4 text-sky-700">
-								Nuestra Familia Pastoral
+								{{
+									lang.spaOrEngLng
+										? 'Nuestra Familia Pastoral'
+										: 'Our Pastoral Family'
+								}}
 							</h3>
 						</nuxt-link>
 						<p class="text-sm pb-2">
-							El pastor David Escalona, su esposa Suely y su pequeño hijo Andrés
-							David proceden de Venezuela, país que dejaron para liderar nuestra
-							congregación.
+							{{
+								lang.spaOrEngLng
+									? 'El pastor David Escalona, su esposa Suely y su pequeño hijo Andrés David proceden de Venezuela, país que dejaron para liderar nuestra congregación.'
+									: 'Pastor David Escalona, his wife Suely and their young son Andrés David come from Venezuela, a country they left to lead our congregation. congregation.'
+							}}
 						</p>
 						<p class="text-sm">
-							Mientras el pastor David conduce la Iglesia, nuestra amada Suely
-							dirige el Ministerio de Adoración.
+							{{
+								lang.spaOrEngLng
+									? 'Mientras el pastor David conduce la Iglesia, nuestra amada Suely dirige el Ministerio de Adoración.'
+									: 'While Pastor David leads the church, our beloved Suely leads the worship ministry.'
+							}}
 						</p>
 					</div>
 					<hr class="my-3" />
@@ -47,7 +56,9 @@
 							<span class="circle" aria-hidden="true">
 								<span class="icon arrow"></span>
 							</span>
-							<span class="button-text">Conoce más</span>
+							<span class="button-text">{{
+								lang.spaOrEngLng ? 'Conoce más' : 'Learn more'
+							}}</span>
 						</button></nuxt-link
 					>
 				</div>
@@ -60,7 +71,7 @@
 						<img
 							class="rounded-t-lg"
 							src="../assets/images/fathers-day.jpg"
-							alt="Celebración del Día del Padre 2022"
+							alt="{{ lang.spaOrEngLng ? 'Celebración del Día del Padre 2022' : '2022 Father\'s Day Celebration' }}"
 						/>
 						<div class="rounded-t-lg overlay">
 							<svg
@@ -79,14 +90,19 @@
 					<div class="parallax1a__content">
 						<nuxt-link to="/ministries">
 							<h3 class="text-lg font-semibold text-center pb-4 text-sky-700">
-								Nuestras Celebraciones
+								{{
+									lang.spaOrEngLng
+										? 'Nuestras Celebraciones'
+										: 'Our Celebrations'
+								}}
 							</h3>
 						</nuxt-link>
 						<p class="text-sm pb-4">
-							La celebración es un elemento importante en nuestra congregación
-							en la misma medida en que nos permite ejercitar los 5 ministerios
-							que consideramos esenciales: Proclamación, Enseñanza, Servicio,
-							Compañerismo y Adoración.
+							{{
+								lang.spaOrEngLng
+									? 'La celebración es un elemento importante en nuestra congregación en la misma medida en que nos permite ejercitar los 5 ministerios que consideramos esenciales: Proclamación, Enseñanza, Servicio, Compañerismo y Adoración.'
+									: 'The celebration is an important element in our congregation to the extent that it allows us to exercise the 5 ministries that we consider essential: Proclamation, Teaching, Service, Fellowship and Worship.'
+							}}
 						</p>
 					</div>
 					<hr class="my-3" />
@@ -95,7 +111,9 @@
 							<span class="circle" aria-hidden="true">
 								<span class="icon arrow"></span>
 							</span>
-							<span class="button-text">Conoce más</span>
+							<span class="button-text">{{
+								lang.spaOrEngLng ? 'Conoce más' : 'Learn more'
+							}}</span>
 						</button></nuxt-link
 					>
 				</div>
@@ -108,7 +126,7 @@
 						<img
 							class="rounded-t-lg"
 							src="../assets/images/ibfe-05.jpg"
-							alt="Nuestra edificación"
+							alt="{{ lang.spaOrEngLng ? '' : '' }}Nuestra edificación"
 						/>
 						<div class="rounded-t-lg overlay">
 							<svg
@@ -127,15 +145,15 @@
 					<div class="parallax1a__content">
 						<nuxt-link to="/about/our-church">
 							<h3 class="text-lg font-semibold text-center pb-4 text-sky-700">
-								Nuestras Creencias
+								{{ lang.spaOrEngLng ? 'Nuestras Creencias' : 'Our Beliefs' }}
 							</h3>
 						</nuxt-link>
 						<p class="text-sm pb-4">
-							Creemos en: un Dios verdadero y vivo, en la Santa Biblia, en el
-							hombre como creación especial, en Jesús su Hijo eterno, que
-							salvación implica redención total, en el Espíritu Santo, en la
-							iglesia como congregación local y autónoma y que Dios traerá el
-							mundo a su fin apropiado.
+							{{
+								lang.spaOrEngLng
+									? 'Creemos en: un Dios verdadero y vivo, en la Santa Biblia, en el hombre como creación especial, en Jesús su Hijo eterno, que salvación implica redención total, en el Espíritu Santo, en la iglesia como congregación local y autónoma y que Dios traerá el mundo a su fin apropiado.'
+									: 'We believe in: a true and living God, in the Holy Bible, in man as a special creation, in Jesus his eternal Son, that salvation implies total redemption, in the Holy Spirit, in the church as a local and autonomous congregation, and that God will bring the world to its proper end.'
+							}}
 						</p>
 					</div>
 					<hr class="my-3" />
@@ -144,7 +162,9 @@
 							<span class="circle" aria-hidden="true">
 								<span class="icon arrow"></span>
 							</span>
-							<span class="button-text">Conoce más</span>
+							<span class="button-text">{{
+								lang.spaOrEngLng ? 'Conoce más' : 'Learn more'
+							}}</span>
 						</button></nuxt-link
 					>
 				</div>
@@ -152,6 +172,12 @@
 		</div>
 	</div>
 </template>
+
+<script setup>
+	import { useLangStore } from '../stores/LangStore';
+
+	const lang = useLangStore();
+</script>
 
 <style scoped>
 	.parallax1a {

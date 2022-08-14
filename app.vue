@@ -1,4 +1,3 @@
-import { NuxtLayout } from './.nuxt/components';
 <template>
 	<div class="w-full relative">
 		<Head>
@@ -18,6 +17,12 @@ import { NuxtLayout } from './.nuxt/components';
 		</NuxtLayout>
 	</div>
 </template>
+
+<script setup>
+	import { useLangStore } from './stores/LangStore';
+
+	useLangStore;
+</script>
 
 <style>
 	.main {

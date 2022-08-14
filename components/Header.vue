@@ -19,7 +19,7 @@
 							<nuxt-link
 								class="block relative hover:bg-slate-800"
 								to="/about/our-church"
-								>Nosotros
+								>{{ lang.spaOrEngLng ? 'Nosotros' : 'About Us' }}
 								<svg
 									class="fill-current w-4 h-4 arrow"
 									xmlns="http://www.w3.org/2000/svg"
@@ -32,10 +32,14 @@
 							</nuxt-link>
 							<ul>
 								<li>
-									<nuxt-link to="/about/our-church">Nuestra Iglesia</nuxt-link>
+									<nuxt-link to="/about/our-church">{{
+										lang.spaOrEngLng ? 'Nuestra Iglesia' : 'Our Church'
+									}}</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/about/pastor">Conoce al Pastor</nuxt-link>
+									<nuxt-link to="/about/pastor">{{
+										lang.spaOrEngLng ? 'Conoce al Pastor' : 'Meet the Pastor'
+									}}</nuxt-link>
 								</li>
 							</ul>
 						</li>
@@ -43,7 +47,7 @@
 							<nuxt-link
 								class="block relative hover:bg-slate-800"
 								to="/ministries"
-								>Ministerios
+								>{{ lang.spaOrEngLng ? 'Ministerios' : 'Ministries' }}
 								<svg
 									class="fill-current w-4 h-4 arrow"
 									xmlns="http://www.w3.org/2000/svg"
@@ -56,19 +60,25 @@
 							</nuxt-link>
 							<ul>
 								<li>
-									<nuxt-link to="/ministries/teaching">Enseñanza</nuxt-link>
+									<nuxt-link to="/ministries/teaching">{{
+										lang.spaOrEngLng ? 'Enseñanza' : 'Teaching'
+									}}</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/ministries/misions">Misiones</nuxt-link>
+									<nuxt-link to="/ministries/misions">{{
+										lang.spaOrEngLng ? 'Misiones' : 'Misions'
+									}}</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/ministries/marriages">Matrimonios</nuxt-link>
+									<nuxt-link to="/ministries/marriages">{{
+										lang.spaOrEngLng ? 'Matrimonios' : 'Marriages'
+									}}</nuxt-link>
 								</li>
 							</ul>
 						</li>
 						<li>
 							<nuxt-link class="block hover:bg-slate-800" to="/contact"
-								>Conectarme
+								>{{ lang.spaOrEngLng ? 'Conectarme' : 'Connect Me' }}
 								<svg
 									class="fill-current w-4 h-4 arrow"
 									xmlns="http://www.w3.org/2000/svg"
@@ -81,24 +91,28 @@
 							</nuxt-link>
 							<ul>
 								<li>
-									<nuxt-link to="/contact#what-to-expect"
-										>¿Qué esperar?</nuxt-link
-									>
+									<nuxt-link to="/contact#what-to-expect">{{
+										lang.spaOrEngLng ? '¿Qué esperar?' : 'What to Expect?'
+									}}</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/contact#first-steps"
-										>Primeros Pasos</nuxt-link
-									>
+									<nuxt-link to="/contact#first-steps">{{
+										lang.spaOrEngLng ? 'Primeros Pasos' : 'First Steps'
+									}}</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/contact#how-to-get-involved"
-										>¿Cómo involucrarme?</nuxt-link
-									>
+									<nuxt-link to="/contact#how-to-get-involved">{{
+										lang.spaOrEngLng
+											? '¿Cómo involucrarme?'
+											: 'How to Get Involved?'
+									}}</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/contact/serve-you"
-										>¿Cómo podemos servirte?</nuxt-link
-									>
+									<nuxt-link to="/contact/serve-you">{{
+										lang.spaOrEngLng
+											? '¿Cómo podemos servirte?'
+											: 'How Can We Serve You?'
+									}}</nuxt-link>
 								</li>
 							</ul>
 						</li>
@@ -106,7 +120,7 @@
 							<nuxt-link
 								class="block relative hover:bg-slate-800"
 								to="/resources"
-								>Recursos
+								>{{ lang.spaOrEngLng ? 'Recursos' : 'Resources' }}
 								<svg
 									class="fill-current w-4 h-4 arrow"
 									xmlns="http://www.w3.org/2000/svg"
@@ -119,95 +133,120 @@
 							</nuxt-link>
 							<ul>
 								<li>
-									<nuxt-link to="/resources/calendar"
-										>Calendario de Eventos</nuxt-link
-									>
+									<nuxt-link to="/resources/calendar">{{
+										lang.spaOrEngLng
+											? 'Calendario de Eventos'
+											: 'Events Calendar'
+									}}</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/resources#watch-online"
-										>Ver en Línea</nuxt-link
-									>
+									<nuxt-link to="/resources#watch-online">{{
+										lang.spaOrEngLng ? 'Ver en Línea' : 'Watch Online'
+									}}</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/resources#audios"
-										>Mensajes en Audio</nuxt-link
-									>
+									<nuxt-link to="/resources#audios">{{
+										lang.spaOrEngLng ? 'Mensajes en Audio' : 'Audio Messages'
+									}}</nuxt-link>
 								</li>
 							</ul>
 						</li>
 					</ul>
 					<div class="dropdown-menu">
 						<h3>
-							<nuxt-link to="/about/our-church">Nosotros</nuxt-link>
+							<nuxt-link to="/about/our-church">{{
+								lang.spaOrEngLng ? 'Nosotros' : 'About Us'
+							}}</nuxt-link>
 						</h3>
 						<p>
-							<nuxt-link to="/about/our-church">Nuestra Iglesia</nuxt-link>
+							<nuxt-link to="/about/our-church">{{
+								lang.spaOrEngLng ? 'Nuestra Iglesia' : 'Our Church'
+							}}</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/about/pastor">Conoce al Pastor</nuxt-link>
+							<nuxt-link to="/about/pastor">{{
+								lang.spaOrEngLng ? 'Conoce al Pastor' : 'Meet the Pastor'
+							}}</nuxt-link>
 						</p>
 						<h3>
-							<nuxt-link to="/ministries">Ministerios</nuxt-link>
+							<nuxt-link to="/ministries">{{
+								lang.spaOrEngLng ? 'Ministerios' : 'Ministries'
+							}}</nuxt-link>
 						</h3>
 						<p>
-							<nuxt-link to="/ministries/teaching">Enseñanza</nuxt-link>
+							<nuxt-link to="/ministries/teaching">{{
+								lang.spaOrEngLng ? 'Enseñanza' : 'Teaching'
+							}}</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/ministries/misions">Misiones</nuxt-link>
+							<nuxt-link to="/ministries/misions">{{
+								lang.spaOrEngLng ? 'Misiones' : 'Misions'
+							}}</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/ministries/marriages">Matrimonios</nuxt-link>
+							<nuxt-link to="/ministries/marriages">{{
+								lang.spaOrEngLng ? 'Matrimonios' : 'Marriages'
+							}}</nuxt-link>
 						</p>
 						<h3>
-							<nuxt-link to="/contact">Conectarme</nuxt-link>
+							<nuxt-link to="/contact">{{
+								lang.spaOrEngLng ? 'Conectarme' : 'Connect Me'
+							}}</nuxt-link>
 						</h3>
 						<p>
-							<nuxt-link to="/contact#what-to-expect">¿Qué esperar?</nuxt-link>
+							<nuxt-link to="/contact#what-to-expect">{{
+								lang.spaOrEngLng ? '¿Qué esperar?' : 'What to Expect?'
+							}}</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/contact#first-steps">Primeros Pasos</nuxt-link>
+							<nuxt-link to="/contact#first-steps">{{
+								lang.spaOrEngLng ? 'Primeros Pasos' : 'First Steps'
+							}}</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/contact#how-to-get-involved"
-								>¿Cómo Involucrarme?</nuxt-link
-							>
+							<nuxt-link to="/contact#how-to-get-involved">{{
+								lang.spaOrEngLng
+									? '¿Cómo Involucrarme?'
+									: 'How to Get Involved?'
+							}}</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/contact/serve-you"
-								>¿Cómo Podemos Servirte?</nuxt-link
-							>
+							<nuxt-link to="/contact/serve-you">{{
+								lang.spaOrEngLng
+									? '¿Cómo Podemos Servirte?'
+									: 'How Can We Serve You?'
+							}}</nuxt-link>
 						</p>
 						<h3>
-							<nuxt-link to="/resources">Recursos</nuxt-link>
+							<nuxt-link to="/resources">{{
+								lang.spaOrEngLng ? 'Recursos' : 'Resources'
+							}}</nuxt-link>
 						</h3>
 						<p>
-							<nuxt-link to="/resources/calendar"
-								>Calendario de Eventos</nuxt-link
-							>
+							<nuxt-link to="/resources/calendar">{{
+								lang.spaOrEngLng ? 'Calendario de Eventos' : 'Events Calendar'
+							}}</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/resources#watch-online">Ver en Línea</nuxt-link>
+							<nuxt-link to="/resources#watch-online">{{
+								lang.spaOrEngLng ? 'Ver en Línea' : 'Watch Online'
+							}}</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/resources#audios">Mensajes en Audio</nuxt-link>
+							<nuxt-link to="/resources#audios">{{
+								lang.spaOrEngLng ? 'Mensajes en Audio' : 'Audio Messages'
+							}}</nuxt-link>
 						</p>
 					</div>
 				</div>
 			</nav>
 			<div class="flex items-center justify-center language">
-				<button
-					v-if="langEs"
-					class="text-xs hover:text-amber-400"
-					@click="doLangEs(false)"
-				>
-					<img class="w-7 h-7" src="../assets/images/english.png" alt="" />
-				</button>
-				<button
-					v-else
-					class="text-xs hover:text-amber-400"
-					@click="doLangEs(true)"
-				>
-					<img class="w-7 h-7" src="../assets/images/spanish.png" alt="" />
+				<button class="text-xs" @click="lang.setLangEs">
+					<img
+						class="w-7 h-7"
+						:src="lang.spaOrEngImg"
+						:alt="lang.spaOrEngAlt"
+					/>
 				</button>
 			</div>
 		</div>
@@ -215,17 +254,10 @@
 </template>
 
 <script setup>
-	import { ref } from 'vue';
+	import { useLangStore } from '../stores/LangStore';
 
-	const langEs = ref(true);
-	let isLangEs = true;
-	let isLangEn = false;
-
-	const doLangEs = e => {
-		langEs.value = e;
-		isLangEs = !isLangEs;
-		isLangEn = !isLangEn;
-	};
+	const lang = useLangStore();
+	const spaOrEng = lang.spaOrEngLng;
 </script>
 
 <style scoped>
