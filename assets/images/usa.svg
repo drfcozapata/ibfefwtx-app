@@ -23,6 +23,6 @@
     <rect x="5" y="50" width="62" height="5" fill="#d22f27"/>
   </g>
   <g id="line">
-    <rect x="5" y="17" width="62" height="38" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <rect x="5" y="17" width="62" height="38" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
   </g>
 </svg>

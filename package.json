@@ -24,6 +24,7 @@
 		"vue"
 	],
 	"dependencies": {
+		"@vitejs/plugin-vue": "^3.0.3",
 		"vue-responsive-video-background-player": "^2.2.3"
 	}
 }

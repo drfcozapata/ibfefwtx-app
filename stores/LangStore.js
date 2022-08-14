@@ -11,10 +11,6 @@ export const useLangStore = defineStore({
 		},
 	},
 	getters: {
-		spaOrEngImg: state => {
-			if (state.langEs === true) return '../assets/images/usa.svg';
-			return '../assets/images/mexico.svg';
-		},
 		spaOrEngAlt: state => {
 			if (state.langEs === true) return 'english';
 			return 'español';

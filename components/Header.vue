@@ -239,13 +239,18 @@
 				</div>
 			</nav>
 			<div class="flex items-center justify-center language">
-				<button class="text-xs" @click="lang.setLangEs">
+				<button
+					v-if="lang.spaOrEngLng"
+					class="w-8 h-8 text-xs"
+					@click="lang.setLangEs"
+				>
 					<abbr :title="lang.spaOrEngAlt">
-						<img
-							class="w-7 h-7"
-							:src="lang.spaOrEngImg"
-							:alt="lang.spaOrEngAlt"
-						/>
+						<Usa />
+					</abbr>
+				</button>
+				<button v-else class="w-8 h-8 text-xs" @click="lang.setLangEs">
+					<abbr :title="lang.spaOrEngAlt">
+						<Mexico />
 					</abbr>
 				</button>
 			</div>
@@ -257,7 +262,6 @@
 	import { useLangStore } from '../stores/LangStore';
 
 	const lang = useLangStore();
-	const spaOrEng = lang.spaOrEngLng;
 </script>
 
 <style scoped>
