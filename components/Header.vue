@@ -16,9 +16,7 @@
 					<div class="hamburger"></div>
 					<ul class="menu">
 						<li>
-							<nuxt-link
-								class="block relative hover:bg-slate-800"
-								to="/about/our-church"
+							<nuxt-link class="block relative hover:bg-slate-800" to="/about"
 								>{{ lang.spaOrEngLng ? 'Nosotros' : 'About Us' }}
 								<svg
 									class="fill-current w-4 h-4 arrow"
@@ -33,7 +31,7 @@
 							<ul>
 								<li>
 									<nuxt-link to="/about/our-church">{{
-										lang.spaOrEngLng ? 'Nuestra Iglesia' : 'Our Church'
+										lang.spaOrEngLng ? '¿Qué Creemos?' : 'What Do We Believe?'
 									}}</nuxt-link>
 								</li>
 								<li>
@@ -154,13 +152,13 @@
 					</ul>
 					<div class="dropdown-menu">
 						<h3>
-							<nuxt-link to="/about/our-church">{{
+							<nuxt-link to="/about">{{
 								lang.spaOrEngLng ? 'Nosotros' : 'About Us'
 							}}</nuxt-link>
 						</h3>
 						<p>
 							<nuxt-link to="/about/our-church">{{
-								lang.spaOrEngLng ? 'Nuestra Iglesia' : 'Our Church'
+								lang.spaOrEngLng ? '¿Qué Creemos?' : 'What Do We Believe?'
 							}}</nuxt-link>
 						</p>
 						<p>
@@ -242,11 +240,13 @@
 			</nav>
 			<div class="flex items-center justify-center language">
 				<button class="text-xs" @click="lang.setLangEs">
-					<img
-						class="w-7 h-7"
-						:src="lang.spaOrEngImg"
-						:alt="lang.spaOrEngAlt"
-					/>
+					<abbr :title="lang.spaOrEngAlt">
+						<img
+							class="w-7 h-7"
+							:src="lang.spaOrEngImg"
+							:alt="lang.spaOrEngAlt"
+						/>
+					</abbr>
 				</button>
 			</div>
 		</div>

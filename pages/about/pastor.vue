@@ -1,4 +1,3 @@
-<style scoped></style>
 <template>
 	<div class="w-full pt-32 page-title">
 		<Head>

@@ -1,14 +1,18 @@
 <template>
-	<div class="w-full pt-24">
+	<div class="w-full pt-32 page-title">
 		<Head>
-			<Title>Nosotros</Title>
-			<Meta name="description" content="Sobre nosotros" />
+			<Title>{{ lang.spaOrEngLng ? 'Nosotros' : 'About Us' }}</Title>
+			<Meta name="description" content="Sobre la Iglesia Bautista Fe" />
 		</Head>
 
-		<h1 class="text-4xl my-10 px-10 mx-auto font-medium">Nosotros</h1>
+		<h1>{{ lang.spaOrEngLng ? 'Nosotros' : 'About Us' }}</h1>
+
+		<AboutUsContent />
 	</div>
 </template>
 
-<script setup></script>
+<script setup>
+	import { useLangStore } from '../../stores/LangStore';
 
-<style scoped></style>
+	const lang = useLangStore();
+</script>

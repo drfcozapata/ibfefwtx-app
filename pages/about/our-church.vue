@@ -1,16 +1,20 @@
-<style scoped></style>
 <template>
-	<div class="w-full pt-24">
+	<div class="w-full pt-32 page-title">
 		<Head>
-			<Title>Nuestra Iglesia</Title>
-			<Meta name="description" content="Nuestras creencias" />
+			<Title>{{
+				lang.spaOrEngLng ? '¿Qué Creemos?' : 'What Do We Believe?'
+			}}</Title>
+			<Meta name="description" content="Conoce a nuestro pastor y su familia" />
 		</Head>
 
-		<h1 class="text-4xl my-10 px-10 mx-auto font-medium">Nuestra Iglesia</h1>
-		<p>Inner page in church</p>
+		<h1>{{ lang.spaOrEngLng ? '¿Qué Creemos?' : 'What Do We Believe?' }}</h1>
+
+		<OurChurchContent />
 	</div>
 </template>
 
-<script setup></script>
+<script setup>
+	import { useLangStore } from '../../stores/LangStore';
 
-<style scoped></style>
+	const lang = useLangStore();
+</script>
