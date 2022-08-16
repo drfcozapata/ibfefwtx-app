@@ -4,7 +4,7 @@
 			<h1>
 				{{ lang.spaOrEngLng ? 'Conectarme' : 'Connect Me' }}
 			</h1>
-			<form class="w-full py-10 px-20 bg-slate-50">
+			<form class="w-full py-10 px-20 rounded-xl bg-slate-50">
 				<div class="flex gap-10 mb-4 wrap">
 					<div class="w-full flex flex-col">
 						<label for="name">{{ lang.spaOrEngLng ? 'Nombre' : 'Name' }}</label>
@@ -83,7 +83,12 @@
 					/>
 				</div>
 				<div class="flex items-end">
-					<input class="uppercase font-medium" type="submit" value="Enviar" />
+					<input
+						@click.prevent="sendForm"
+						class="uppercase font-medium"
+						type="submit"
+						value="Enviar"
+					/>
 				</div>
 			</form>
 		</div>
@@ -94,6 +99,9 @@
 	import { useLangStore } from '../stores/LangStore';
 
 	const lang = useLangStore();
+	const sendForm = () => {
+		console.log('Formulario enviado');
+	};
 </script>
 
 <style scoped>

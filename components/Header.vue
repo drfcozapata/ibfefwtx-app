@@ -89,7 +89,7 @@
 							</nuxt-link>
 							<ul>
 								<li>
-									<nuxt-link to="/contact#what-to-expect">{{
+									<nuxt-link to="/contact/what-to-expect">{{
 										lang.spaOrEngLng ? '¿Qué esperar?' : 'What to Expect?'
 									}}</nuxt-link>
 								</li>
@@ -192,7 +192,7 @@
 							}}</nuxt-link>
 						</h3>
 						<p>
-							<nuxt-link to="/contact#what-to-expect">{{
+							<nuxt-link to="/contact/what-to-expect">{{
 								lang.spaOrEngLng ? '¿Qué esperar?' : 'What to Expect?'
 							}}</nuxt-link>
 						</p>
