@@ -89,9 +89,6 @@
 		font-weight: 600;
 		letter-spacing: 1px;
 	}
-	.accordion-p {
-		line-height: 2;
-	}
 	@media screen and (max-width: 992px) {
 		.contact > div {
 			padding: 0 40px;
@@ -111,9 +108,6 @@
 			line-height: 34px;
 			margin-bottom: 48px;
 		}
-		form {
-			padding: 40px;
-		}
 		.wrap {
 			flex-wrap: wrap;
 			gap: 12px;
@@ -121,18 +115,16 @@
 	}
 	@media screen and (max-width: 576px) {
 		.contact {
-			height: 800px;
+			min-height: 860px;
 		}
 		.contact > div {
+			width: 90%;
 			padding: 0 6px;
 		}
 		.contact h1 {
 			font-size: 30px;
 			line-height: 30px;
 			margin-bottom: 42px;
-		}
-		form {
-			padding: 20px;
 		}
 		.contact p,
 		label,

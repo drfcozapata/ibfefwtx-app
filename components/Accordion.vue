@@ -1,5 +1,5 @@
 <template>
-	<div class="w-10/12 mx-auto mb-2">
+	<div class="w-10/12 mx-auto mb-2 accordion">
 		<div
 			@click="isOpen = !isOpen"
 			class="flex gap-1 items-center p-4 font-bold border rounded cursor-pointer hover:bg-sky-500 hover:text-slate-50"
@@ -20,7 +20,7 @@
 			</h2>
 		</div>
 		<div
-			class="mt-2 border border-sky-700 bg-indigo-50 rounded px-8 py-6 leading-8"
+			class="mt-2 border border-sky-700 bg-indigo-50 rounded px-8 py-6 leading-8 accordion__text"
 			:class="isOpen ? 'd-block' : 'hidden'"
 		>
 			<slot></slot>
@@ -36,3 +36,32 @@
 	const isOpen = ref(false);
 	const props = defineProps(['titleEs', 'titleEn']);
 </script>
+
+<style>
+	@media screen and (max-width: 768px) {
+		.accordion {
+			width: 90%;
+		}
+		.accordion p {
+			line-height: 29px;
+		}
+		.accordion__text {
+			padding: 24px;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		.accordion {
+			width: 100%;
+		}
+		.accordion h2 {
+			font-size: 15px;
+		}
+		.accordion p {
+			font-size: 14px;
+			line-height: 1.9;
+		}
+		.accordion__text {
+			padding: 16px;
+		}
+	}
+</style>
