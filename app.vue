@@ -29,6 +29,7 @@
 		font-family: 'Poppins', sans serif;
 	}
 	.page-title h1 {
+		font-family: 'Poppins', sans serif;
 		width: 83.33%;
 		margin: 56px auto;
 		font-size: 40px;

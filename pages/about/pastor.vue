@@ -9,7 +9,7 @@
 
 		<h1>{{ lang.spaOrEngLng ? 'Conoce al Pastor' : 'Meet the Pastor' }}</h1>
 
-		<PastorContent />
+		<AboutUsPastor />
 	</div>
 </template>
 

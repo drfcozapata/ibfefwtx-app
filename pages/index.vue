@@ -4,11 +4,11 @@
 			<Title>Home</Title>
 			<Meta name="description" content="Home page Iglesia Bautista Fe" />
 		</Head>
-		<Hero />
-		<Banner1 />
-		<People />
-		<!-- <Banner2 /> -->
-		<Fortworth />
-		<Parallax1 />
+		<IndexHero />
+		<IndexBanner1 />
+		<IndexPeople />
+		<IndexFortworth />
+		<IndexContact />
+		<IndexParallax1 />
 	</main>
 </template>

@@ -9,7 +9,7 @@
 
 		<h1>{{ lang.spaOrEngLng ? '¿Qué Creemos?' : 'What Do We Believe?' }}</h1>
 
-		<OurChurchContent />
+		<AboutUsOurChurch />
 	</div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
 	<div class="w-full relative parallax">
 		<div class="flex flex-col">
-			<Parallax1a />
-			<Parallax1b />
+			<IndexParallax1a />
+			<IndexParallax1b />
 		</div>
 	</div>
 </template>
