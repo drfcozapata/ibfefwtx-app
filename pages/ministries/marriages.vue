@@ -1,19 +1,20 @@
-<style scoped></style>
 <template>
-	<div class="w-full pt-24">
+	<div class="w-full h-full">
 		<Head>
-			<Title>Matrimonios</Title>
+			<Title>{{ lang.spaOrEngLng ? 'Matrimonios' : 'Marriages' }}</Title>
 			<Meta
 				name="description"
-				content="Ministerio dirigido a matrimonios de nuestra Iglesia"
+				content="Ministerio de matrimonios de la Iglesia Bautista Fe"
 			/>
 		</Head>
-
-		<h1 class="text-4xl my-10 px-10 mx-auto font-medium">Matrimonios</h1>
-		<p>Inner page in marriages</p>
+		<MinistriesMARBanner />
+		<MinistriesMARHero />
+		<MinistriesMARContent />
 	</div>
 </template>
 
-<script setup></script>
+<script setup>
+	import { useLangStore } from '../../stores/LangStore';
 
-<style scoped></style>
+	const lang = useLangStore();
+</script>

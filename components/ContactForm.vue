@@ -1,6 +1,6 @@
 <template>
 	<div class="w-full grid grid-cols-1 bg-gray-100 contact" id="contact-form">
-		<div class="w-10/12 mx-auto flex flex-col justify-center">
+		<div class="w-10/12 mx-auto flex flex-col justify-start">
 			<h1>
 				{{ lang.spaOrEngLng ? 'Conectarme' : 'Connect Me' }}
 			</h1>
@@ -114,7 +114,7 @@
 		font-size: 40px;
 		line-height: 40px;
 		font-weight: 500;
-		margin-bottom: 60px;
+		margin: 90px 0 60px 0;
 	}
 	.contact p {
 		font-size: 16px;

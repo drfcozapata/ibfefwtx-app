@@ -1,18 +1,20 @@
-<style scoped></style>
 <template>
-	<div class="w-full pt-24">
+	<div class="w-full h-full">
 		<Head>
-			<Title>Enseñanza</Title>
+			<Title>{{ lang.spaOrEngLng ? 'Enseñanza' : 'Teaching' }}</Title>
 			<Meta
 				name="description"
-				content="Ministerio de Enseñanza de nuestra Iglesia"
+				content="Ministerio de enseñanza de la Iglesia Bautista Fe"
 			/>
 		</Head>
-		<h1 class="text-4xl my-10 px-10 mx-auto font-medium">Enseñanza</h1>
-		<p>Inner page in enseñanza</p>
+		<MinistriesTEABanner />
+		<MinistriesTEAHero />
+		<MinistriesTEAContent />
 	</div>
 </template>
 
-<script setup></script>
+<script setup>
+	import { useLangStore } from '../../stores/LangStore';
 
-<style scoped></style>
+	const lang = useLangStore();
+</script>

@@ -2,16 +2,18 @@
 	<div class="w-full h-full">
 		<Head>
 			<Title>{{
-				lang.spaOrEngLng ? 'Calendario de Eventos' : 'Events Calendar'
+				lang.spaOrEngLng
+					? 'Mensajes en Audio y Video'
+					: 'Audio & Video Messages'
 			}}</Title>
 			<Meta
 				name="description"
-				content="Calendario de eventos de la Iglesia Bautista Fe"
+				content="Mensajes en Audio y Video de la Iglesia Bautista Fe"
 			/>
 		</Head>
-		<ResourcesECBanner />
-		<ResourcesECHero />
-		<ResourcesECContent />
+		<ResourcesAVBanner />
+		<ResourcesAVHero />
+		<ResourcesAVContent />
 	</div>
 </template>
 

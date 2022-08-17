@@ -1,15 +1,15 @@
 <template>
 	<div class="w-full h-full">
 		<Head>
-			<Title>{{ lang.spaOrEngLng ? 'Ministerios' : 'Ministries' }}</Title>
+			<Title>{{ lang.spaOrEngLng ? 'Misiones' : 'Missions' }}</Title>
 			<Meta
 				name="description"
-				content="Los diversos ministerios de nuestra iglesia"
+				content="Ministerio de misiones de la Iglesia Bautista Fe"
 			/>
 		</Head>
-		<MinistriesBanner />
-		<MinistriesHero />
-		<MinistriesContent />
+		<MinistriesMISBanner />
+		<MinistriesMISHero />
+		<MinistriesMISContent />
 	</div>
 </template>
 

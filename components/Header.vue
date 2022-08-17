@@ -63,7 +63,7 @@
 									}}</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/ministries/misions">{{
+									<nuxt-link to="/ministries/missions">{{
 										lang.spaOrEngLng ? 'Misiones' : 'Misions'
 									}}</nuxt-link>
 								</li>
@@ -115,10 +115,8 @@
 							</ul>
 						</li>
 						<li>
-							<nuxt-link
-								class="block relative hover:bg-slate-800"
-								to="/resources"
-								>{{ lang.spaOrEngLng ? 'Recursos' : 'Resources' }}
+							<nuxt-link class="block relative hover:bg-slate-800">
+								{{ lang.spaOrEngLng ? 'Recursos' : 'Resources' }}
 								<svg
 									class="fill-current w-4 h-4 arrow"
 									xmlns="http://www.w3.org/2000/svg"
@@ -138,13 +136,10 @@
 									}}</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/resources#watch-online">{{
-										lang.spaOrEngLng ? 'Ver en Línea' : 'Watch Online'
-									}}</nuxt-link>
-								</li>
-								<li>
-									<nuxt-link to="/resources#audios">{{
-										lang.spaOrEngLng ? 'Mensajes en Audio' : 'Audio Messages'
+									<nuxt-link to="/resources/audio-video">{{
+										lang.spaOrEngLng
+											? 'Mensajes Audio / Video'
+											: 'Audio & Video Messages'
 									}}</nuxt-link>
 								</li>
 							</ul>
@@ -178,7 +173,7 @@
 						</p>
 						<p>
 							<nuxt-link to="/ministries/misions">{{
-								lang.spaOrEngLng ? 'Misiones' : 'Misions'
+								lang.spaOrEngLng ? 'Misiones' : 'Missions'
 							}}</nuxt-link>
 						</p>
 						<p>
@@ -220,19 +215,21 @@
 								lang.spaOrEngLng ? 'Recursos' : 'Resources'
 							}}</nuxt-link>
 						</h3>
-						<p>
+						<!-- <p>
 							<nuxt-link to="/resources/calendar">{{
 								lang.spaOrEngLng ? 'Calendario de Eventos' : 'Events Calendar'
 							}}</nuxt-link>
-						</p>
+						</p> -->
 						<p>
 							<nuxt-link to="/resources#watch-online">{{
 								lang.spaOrEngLng ? 'Ver en Línea' : 'Watch Online'
 							}}</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/resources#audios">{{
-								lang.spaOrEngLng ? 'Mensajes en Audio' : 'Audio Messages'
+							<nuxt-link to="/resources/audio-video">{{
+								lang.spaOrEngLng
+									? 'Mensajes Audio / Video'
+									: 'Audio & Video Messages'
 							}}</nuxt-link>
 						</p>
 					</div>
