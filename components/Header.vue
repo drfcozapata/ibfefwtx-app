@@ -238,17 +238,23 @@
 			<div class="flex items-center justify-center language">
 				<button
 					v-if="lang.spaOrEngLng"
-					class="w-8 h-8 text-xs"
+					class="w-8 h-8 text-xs hover:text-amber-400"
 					@click="lang.setLangEs"
 				>
-					<abbr :title="lang.spaOrEngAlt">
+					English
+					<!-- <abbr :title="lang.spaOrEngAlt">
 						<Usa />
-					</abbr>
+					</abbr> -->
 				</button>
-				<button v-else class="w-8 h-8 text-xs" @click="lang.setLangEs">
-					<abbr :title="lang.spaOrEngAlt">
+				<button
+					v-else
+					class="w-8 h-8 text-xs hover:text-amber-400"
+					@click="lang.setLangEs"
+				>
+					Español
+					<!-- <abbr :title="lang.spaOrEngAlt">
 						<Mexico />
-					</abbr>
+					</abbr> -->
 				</button>
 			</div>
 		</div>

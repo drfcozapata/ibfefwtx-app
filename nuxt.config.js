@@ -26,4 +26,7 @@ export default defineNuxtConfig({
 	meta: {
 		title: 'Iglesia Bautista Fe',
 	},
+	typescript: {
+		shim: false,
+	},
 });

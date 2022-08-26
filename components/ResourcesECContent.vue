@@ -4,39 +4,7 @@
 			<h1>
 				{{ lang.spaOrEngLng ? 'Calendario de Eventos' : 'Events Calendar' }}
 			</h1>
-			<div v-if="lang.spaOrEngLng === true" class="mb-2 spanish">
-				<p>
-					Lo primero que encontrarás en la Iglesia Bautista Fe es ¡gente normal
-					como tú!
-				</p>
-				<p>
-					Nos gusta la idea de acompañar a otros en el proceso de aprender
-					acerca de Jesús y su Palabra (la Biblia). Somos personas imperfectas
-					sirviendo a un Dios perfecto, pero cada día aprendiendo y aplicando
-					los principios que Dios nos ha dado para crecer como personas.
-				</p>
-				<p>Nuestro deseo es que al visitarnos puedas sentirte como en casa.</p>
-				<p>
-					Queremos responder algunas preguntas que pueden estar pasando por tu
-					mente:
-				</p>
-			</div>
-			<div v-else class="mb-2 english">
-				<p>
-					The first thing you'll find at Faith Baptist Church is regular people
-					just like you!
-				</p>
-				<p>
-					We like the idea of accompanying others in the process of learning
-					about Jesus and His Word (the Bible). We are imperfect people serving
-					a perfect God, but every day learning and applying the principles God
-					has given us to grow as people.
-				</p>
-				<p>Our desire is that when you visit us you can feel at home.</p>
-				<p>
-					We want to answer some questions that may be going through your mind:
-				</p>
-			</div>
+			<ResourcesCalendar />
 		</div>
 	</div>
 </template>
