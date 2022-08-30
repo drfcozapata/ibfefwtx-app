@@ -221,8 +221,8 @@
 							}}</nuxt-link>
 						</p> -->
 						<p>
-							<nuxt-link to="/resources#watch-online">{{
-								lang.spaOrEngLng ? 'Ver en Línea' : 'Watch Online'
+							<nuxt-link to="/resources/calendar">{{
+								lang.spaOrEngLng ? 'Calendario de Eventos' : 'Events Calendar'
 							}}</nuxt-link>
 						</p>
 						<p>
@@ -235,7 +235,7 @@
 					</div>
 				</div>
 			</nav>
-			<div class="flex items-center justify-center language">
+			<div class="flex items-center justify-center language mr-1">
 				<button
 					v-if="lang.spaOrEngLng"
 					class="w-8 h-8 text-xs hover:text-amber-400"
@@ -500,6 +500,9 @@
 		}
 		.dropdown-menu p {
 			padding: 5px 0 5px 40px;
+		}
+		.language button {
+			font-size: 10px;
 		}
 	}
 </style>

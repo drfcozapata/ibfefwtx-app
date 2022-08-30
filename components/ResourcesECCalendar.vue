@@ -1,16 +1,18 @@
 <template>
 	<div>
-		<section class="button">
-			<button @click="prev">
-				<ChevronLeft />
-			</button>
-			<h3>
+		<section class="calendar-head">
+			<h2>
 				{{ lang.spaOrEngLng ? ActualMonthName : ActualMonthNameEn }}
 				{{ actualYear }}
-			</h3>
-			<button @click="next">
-				<ChevronRigth />
-			</button>
+			</h2>
+			<div>
+				<button class="hover:text-sky-700" @click="prev">
+					<ChevronLeft />
+				</button>
+				<button class="chevron-next hover:text-sky-700" @click="next">
+					<ChevronRigth />
+				</button>
+			</div>
 		</section>
 
 		<section>
@@ -25,15 +27,19 @@
 				</p>
 			</div>
 		</section>
+
 		<section>
-			<div class="date">
+			<div class="date mb-5">
 				<p v-for="day in firstDay()" :key="day"></p>
 				<button
 					v-for="date in daysInMonth(actualYear, actualMonth)"
 					:key="date"
 					ref="date"
 					@click="getDate"
-					:class="actualDay(date)"
+					:class="{
+						'prev-class disabled': prevDay(date),
+						'today-class': actualDay(date),
+					}"
 				>
 					{{ date }}
 				</button>
@@ -50,11 +56,9 @@
 
 	let actualMonth = ref(new Date().getMonth()); // Mes actual
 	let actualYear = ref(new Date().getFullYear()); // Año actual
-	// let today = ref(
-	// 	new Date(actualYear.value, actualMonth.value, actualDay.value)
-	// );
+	let isToday = ref(new Date().getDate());
 	const days = ['Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sáb', 'Dom'];
-	const daysEn = ['Mon', 'Tue', 'Wen', 'Thu', 'Fry', 'Sat', 'Sun'];
+	const daysEn = ['Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat', 'Sun'];
 
 	// Número de días del mes
 	const daysInMonth = (year, month) => {
@@ -67,6 +71,15 @@
 		return initDay;
 	};
 	// Día actual
+	const prevDay = date => {
+		let calendarDate = new Date(actualYear.value, actualMonth.value, date);
+		let today = new Date();
+
+		console.log(calendarDate, today);
+
+		return calendarDate < today;
+	};
+	// Día actual
 	const actualDay = date => {
 		let calendarDate = new Date(
 			actualYear.value,
@@ -75,7 +88,7 @@
 		).toDateString();
 		let today = new Date().toDateString();
 
-		return calendarDate === today ? 'today-class' : '';
+		return calendarDate === today;
 	};
 	// Desplaza hasta el mes previo
 	const prev = () => {
@@ -118,42 +131,117 @@
 </script>
 
 <style scoped>
+	.calendar-head {
+		display: flex;
+		justify-content: space-between;
+		margin: 32px 0 40px 0;
+	}
+	.calendar-head h2 {
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 500;
+		margin-left: 16px;
+	}
+	.chevron-next {
+		margin-left: 24px;
+	}
 	.days,
 	.date {
 		text-align: center;
 		display: grid;
 		grid-template-columns: repeat(7, 1fr);
-		grid-gap: 40px;
+		grid-template-rows: auto;
+		grid-gap: 5px;
+		justify-content: center;
+		align-items: center;
+	}
+	.days {
+		font-size: 20px;
+		font-weight: 500;
+		grid-gap: 20px;
+		color: rgb(107, 114, 128);
 	}
 	.days p {
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
-	h1,
 	p {
 		text-align: center;
-	}
-	.button {
-		padding: 15px 0 30px 0;
-		display: flex;
-		justify-content: space-between;
 	}
 	button {
 		cursor: pointer;
 		font-size: 20px;
+		line-height: 1.5;
 		border: none;
 		background-color: transparent;
 	}
+	.date button {
+		padding: 10px 12px;
+		border: 3px solid transparent;
+		background-color: transparent;
+		border-radius: 50%;
+		font-weight: 500;
+	}
+	button.prev-class {
+		color: rgb(212, 212, 216);
+		cursor: default;
+	}
 	button.today-class {
 		font-weight: 700;
-		z-index: 2;
+		background-color: rgb(2, 132, 199);
+		color: rgb(248, 250, 252);
+		cursor: pointer;
 	}
-	button.today-class::before {
-		content: '';
-		position: absolute;
-		border: 3px solid rgb(2, 132, 199);
-		padding: 25px;
-		transform: translate(-30%, -25%);
-		border-radius: 50%;
-		z-index: 0;
+	@media screen and (max-width: 768px) {
+		.calendar-head h2 {
+			margin-left: 4px;
+			font-size: 28px;
+			line-height: 34px;
+		}
+		.date {
+			grid-gap: 10px;
+		}
+		.date button {
+			font-size: 18px;
+			padding: 10.5px 10px;
+		}
+		.days {
+			font-size: 18.5px;
+			grid-gap: 15px;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		.calendar-head h2 {
+			margin-left: 0;
+			font-size: 24px;
+			line-height: 30px;
+		}
+		.date button {
+			padding: 7px 10px;
+		}
+		.days {
+			font-size: 17px;
+			grid-gap: 15px;
+		}
+	}
+	@media screen and (max-width: 400px) {
+		.calendar-head h2 {
+			margin-left: 0;
+			font-size: 20px;
+			line-height: 24px;
+		}
+		.chevron-next {
+			margin-left: 16px;
+		}
+		.date {
+			grid-gap: 0;
+		}
+		.date button {
+			padding: 5px 7px;
+			font-size: 16px;
+		}
+		.days {
+			font-size: 14px;
+			grid-gap: 14px;
+		}
 	}
 </style>

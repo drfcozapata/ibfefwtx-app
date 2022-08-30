@@ -7,6 +7,7 @@
 		<AboutUsBanner />
 		<AboutUsHero />
 		<AboutUsContent />
+		<AboutUsCarouselView />
 	</div>
 </template>
 

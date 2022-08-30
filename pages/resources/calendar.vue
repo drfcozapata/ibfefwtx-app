@@ -12,6 +12,7 @@
 		<ResourcesECBanner />
 		<ResourcesECHero />
 		<ResourcesECContent />
+		<ResourcesECCarouselView />
 	</div>
 </template>
 
