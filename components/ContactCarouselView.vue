@@ -12,16 +12,16 @@
 
 <script setup>
 	import { reactive } from 'vue';
-	import Carousel from '../components/AboutUsCarousel.vue';
-	import Slide from '../components/AboutUsSlide.vue';
+	import Carousel from '../components/ContactCarousel.vue';
+	import Slide from '../components/ContactSlide.vue';
 
 	const carouselSlides = reactive([
-		'ibfe-bg-07',
-		'ibfe-bg-08',
-		'ibfe-bg-09',
-		'ibfe-bg-10',
-		'ibfe-bg-11',
-		'ibfe-bg-12',
+		'ibfe-bg-13',
+		'ibfe-bg-14',
+		'ibfe-bg-15',
+		'ibfe-bg-16',
+		'ibfe-bg-17',
+		'ibfe-bg-18',
 	]);
 </script>
 
@@ -35,8 +35,8 @@
 	}
 	.carousel {
 		position: relative;
-		max-height: 350px;
-		height: 350px;
+		max-height: 400px;
+		height: 400px;
 	}
 	.slide-info {
 		position: absolute;

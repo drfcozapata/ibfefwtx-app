@@ -91,7 +91,7 @@
 		border-radius: 50%;
 		width: 40px;
 		height: 40px;
-		/* background-color: rgb(3, 105, 161); */
+		/* background-color: #0369a1; */
 		color: white;
 	}
 	.pagination {

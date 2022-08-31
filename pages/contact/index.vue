@@ -7,6 +7,7 @@
 		<ContactBanner />
 		<ContactHero />
 		<ContactForm />
+		<ContactCarouselView />
 	</div>
 </template>
 

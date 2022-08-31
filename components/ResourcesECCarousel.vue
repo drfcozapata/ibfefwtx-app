@@ -3,14 +3,14 @@
 		<slot :currentSlide="currentSlide" />
 
 		<!-- Navigation -->
-		<!-- <div class="navigate">
+		<div class="navigate">
 			<div @click="prevSlide" class="toggle-page left">
 				<i class="fa-solid fa-chevron-left"></i>
 			</div>
 			<div @click="nextSlide" class="toggle-page right">
 				<i class="fa-solid fa-chevron-right"></i>
 			</div>
-		</div> -->
+		</div>
 
 		<!-- Pagination -->
 		<div class="pagination">
@@ -91,7 +91,7 @@
 		border-radius: 50%;
 		width: 40px;
 		height: 40px;
-		background-color: #6347c7;
+		/* background-color: #0369a1; */
 		color: white;
 	}
 	.pagination {
@@ -112,6 +112,6 @@
 		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.6);
 	}
 	.pagination .active {
-		background-color: #6347c7;
+		background-color: rgb(3, 105, 161);
 	}
 </style>
