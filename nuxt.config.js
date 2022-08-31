@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 				autoInstall: true,
 			}),
 			{
-				src: '~/plugins/vue-video-background',
+				src: '../plugins/vue-video-background',
 				ssr: false,
 			},
 		],

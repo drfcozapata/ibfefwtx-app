@@ -3,7 +3,7 @@
 		<Carousel class="carousel" v-slot="{ currentSlide }">
 			<Slide v-for="(slide, index) in carouselSlides" :key="index">
 				<div v-show="currentSlide === index + 1" class="slide-info">
-					<img :src="`../assets/images/${slide}.jpg`" alt="" />
+					<img :src="`../public/${slide}.jpg`" alt="" />
 				</div>
 			</Slide>
 		</Carousel>
@@ -12,8 +12,8 @@
 
 <script setup>
 	import { reactive } from 'vue';
-	import Carousel from '../components/ContactCarousel.vue';
-	import Slide from '../components/ContactSlide.vue';
+	import Carousel from '../components/Carousel.vue';
+	import Slide from '../components/Slide.vue';
 
 	const carouselSlides = reactive([
 		'ibfe-bg-13',
