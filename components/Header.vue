@@ -172,7 +172,7 @@
 							}}</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/ministries/misions">{{
+							<nuxt-link to="/ministries/missions">{{
 								lang.spaOrEngLng ? 'Misiones' : 'Missions'
 							}}</nuxt-link>
 						</p>

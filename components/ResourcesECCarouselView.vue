@@ -3,7 +3,7 @@
 		<Carousel class="carousel" v-slot="{ currentSlide }">
 			<Slide v-for="(slide, index) in carouselSlides" :key="index">
 				<div v-show="currentSlide === index + 1" class="slide-info">
-					<img :src="`../public/${slide}.jpg`" alt="" />
+					<img :src="`../assets/${slide}.jpg`" alt="" />
 				</div>
 			</Slide>
 		</Carousel>
@@ -35,8 +35,8 @@
 	}
 	.carousel {
 		position: relative;
-		max-height: 350px;
-		height: 350px;
+		max-height: 400px;
+		height: 400px;
 	}
 	.slide-info {
 		position: absolute;
