@@ -129,7 +129,7 @@
 							</nuxt-link>
 							<ul>
 								<li>
-									<nuxt-link to="/resources/calendar">{{
+									<nuxt-link to="/resources">{{
 										lang.spaOrEngLng
 											? 'Calendario de Eventos'
 											: 'Events Calendar'
@@ -215,13 +215,8 @@
 								lang.spaOrEngLng ? 'Recursos' : 'Resources'
 							}}</nuxt-link>
 						</h3>
-						<!-- <p>
-							<nuxt-link to="/resources/calendar">{{
-								lang.spaOrEngLng ? 'Calendario de Eventos' : 'Events Calendar'
-							}}</nuxt-link>
-						</p> -->
 						<p>
-							<nuxt-link to="/resources/calendar">{{
+							<nuxt-link to="/resources">{{
 								lang.spaOrEngLng ? 'Calendario de Eventos' : 'Events Calendar'
 							}}</nuxt-link>
 						</p>

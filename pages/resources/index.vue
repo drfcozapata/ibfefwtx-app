@@ -1,22 +1,23 @@
 <template>
-	<div class="w-full pt-24">
+	<div class="w-full h-full">
 		<Head>
-			<Title>Recursos</Title>
+			<Title>{{
+				lang.spaOrEngLng ? 'Calendario de Eventos' : 'Events Calendar'
+			}}</Title>
 			<Meta
 				name="description"
-				content="Calendario de eventos y materiales multimedia"
+				content="Calendario de eventos de la Iglesia Bautista Fe"
 			/>
 		</Head>
-
-		<h1 class="text-4xl my-10 px-10 mx-auto font-medium">Recursos</h1>
+		<ResourcesECBanner />
+		<ResourcesECHero />
+		<ResourcesECContent />
+		<ResourcesECCarouselView />
 	</div>
-
-	<h2 id="watch-online">Ver en Línea</h2>
-	<p>...</p>
-	<h2 id="audios">Mensajes en Audio</h2>
-	<p>...</p>
 </template>
 
-<script setup></script>
+<script setup>
+	import { useLangStore } from '../../stores/LangStore';
 
-<style scoped></style>
+	const lang = useLangStore();
+</script>
