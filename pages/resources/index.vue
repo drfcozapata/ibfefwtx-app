@@ -12,7 +12,7 @@
 		<ResourcesECBanner />
 		<ResourcesECHero />
 		<ResourcesECContent />
-		<ResourcesECCarouselView />
+		<StickySlide />
 	</div>
 </template>
 
