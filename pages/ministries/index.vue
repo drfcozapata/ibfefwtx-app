@@ -10,6 +10,7 @@
 		<MinistriesBanner />
 		<MinistriesHero />
 		<MinistriesContent />
+		<Slide3d />
 	</div>
 </template>
 

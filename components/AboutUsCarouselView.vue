@@ -1,12 +1,14 @@
 <template>
-	<div class="home">
-		<Carousel class="carousel" v-slot="{ currentSlide }">
-			<Slide v-for="(slide, index) in carouselSlides" :key="index">
-				<div v-show="currentSlide === index + 1" class="slide-info">
-					<img :src="`${slide}.jpg`" alt="" />
-				</div>
-			</Slide>
-		</Carousel>
+	<div class="carousel-view">
+		<div class="about">
+			<Carousel class="carousel" v-slot="{ currentSlide }">
+				<Slide v-for="(slide, index) in carouselSlides" :key="index">
+					<div v-show="currentSlide === index + 1" class="slide-info">
+						<img :src="`${slide}.jpg`" alt="" />
+					</div>
+				</Slide>
+			</Carousel>
+		</div>
 	</div>
 </template>
 
@@ -32,6 +34,15 @@
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
+	}
+	.carousel-view {
+		width: 100%;
+		background-color: #f9fafb;
+	}
+	.about {
+		width: 84%;
+		margin: 0 auto;
+		padding: 40px 0 80px 0;
 	}
 	.carousel {
 		position: relative;
