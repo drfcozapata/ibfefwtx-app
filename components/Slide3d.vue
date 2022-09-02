@@ -62,7 +62,7 @@
 	#s5:checked ~ #slide4 {
 		box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 		transform: translate3d(-45%, 0, -100px);
-		opacity: 0.85;
+		opacity: 0.9;
 	}
 	#s1:checked ~ #slide1,
 	#s2:checked ~ #slide2,
@@ -80,7 +80,7 @@
 	#s5:checked ~ #slide1 {
 		box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 		transform: translate3d(45%, 0, -100px);
-		opacity: 0.85;
+		opacity: 0.9;
 	}
 	#s1:checked ~ #slide3,
 	#s2:checked ~ #slide4,
@@ -92,31 +92,31 @@
 		opacity: 0.6;
 	}
 	#slide1 {
-		background-image: url('ibfe-bg-19.jpg');
+		background-image: url('../public/ibfe-bg-19.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
 	}
 	#slide2 {
-		background-image: url('ibfe-bg-20.jpg');
+		background-image: url('../public/ibfe-bg-20.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
 	}
 	#slide3 {
-		background-image: url('ibfe-bg-21.jpg');
+		background-image: url('../public/ibfe-bg-21.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
 	}
 	#slide4 {
-		background-image: url('ibfe-bg-22.jpg');
+		background-image: url('../public/ibfe-bg-22.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
 	}
 	#slide5 {
-		background-image: url('ibfe-bg-23.jpg');
+		background-image: url('../public/ibfe-bg-23.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
