@@ -1,5 +1,5 @@
 <template>
-	<div class="w-full grid grid-cols-1 bg-gray-50 contact" id="contact-form">
+	<div class="w-full grid grid-cols-1 bg-gray-50 resources">
 		<div class="w-10/12 mx-auto mb-8 flex flex-col justify-start">
 			<h1>
 				{{
@@ -8,105 +8,154 @@
 						: 'Audio & Video Messages'
 				}}
 			</h1>
-			<div v-if="lang.spaOrEngLng === true" class="mb-2 spanish">
-				<p>
-					Lo primero que encontrarás en la Iglesia Bautista Fe es ¡gente normal
-					como tú!
-				</p>
-				<p>
-					Nos gusta la idea de acompañar a otros en el proceso de aprender
-					acerca de Jesús y su Palabra (la Biblia). Somos personas imperfectas
-					sirviendo a un Dios perfecto, pero cada día aprendiendo y aplicando
-					los principios que Dios nos ha dado para crecer como personas.
-				</p>
-				<p>Nuestro deseo es que al visitarnos puedas sentirte como en casa.</p>
-				<p>
-					Queremos responder algunas preguntas que pueden estar pasando por tu
-					mente:
-				</p>
-			</div>
-			<div v-else class="mb-2 english">
-				<p>
-					The first thing you'll find at Faith Baptist Church is regular people
-					just like you!
-				</p>
-				<p>
-					We like the idea of accompanying others in the process of learning
-					about Jesus and His Word (the Bible). We are imperfect people serving
-					a perfect God, but every day learning and applying the principles God
-					has given us to grow as people.
-				</p>
-				<p>Our desire is that when you visit us you can feel at home.</p>
-				<p>
-					We want to answer some questions that may be going through your mind:
-				</p>
+			<div class="cards flex flex-wrap justify-between pb-10">
+				<AudioVideoMessages v-for="message in messages" :key="message.id">
+					<template #image>
+						<img :src="`../${message.img}.jpg`" alt="Imagen del video" />
+					</template>
+					<template #title>{{
+						lang.spaOrEngLng ? message.titleEs : message.titleEn
+					}}</template>
+					<template #speaker>{{ message.speaker }}</template>
+					<template #date>{{
+						lang.spaOrEngLng ? message.dateEs : message.dateEn
+					}}</template>
+					<template #description>{{
+						lang.spaOrEngLng ? message.descriptionEs : message.descriptionEn
+					}}</template>
+				</AudioVideoMessages>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script setup>
+	import { reactive } from 'vue';
 	import { useLangStore } from '../stores/LangStore';
 
 	const lang = useLangStore();
+	const messages = reactive([
+		{
+			id: 1,
+			img: 'ibfe-videos',
+			titleEs: 'Leyendo la Palabra de Dios',
+			titleEn: 'Reading the God’s Word',
+			speaker: 'David Escalona',
+			dateEs: '17 de Julio, 2022',
+			dateEn: 'July 17, 2022',
+			descriptionEs:
+				'Unde veniam corporis soluta dolorem sapiente commodi ex fuga laborum cumque quia itaque, labore magnam dolor at.',
+			descriptionEn:
+				'Fugiat tempore, dolorem necessitatibus velit optio distinctio ipsum ea quas mollitia dolore suscipit, beatae itaque.',
+		},
+		{
+			id: 2,
+			img: 'audio-video-02',
+			titleEs: '¿Por qué debería confiar en Dios?',
+			titleEn: 'Why Should I Trust God?',
+			speaker: 'Suely Escalona',
+			dateEs: '24 de Julio, 2022',
+			dateEn: 'July 24, 2022',
+			descriptionEs:
+				'Et adipisci earum alias, laborum modi ullam esse impedit sint quaerat nostrum ut velit incidunt maxime debitis ex.',
+			descriptionEn:
+				'Alias cumque ipsam quis repellat et porro dolore ut nostrum soluta. Dolor harum itaque quae beatae doloremque provident.',
+		},
+		{
+			id: 3,
+			img: 'audio-video-05',
+			titleEs: 'Reconstruyendo Los Muros',
+			titleEn: 'Rebuilding The Walls',
+			speaker: 'Boanerges Jr. De Armas',
+			dateEs: '31 de Julio, 2022',
+			dateEn: 'July 31, 2022',
+			descriptionEs:
+				'Laboriosam saepe quae dolor labore autem pariatur magnam quos. Voluptas minima deserunt esse, asperiores consectetur nulla?',
+			descriptionEn:
+				'Non beatae tenetur quod maiores fugiat? Aliquam nemo maxime doloribus odio ratione expedita reprehenderit at placeat!',
+		},
+		{
+			id: 4,
+			img: 'audio-video-03',
+			titleEs: '¡No Perdemos el Ánimo!',
+			titleEn: 'We Do Not Lose Heart!',
+			speaker: 'Francisco Zapata',
+			dateEs: '7 de Agosto, 2022',
+			dateEn: 'August 7, 2022',
+			descriptionEs:
+				'Quas voluptatibus cum temporibus, repellat tempore eius pariatur numquam explicabo facilis officia, vel error.',
+			descriptionEn:
+				'Et adipisci earum alias, laborum modi ullam esse impedit sint quaerat nostrum ut velit incidunt maxime debitis ex.',
+		},
+		{
+			id: 5,
+			img: 'audio-video-04',
+			titleEs: '¿Cambia Dios de opinión alguna vez?',
+			titleEn: 'Does God Ever Change His Mind?',
+			speaker: 'David Escalona',
+			dateEs: '14 de Agosto, 2022',
+			dateEn: 'August 14, 2022',
+			descriptionEs:
+				'Alias cumque ipsam quis repellat et porro dolore ut nostrum soluta. Dolor harum itaque quae beatae doloremque provident.',
+			descriptionEn:
+				'Minima, sunt dolore ipsa aliquam cumque eaque dolores doloremque maxime modi mollitia vel ad dolor dolorem laborum.',
+		},
+		{
+			id: 6,
+			img: 'audio-video-01',
+			titleEs: '5 Pasos para el Perdón',
+			titleEn: '5 Steps to Forgiveness',
+			speaker: 'Suely Escalona',
+			dateEs: '21 de Agosto, 2022',
+			dateEn: 'August 21, 2022',
+			descriptionEs:
+				'Fugiat tempore, dolorem necessitatibus velit optio distinctio ipsum ea quas mollitia dolore suscipit, beatae itaque.',
+			descriptionEn:
+				'Laboriosam saepe quae dolor labore autem pariatur magnam quos. Voluptas minima deserunt esse, asperiores consectetur nulla?',
+		},
+		{
+			id: 7,
+			img: 'audio-video-06',
+			titleEs: 'La Prueba de Nuestra Fe',
+			titleEn: 'The Testing of Our Faith',
+			speaker: 'David Escalona',
+			dateEs: '28 de Agosto, 2022',
+			dateEn: 'August 28, 2022',
+			descriptionEs:
+				'Non beatae tenetur quod maiores fugiat? Aliquam nemo maxime doloribus odio ratione expedita reprehenderit at placeat!',
+			descriptionEn:
+				'Quas voluptatibus cum temporibus, repellat tempore eius pariatur numquam explicabo facilis officia, vel error.',
+		},
+	]);
 </script>
 
 <style scoped>
-	.contact {
+	.resources {
 		min-height: 790px;
 		font-family: 'Montserrat', sans serif;
 	}
-	.contact h1 {
+	.resources h1 {
 		font-family: 'Poppins', sans serif;
 		font-size: 40px;
 		line-height: 40px;
 		font-weight: 500;
 		margin: 90px 0 60px 0;
 	}
-	.contact p {
-		font-size: 16px;
-		line-height: 1.8;
-		margin-bottom: 10px;
-	}
-	.contact input[type='text'],
-	.contact input[type='email'],
-	.contact textarea {
-		padding: 6px;
-		border-radius: 6px;
-		border: 0.5px solid #ccc;
-	}
-	.contact label {
-		margin-bottom: 2px;
-	}
-	.contact input[type='submit'] {
-		padding: 10px 30px;
-		border: 2px solid rgb(3, 105, 161);
-		text-transform: uppercase;
-		font-weight: 500;
-		transition: 0.5s ease all;
-	}
-	.contact input[type='submit']:hover {
-		border: 2px solid transparent;
-		background-color: rgb(3, 105, 161);
-		color: rgb(241, 245, 249);
-		font-weight: 600;
-		letter-spacing: 1px;
-	}
 	@media screen and (max-width: 992px) {
-		.contact > div {
+		.resources > div {
 			padding: 0 40px;
 		}
-		.contact h1 {
+		.resources h1 {
 			font-size: 38px;
 			line-height: 38px;
 			margin-bottom: 54px;
 		}
 	}
 	@media screen and (max-width: 768px) {
-		.contact > div {
+		.resources > div {
 			padding: 0 20px;
 		}
-		.contact h1 {
+		.resources h1 {
 			font-size: 34px;
 			line-height: 34px;
 			margin-bottom: 48px;
@@ -117,19 +166,19 @@
 		}
 	}
 	@media screen and (max-width: 576px) {
-		.contact {
+		.resources {
 			min-height: 860px;
 		}
-		.contact > div {
+		.resources > div {
 			width: 90%;
 			padding: 0 6px;
 		}
-		.contact h1 {
+		.resources h1 {
 			font-size: 30px;
 			line-height: 30px;
 			margin-bottom: 42px;
 		}
-		.contact p,
+		.resources p,
 		label,
 		input {
 			font-size: 14px;

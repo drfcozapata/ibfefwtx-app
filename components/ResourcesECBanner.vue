@@ -1,13 +1,13 @@
 <template>
-	<div class="relative banner-contact">
+	<div class="relative banner-resources">
 		<div class="main__bckgr"></div>
 	</div>
 </template>
 
 <style scoped>
-	.banner-contact {
+	.banner-resources {
 		width: 100vw;
-		height: 480px;
+		height: 580px;
 		/* padding-top: 96px; */
 		background-image: url('../assets/images/ibfe-16.jpg');
 		background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 	.main__bckgr {
 		position: absolute;
 		width: 100%;
-		height: 480px;
+		height: 580px;
 		top: 0;
 		left: 0;
 		background-color: rgba(16, 16, 16, 0.6);

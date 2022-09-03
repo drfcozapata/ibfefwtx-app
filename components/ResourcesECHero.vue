@@ -18,7 +18,7 @@
 	.hero-contact {
 		color: white;
 		position: relative;
-		height: 480px;
+		height: 580px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;

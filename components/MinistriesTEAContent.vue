@@ -1,40 +1,54 @@
 <template>
-	<div class="w-full grid grid-cols-1 bg-gray-50 contact" id="contact-form">
-		<div class="w-10/12 mx-auto mb-8 flex flex-col justify-start">
-			<h1>
+	<div class="w-full grid grid-cols-1 bg-gray-50 ministries">
+		<div
+			class="w-11/12 mx-auto pl-10 mb-8 flex flex-col justify-start ministries__border"
+		>
+			<h2 id="teaching">
 				{{ lang.spaOrEngLng ? 'Enseñanza' : 'Teaching' }}
-			</h1>
-			<div v-if="lang.spaOrEngLng === true" class="mb-2 spanish">
+			</h2>
+			<div v-if="lang.spaOrEngLng === true" class="mb-8 spanish">
 				<p>
-					Lo primero que encontrarás en la Iglesia Bautista Fe es ¡gente normal
-					como tú!
+					Tenemos la responsabilidad de capacitar a nuestras familias para
+					personificar el modelo de enseñanza de Jesús. Para ello, aspiramos a
+					hacer de nuestra iglesia un centro de entrenamiento para servir a Fort
+					Worth, Texas, los Estados Unidos y el mundo.
 				</p>
 				<p>
-					Nos gusta la idea de acompañar a otros en el proceso de aprender
-					acerca de Jesús y su Palabra (la Biblia). Somos personas imperfectas
-					sirviendo a un Dios perfecto, pero cada día aprendiendo y aplicando
-					los principios que Dios nos ha dado para crecer como personas.
+					También deseamos que niños, adolescentes, jóvenes y adultos puedan
+					recibir enseñanzas relevantes que les den herramientas para enfrentar
+					los acontecimientos actuales por medio de programas sistemáticos de
+					educación bíblica.
 				</p>
-				<p>Nuestro deseo es que al visitarnos puedas sentirte como en casa.</p>
 				<p>
-					Queremos responder algunas preguntas que pueden estar pasando por tu
-					mente:
+					Es crucial en nuestros días que la enseñanza motive a las personas a
+					buscar el próximo paso, haciéndose la pregunta “¿qué debo hacer ahora
+					con esto?”. Por esta razón cada mensaje guía al que escucha a la
+					acción.
+				</p>
+				<p>
+					Algo que nos gusta recordar es que “solo podemos ver el efecto de la
+					Biblia en nuestra vidas cuando aplicamos lo que escuchamos”.
 				</p>
 			</div>
-			<div v-else class="mb-2 english">
+			<div v-else class="mb-8 english">
 				<p>
-					The first thing you'll find at Faith Baptist Church is regular people
-					just like you!
+					We have a responsibility to train our families to embody the teaching
+					model of Jesus. To that end, we aspire to make our church a training
+					center to serve Fort Worth, Texas, the United States and the world.
 				</p>
 				<p>
-					We like the idea of accompanying others in the process of learning
-					about Jesus and His Word (the Bible). We are imperfect people serving
-					a perfect God, but every day learning and applying the principles God
-					has given us to grow as people.
+					We also desire that children, teenagers, youth and adults can receive
+					relevant teachings that will give them tools to face current events
+					through systematic Bible education programs.
 				</p>
-				<p>Our desire is that when you visit us you can feel at home.</p>
 				<p>
-					We want to answer some questions that may be going through your mind:
+					It is crucial in our day that teaching motivates people to seek the
+					next step, asking the question "what should I do now with this?". For
+					this reason every message guides the listener to action.
+				</p>
+				<p>
+					One thing we like to remember is that "we can only see the effect of
+					the Bible in our lives when we apply what we hear".
 				</p>
 			</div>
 		</div>
@@ -48,87 +62,7 @@
 </script>
 
 <style scoped>
-	.contact {
-		min-height: 790px;
-		font-family: 'Montserrat', sans serif;
-	}
-	.contact h1 {
-		font-family: 'Poppins', sans serif;
-		font-size: 40px;
-		line-height: 40px;
-		font-weight: 500;
-		margin: 90px 0 60px 0;
-	}
-	.contact p {
-		font-size: 16px;
-		line-height: 1.8;
-		margin-bottom: 10px;
-	}
-	.contact input[type='text'],
-	.contact input[type='email'],
-	.contact textarea {
-		padding: 6px;
-		border-radius: 6px;
-		border: 0.5px solid #ccc;
-	}
-	.contact label {
-		margin-bottom: 2px;
-	}
-	.contact input[type='submit'] {
-		padding: 10px 30px;
-		border: 2px solid rgb(3, 105, 161);
-		text-transform: uppercase;
-		font-weight: 500;
-		transition: 0.5s ease all;
-	}
-	.contact input[type='submit']:hover {
-		border: 2px solid transparent;
-		background-color: rgb(3, 105, 161);
-		color: rgb(241, 245, 249);
-		font-weight: 600;
-		letter-spacing: 1px;
-	}
-	@media screen and (max-width: 992px) {
-		.contact > div {
-			padding: 0 40px;
-		}
-		.contact h1 {
-			font-size: 38px;
-			line-height: 38px;
-			margin-bottom: 54px;
-		}
-	}
-	@media screen and (max-width: 768px) {
-		.contact > div {
-			padding: 0 20px;
-		}
-		.contact h1 {
-			font-size: 34px;
-			line-height: 34px;
-			margin-bottom: 48px;
-		}
-		.wrap {
-			flex-wrap: wrap;
-			gap: 12px;
-		}
-	}
-	@media screen and (max-width: 576px) {
-		.contact {
-			min-height: 860px;
-		}
-		.contact > div {
-			width: 90%;
-			padding: 0 6px;
-		}
-		.contact h1 {
-			font-size: 30px;
-			line-height: 30px;
-			margin-bottom: 42px;
-		}
-		.contact p,
-		label,
-		input {
-			font-size: 14px;
-		}
+	.ministries .ministries__border {
+		border-left: 20px solid #2dd4bf;
 	}
 </style>

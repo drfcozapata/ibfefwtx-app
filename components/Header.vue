@@ -58,17 +58,17 @@
 							</nuxt-link>
 							<ul>
 								<li>
-									<nuxt-link to="/ministries/teaching">{{
+									<nuxt-link to="/ministries#teaching">{{
 										lang.spaOrEngLng ? 'Enseñanza' : 'Teaching'
 									}}</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/ministries/missions">{{
+									<nuxt-link to="/ministries#missions">{{
 										lang.spaOrEngLng ? 'Misiones' : 'Misions'
 									}}</nuxt-link>
 								</li>
 								<li>
-									<nuxt-link to="/ministries/marriages">{{
+									<nuxt-link to="/ministries#marriages">{{
 										lang.spaOrEngLng ? 'Matrimonios' : 'Marriages'
 									}}</nuxt-link>
 								</li>
@@ -167,17 +167,17 @@
 							}}</nuxt-link>
 						</h3>
 						<p>
-							<nuxt-link to="/ministries/teaching">{{
+							<nuxt-link to="/ministries#teaching">{{
 								lang.spaOrEngLng ? 'Enseñanza' : 'Teaching'
 							}}</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/ministries/missions">{{
+							<nuxt-link to="/ministries#missions">{{
 								lang.spaOrEngLng ? 'Misiones' : 'Missions'
 							}}</nuxt-link>
 						</p>
 						<p>
-							<nuxt-link to="/ministries/marriages">{{
+							<nuxt-link to="/ministries#marriages">{{
 								lang.spaOrEngLng ? 'Matrimonios' : 'Marriages'
 							}}</nuxt-link>
 						</p>

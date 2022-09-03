@@ -7,8 +7,7 @@
 <style scoped>
 	.banner-contact {
 		width: 100vw;
-		height: 480px;
-		/* padding-top: 96px; */
+		height: 580px;
 		background-image: url('../assets/images/ibfe-17.jpg');
 		background-repeat: no-repeat;
 		background-position: center top;
@@ -19,7 +18,7 @@
 	.main__bckgr {
 		position: absolute;
 		width: 100%;
-		height: 480px;
+		height: 580px;
 		top: 0;
 		left: 0;
 		background-color: rgba(16, 16, 16, 0.6);

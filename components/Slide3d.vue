@@ -92,31 +92,31 @@
 		opacity: 0.6;
 	}
 	#slide1 {
-		background-image: url('../public/ibfe-bg-19.jpg');
+		background-image: url('../ibfe-bg-19.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
 	}
 	#slide2 {
-		background-image: url('../public/ibfe-bg-20.jpg');
+		background-image: url('../ibfe-bg-20.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
 	}
 	#slide3 {
-		background-image: url('../public/ibfe-bg-21.jpg');
+		background-image: url('../ibfe-bg-21.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
 	}
 	#slide4 {
-		background-image: url('../public/ibfe-bg-22.jpg');
+		background-image: url('../ibfe-bg-22.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
 	}
 	#slide5 {
-		background-image: url('../public/ibfe-bg-23.jpg');
+		background-image: url('../ibfe-bg-23.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
