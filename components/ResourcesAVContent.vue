@@ -9,13 +9,18 @@
 				}}
 			</h1>
 			<div class="cards flex flex-wrap justify-between pb-10">
-				<AudioVideoMessages v-for="message in messages" :key="message.id">
+				<AudioVideoMessages
+					@add="showModal = true"
+					v-for="message in messages"
+					:key="message.id"
+				>
 					<template #image>
 						<img :src="`../${message.img}.jpg`" alt="Imagen del video" />
 					</template>
 					<template #title>{{
 						lang.spaOrEngLng ? message.titleEs : message.titleEn
 					}}</template>
+					<template #video>{{ (showVideo = message.video) }} </template>
 					<template #speaker>{{ message.speaker }}</template>
 					<template #date>{{
 						lang.spaOrEngLng ? message.dateEs : message.dateEn
@@ -24,25 +29,46 @@
 						lang.spaOrEngLng ? message.descriptionEs : message.descriptionEn
 					}}</template>
 				</AudioVideoMessages>
+
+				<!-- Video Modal -->
+				<ModalVideoPlayer
+					:show="showModal"
+					:video="showVideo"
+					@close="showModal = false"
+				>
+					<template #main>
+						<iframe
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/hqENO99n1ig"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</template>
+				</ModalVideoPlayer>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script setup>
-	import { reactive } from 'vue';
+	import { reactive, ref } from 'vue';
 	import { useLangStore } from '../stores/LangStore';
 
 	const lang = useLangStore();
 	const messages = reactive([
 		{
 			id: 1,
-			img: 'ibfe-videos',
-			titleEs: 'Leyendo la Palabra de Dios',
-			titleEn: 'Reading the God’s Word',
-			speaker: 'David Escalona',
+			img: 'audio-video-08',
+			titleEs: 'Sabiduría para Tiempos Difíciles',
+			titleEn: 'Wisdom for Difficult Times',
+			speaker: 'Charles Stanley',
 			dateEs: '17 de Julio, 2022',
 			dateEn: 'July 17, 2022',
+			video: '',
+			audio: '',
 			descriptionEs:
 				'Unde veniam corporis soluta dolorem sapiente commodi ex fuga laborum cumque quia itaque, labore magnam dolor at.',
 			descriptionEn:
@@ -50,12 +76,14 @@
 		},
 		{
 			id: 2,
-			img: 'audio-video-02',
-			titleEs: '¿Por qué debería confiar en Dios?',
-			titleEn: 'Why Should I Trust God?',
-			speaker: 'Suely Escalona',
+			img: 'audio-video-07',
+			titleEs: 'Renovarse... Otra Vez',
+			titleEn: 'Renew yourself... Again',
+			speaker: 'Dante Gebel',
 			dateEs: '24 de Julio, 2022',
 			dateEn: 'July 24, 2022',
+			video: 'https://www.youtube.com/embed/RtddIDmnTlw',
+			audio: '',
 			descriptionEs:
 				'Et adipisci earum alias, laborum modi ullam esse impedit sint quaerat nostrum ut velit incidunt maxime debitis ex.',
 			descriptionEn:
@@ -63,12 +91,14 @@
 		},
 		{
 			id: 3,
-			img: 'audio-video-05',
-			titleEs: 'Reconstruyendo Los Muros',
-			titleEn: 'Rebuilding The Walls',
-			speaker: 'Boanerges Jr. De Armas',
+			img: 'audio-video-09',
+			titleEs: 'La Vida es Corta',
+			titleEn: 'Life is Short',
+			speaker: 'Billy Graham',
 			dateEs: '31 de Julio, 2022',
 			dateEn: 'July 31, 2022',
+			video: 'https://www.youtube.com/embed/HhBNGdS5Kqk',
+			audio: '',
 			descriptionEs:
 				'Laboriosam saepe quae dolor labore autem pariatur magnam quos. Voluptas minima deserunt esse, asperiores consectetur nulla?',
 			descriptionEn:
@@ -76,12 +106,14 @@
 		},
 		{
 			id: 4,
-			img: 'audio-video-03',
-			titleEs: '¡No Perdemos el Ánimo!',
-			titleEn: 'We Do Not Lose Heart!',
-			speaker: 'Francisco Zapata',
+			img: 'ibfe-videos',
+			titleEs: 'Leyendo la Palabra de Dios',
+			titleEn: 'Reading the God’s Word',
+			speaker: 'David Escalona',
 			dateEs: '7 de Agosto, 2022',
 			dateEn: 'August 7, 2022',
+			video: '',
+			audio: '',
 			descriptionEs:
 				'Quas voluptatibus cum temporibus, repellat tempore eius pariatur numquam explicabo facilis officia, vel error.',
 			descriptionEn:
@@ -92,9 +124,11 @@
 			img: 'audio-video-04',
 			titleEs: '¿Cambia Dios de opinión alguna vez?',
 			titleEn: 'Does God Ever Change His Mind?',
-			speaker: 'David Escalona',
+			speaker: 'Boanerges Jr. De Armas',
 			dateEs: '14 de Agosto, 2022',
 			dateEn: 'August 14, 2022',
+			video: '',
+			audio: '',
 			descriptionEs:
 				'Alias cumque ipsam quis repellat et porro dolore ut nostrum soluta. Dolor harum itaque quae beatae doloremque provident.',
 			descriptionEn:
@@ -108,6 +142,8 @@
 			speaker: 'Suely Escalona',
 			dateEs: '21 de Agosto, 2022',
 			dateEn: 'August 21, 2022',
+			video: '',
+			audio: '',
 			descriptionEs:
 				'Fugiat tempore, dolorem necessitatibus velit optio distinctio ipsum ea quas mollitia dolore suscipit, beatae itaque.',
 			descriptionEn:
@@ -121,12 +157,16 @@
 			speaker: 'David Escalona',
 			dateEs: '28 de Agosto, 2022',
 			dateEn: 'August 28, 2022',
+			video: '',
+			audio: '',
 			descriptionEs:
 				'Non beatae tenetur quod maiores fugiat? Aliquam nemo maxime doloribus odio ratione expedita reprehenderit at placeat!',
 			descriptionEn:
 				'Quas voluptatibus cum temporibus, repellat tempore eius pariatur numquam explicabo facilis officia, vel error.',
 		},
 	]);
+
+	let showModal = ref(false);
 </script>
 
 <style scoped>

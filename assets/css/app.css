@@ -15,12 +15,3 @@
 		color: rbga(209, 213, 219, 1);
 	}
 }
-.p__laboral-day {
-	@apply --p__laboral-day;
-}
-.p__weekend-day {
-	@apply --p__weekend-day;
-}
-.p__other-month {
-	@apply --p__other-month;
-}

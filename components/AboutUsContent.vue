@@ -19,15 +19,7 @@
 							Bautista Fe con el deseo de que esta se convierta en:
 						</p>
 						<p>
-							<svg
-								class="w-5 h-5 fill-sky-700 mr-3 inline"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 640 512"
-							>
-								<path
-									d="M344 48H376C389.3 48 400 58.75 400 72C400 85.25 389.3 96 376 96H344V142.4L456.7 210C471.2 218.7 480 234.3 480 251.2V512H384V416C384 380.7 355.3 352 320 352C284.7 352 256 380.7 256 416V512H160V251.2C160 234.3 168.8 218.7 183.3 210L296 142.4V96H264C250.7 96 240 85.25 240 72C240 58.75 250.7 48 264 48H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V48zM24.87 330.3L128 273.6V512H48C21.49 512 0 490.5 0 464V372.4C0 354.9 9.53 338.8 24.87 330.3V330.3zM592 512H512V273.6L615.1 330.3C630.5 338.8 640 354.9 640 372.4V464C640 490.5 618.5 512 592 512V512z"
-								/>
-							</svg>
+							<i class="fa-sharp fa-solid fa-church"></i>
 							<span>
 								Una comunidad donde las familias se integran para crecer
 								sanamente dependiendo del Espíritu Santo, aprendiendo de Dios a
@@ -37,15 +29,7 @@
 							</span>
 						</p>
 						<p>
-							<svg
-								class="w-5 h-5 fill-sky-700 mr-3 inline"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 640 512"
-							>
-								<path
-									d="M344 48H376C389.3 48 400 58.75 400 72C400 85.25 389.3 96 376 96H344V142.4L456.7 210C471.2 218.7 480 234.3 480 251.2V512H384V416C384 380.7 355.3 352 320 352C284.7 352 256 380.7 256 416V512H160V251.2C160 234.3 168.8 218.7 183.3 210L296 142.4V96H264C250.7 96 240 85.25 240 72C240 58.75 250.7 48 264 48H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V48zM24.87 330.3L128 273.6V512H48C21.49 512 0 490.5 0 464V372.4C0 354.9 9.53 338.8 24.87 330.3V330.3zM592 512H512V273.6L615.1 330.3C630.5 338.8 640 354.9 640 372.4V464C640 490.5 618.5 512 592 512V512z"
-								/>
-							</svg>
+							<i class="fa-sharp fa-solid fa-church"></i>
 							<span>
 								Una comunidad donde hombres y mujeres estén comprometidos en
 								compartir el evangelio con otros e invertir sus vidas en guiar a
@@ -55,15 +39,7 @@
 							</span>
 						</p>
 						<p>
-							<svg
-								class="w-5 h-5 fill-sky-700 mr-3 inline"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 640 512"
-							>
-								<path
-									d="M344 48H376C389.3 48 400 58.75 400 72C400 85.25 389.3 96 376 96H344V142.4L456.7 210C471.2 218.7 480 234.3 480 251.2V512H384V416C384 380.7 355.3 352 320 352C284.7 352 256 380.7 256 416V512H160V251.2C160 234.3 168.8 218.7 183.3 210L296 142.4V96H264C250.7 96 240 85.25 240 72C240 58.75 250.7 48 264 48H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V48zM24.87 330.3L128 273.6V512H48C21.49 512 0 490.5 0 464V372.4C0 354.9 9.53 338.8 24.87 330.3V330.3zM592 512H512V273.6L615.1 330.3C630.5 338.8 640 354.9 640 372.4V464C640 490.5 618.5 512 592 512V512z"
-								/>
-							</svg>
+							<i class="fa-sharp fa-solid fa-church"></i>
 							<span>
 								Una comunidad con corazón dispuesto a mostrar el amor de Dios
 								visible por medio de nuestro ejemplo y actos de servicio en
@@ -71,15 +47,7 @@
 							</span>
 						</p>
 						<p>
-							<svg
-								class="w-5 h-5 fill-sky-700 mr-3 inline"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 640 512"
-							>
-								<path
-									d="M344 48H376C389.3 48 400 58.75 400 72C400 85.25 389.3 96 376 96H344V142.4L456.7 210C471.2 218.7 480 234.3 480 251.2V512H384V416C384 380.7 355.3 352 320 352C284.7 352 256 380.7 256 416V512H160V251.2C160 234.3 168.8 218.7 183.3 210L296 142.4V96H264C250.7 96 240 85.25 240 72C240 58.75 250.7 48 264 48H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V48zM24.87 330.3L128 273.6V512H48C21.49 512 0 490.5 0 464V372.4C0 354.9 9.53 338.8 24.87 330.3V330.3zM592 512H512V273.6L615.1 330.3C630.5 338.8 640 354.9 640 372.4V464C640 490.5 618.5 512 592 512V512z"
-								/>
-							</svg>
+							<i class="fa-sharp fa-solid fa-church"></i>
 							<span>
 								Una comunidad que está activamente yendo no solo en Texas, sino
 								en Estados Unidos y al mundo, llevando el evangelio sirviendo en
@@ -93,15 +61,7 @@
 							Church with the desire that it will become:
 						</p>
 						<p>
-							<svg
-								class="w-5 h-5 fill-sky-700 mr-3 inline"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 640 512"
-							>
-								<path
-									d="M344 48H376C389.3 48 400 58.75 400 72C400 85.25 389.3 96 376 96H344V142.4L456.7 210C471.2 218.7 480 234.3 480 251.2V512H384V416C384 380.7 355.3 352 320 352C284.7 352 256 380.7 256 416V512H160V251.2C160 234.3 168.8 218.7 183.3 210L296 142.4V96H264C250.7 96 240 85.25 240 72C240 58.75 250.7 48 264 48H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V48zM24.87 330.3L128 273.6V512H48C21.49 512 0 490.5 0 464V372.4C0 354.9 9.53 338.8 24.87 330.3V330.3zM592 512H512V273.6L615.1 330.3C630.5 338.8 640 354.9 640 372.4V464C640 490.5 618.5 512 592 512V512z"
-								/>
-							</svg>
+							<i class="fa-sharp fa-solid fa-church"></i>
 							<span>
 								A community where families join to grow, learn to depend on the
 								Holy Spirit, learn from God through his word, developing their
@@ -110,15 +70,7 @@
 							</span>
 						</p>
 						<p>
-							<svg
-								class="w-5 h-5 fill-sky-700 mr-3 inline"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 640 512"
-							>
-								<path
-									d="M344 48H376C389.3 48 400 58.75 400 72C400 85.25 389.3 96 376 96H344V142.4L456.7 210C471.2 218.7 480 234.3 480 251.2V512H384V416C384 380.7 355.3 352 320 352C284.7 352 256 380.7 256 416V512H160V251.2C160 234.3 168.8 218.7 183.3 210L296 142.4V96H264C250.7 96 240 85.25 240 72C240 58.75 250.7 48 264 48H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V48zM24.87 330.3L128 273.6V512H48C21.49 512 0 490.5 0 464V372.4C0 354.9 9.53 338.8 24.87 330.3V330.3zM592 512H512V273.6L615.1 330.3C630.5 338.8 640 354.9 640 372.4V464C640 490.5 618.5 512 592 512V512z"
-								/>
-							</svg>
+							<i class="fa-sharp fa-solid fa-church"></i>
 							<span>
 								A community where men and women are committed to sharing the
 								gospel with others and investing their lives in leading people
@@ -128,15 +80,7 @@
 							</span>
 						</p>
 						<p>
-							<svg
-								class="w-5 h-5 fill-sky-700 mr-3 inline"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 640 512"
-							>
-								<path
-									d="M344 48H376C389.3 48 400 58.75 400 72C400 85.25 389.3 96 376 96H344V142.4L456.7 210C471.2 218.7 480 234.3 480 251.2V512H384V416C384 380.7 355.3 352 320 352C284.7 352 256 380.7 256 416V512H160V251.2C160 234.3 168.8 218.7 183.3 210L296 142.4V96H264C250.7 96 240 85.25 240 72C240 58.75 250.7 48 264 48H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V48zM24.87 330.3L128 273.6V512H48C21.49 512 0 490.5 0 464V372.4C0 354.9 9.53 338.8 24.87 330.3V330.3zM592 512H512V273.6L615.1 330.3C630.5 338.8 640 354.9 640 372.4V464C640 490.5 618.5 512 592 512V512z"
-								/>
-							</svg>
+							<i class="fa-sharp fa-solid fa-church"></i>
 							<span>
 								A community with a heart willing to show the love of God visible
 								through our example and acts of service in our city and where
@@ -144,15 +88,7 @@
 							</span>
 						</p>
 						<p>
-							<svg
-								class="w-5 h-5 fill-sky-700 mr-3 inline"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 640 512"
-							>
-								<path
-									d="M344 48H376C389.3 48 400 58.75 400 72C400 85.25 389.3 96 376 96H344V142.4L456.7 210C471.2 218.7 480 234.3 480 251.2V512H384V416C384 380.7 355.3 352 320 352C284.7 352 256 380.7 256 416V512H160V251.2C160 234.3 168.8 218.7 183.3 210L296 142.4V96H264C250.7 96 240 85.25 240 72C240 58.75 250.7 48 264 48H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V48zM24.87 330.3L128 273.6V512H48C21.49 512 0 490.5 0 464V372.4C0 354.9 9.53 338.8 24.87 330.3V330.3zM592 512H512V273.6L615.1 330.3C630.5 338.8 640 354.9 640 372.4V464C640 490.5 618.5 512 592 512V512z"
-								/>
-							</svg>
+							<i class="fa-sharp fa-solid fa-church"></i>
 							<span>
 								A community that is actively going not only to Texas, but in the
 								United States and the world, taking the gospel serving in
@@ -215,6 +151,12 @@
 	.about__text p:first-of-type {
 		text-indent: 0;
 		padding-left: 0;
+	}
+	i {
+		color: #0369a1;
+		font-size: 16px;
+		display: inline;
+		margin-right: 12px;
 	}
 
 	@media screen and (max-width: 768px) {

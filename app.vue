@@ -43,6 +43,14 @@
 		font-weight: 500;
 		line-height: 40px;
 	}
+	.page-enter-active,
+	.page-leave-active {
+		transition: opacity 0.5s;
+	}
+	.page-enter-from,
+	.page-leave-to {
+		opacity: 0;
+	}
 	@media screen and (max-width: 768px) {
 		.page-title h1 {
 			margin: 35px auto;

@@ -2,7 +2,9 @@
 	<div class="hero-contact">
 		<div class="content">
 			<h1 class="mb-16">
-				{{ lang.spaOrEngLng ? '¿Qué esperar?' : 'What to expect?' }}
+				{{
+					lang.spaOrEngLng ? '¿Cómo podemos servirte?' : 'How can we serve you?'
+				}}
 			</h1>
 		</div>
 	</div>

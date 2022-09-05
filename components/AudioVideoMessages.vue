@@ -5,17 +5,19 @@
 		</div>
 		<div class="card-icons">
 			<i
+				@click="$emit('add')"
 				class="fa-regular fa-circle-play"
 				:title="lang.spaOrEngLng ? 'Ver video' : 'Watch video'"
-			></i>
+			>
+			</i>
 			<i
 				class="fa-solid fa-headphones"
 				:title="lang.spaOrEngLng ? 'Escuchar audio' : 'Listen audio'"
 			></i>
-			<i
+			<!-- <i
 				class="fa-regular fa-circle-down"
 				:title="lang.spaOrEngLng ? 'Descargar' : 'Download'"
-			></i>
+			></i> -->
 		</div>
 		<div class="card-content">
 			<h3><slot name="title" /></h3>

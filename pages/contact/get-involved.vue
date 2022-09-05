@@ -2,17 +2,17 @@
 	<div class="w-full h-full">
 		<Head>
 			<Title>{{
-				lang.spaOrEngLng ? '¿Cómo podemos servirte?' : 'How can we serve you?'
+				lang.spaOrEngLng ? '¿Cómo involucrarme?' : 'How to become involved?'
 			}}</Title>
 			<Meta
 				name="description"
-				content="Infórmanos de qué manera podemos servirte"
+				content="Infórmanos de qué manera te gustaría involucrarte en nuestra iglesia"
 			/>
 		</Head>
-		<ContactHSYBanner />
-		<ContactHSYHero />
-		<ContactHSYContent />
-		<ContactHSYForm />
+		<ContactGIBanner />
+		<ContactGIHero />
+		<ContactGIContent />
+		<ContactGIForm />
 	</div>
 </template>
 
@@ -21,5 +21,3 @@
 
 	const lang = useLangStore();
 </script>
-
-<style scoped></style>

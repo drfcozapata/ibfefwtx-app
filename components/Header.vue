@@ -18,15 +18,7 @@
 						<li>
 							<nuxt-link class="block relative hover:bg-slate-800" to="/about"
 								>{{ lang.spaOrEngLng ? 'Nosotros' : 'About Us' }}
-								<svg
-									class="fill-current w-4 h-4 arrow"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 384 512"
-								>
-									<path
-										d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"
-									/>
-								</svg>
+								<i class="fa-solid fa-chevron-down"></i>
 							</nuxt-link>
 							<ul>
 								<li>
@@ -46,17 +38,9 @@
 								class="block relative hover:bg-slate-800"
 								to="/ministries"
 								>{{ lang.spaOrEngLng ? 'Ministerios' : 'Ministries' }}
-								<svg
-									class="fill-current w-4 h-4 arrow"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 384 512"
-								>
-									<path
-										d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"
-									/>
-								</svg>
+								<!-- <i class="fa-solid fa-chevron-down"></i> -->
 							</nuxt-link>
-							<ul>
+							<!-- <ul>
 								<li>
 									<nuxt-link to="/ministries#teaching">{{
 										lang.spaOrEngLng ? 'Enseñanza' : 'Teaching'
@@ -72,20 +56,12 @@
 										lang.spaOrEngLng ? 'Matrimonios' : 'Marriages'
 									}}</nuxt-link>
 								</li>
-							</ul>
+							</ul> -->
 						</li>
 						<li>
 							<nuxt-link class="block hover:bg-slate-800" to="/contact"
 								>{{ lang.spaOrEngLng ? 'Conectarme' : 'Connect Me' }}
-								<svg
-									class="fill-current w-4 h-4 arrow"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 384 512"
-								>
-									<path
-										d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"
-									/>
-								</svg>
+								<i class="fa-solid fa-chevron-down"></i>
 							</nuxt-link>
 							<ul>
 								<li>
@@ -93,13 +69,13 @@
 										lang.spaOrEngLng ? '¿Qué esperar?' : 'What to Expect?'
 									}}</nuxt-link>
 								</li>
-								<li>
+								<!-- <li>
 									<nuxt-link to="/contact#first-steps">{{
 										lang.spaOrEngLng ? 'Primeros Pasos' : 'First Steps'
 									}}</nuxt-link>
-								</li>
+								</li> -->
 								<li>
-									<nuxt-link to="/contact#how-to-get-involved">{{
+									<nuxt-link to="/contact/get-involved">{{
 										lang.spaOrEngLng
 											? '¿Cómo involucrarme?'
 											: 'How to Get Involved?'
@@ -117,15 +93,7 @@
 						<li>
 							<nuxt-link class="block relative hover:bg-slate-800">
 								{{ lang.spaOrEngLng ? 'Recursos' : 'Resources' }}
-								<svg
-									class="fill-current w-4 h-4 arrow"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 384 512"
-								>
-									<path
-										d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"
-									/>
-								</svg>
+								<i class="fa-solid fa-chevron-down"></i>
 							</nuxt-link>
 							<ul>
 								<li>
@@ -166,7 +134,7 @@
 								lang.spaOrEngLng ? 'Ministerios' : 'Ministries'
 							}}</nuxt-link>
 						</h3>
-						<p>
+						<!-- <p>
 							<nuxt-link to="/ministries#teaching">{{
 								lang.spaOrEngLng ? 'Enseñanza' : 'Teaching'
 							}}</nuxt-link>
@@ -180,7 +148,7 @@
 							<nuxt-link to="/ministries#marriages">{{
 								lang.spaOrEngLng ? 'Matrimonios' : 'Marriages'
 							}}</nuxt-link>
-						</p>
+						</p> -->
 						<h3>
 							<nuxt-link to="/contact">{{
 								lang.spaOrEngLng ? 'Conectarme' : 'Connect Me'
@@ -191,13 +159,13 @@
 								lang.spaOrEngLng ? '¿Qué esperar?' : 'What to Expect?'
 							}}</nuxt-link>
 						</p>
-						<p>
+						<!-- <p>
 							<nuxt-link to="/contact#first-steps">{{
 								lang.spaOrEngLng ? 'Primeros Pasos' : 'First Steps'
 							}}</nuxt-link>
-						</p>
+						</p> -->
 						<p>
-							<nuxt-link to="/contact#how-to-get-involved">{{
+							<nuxt-link to="/contact/get-involved">{{
 								lang.spaOrEngLng
 									? '¿Cómo Involucrarme?'
 									: 'How to Get Involved?'
@@ -333,11 +301,9 @@
 		padding: 38px 28px;
 		transition: 0.5s ease all;
 	}
-	.navbar ul li a .arrow {
-		display: inline;
-		position: absolute;
-		bottom: 41px;
-		padding-left: 5px;
+	i {
+		font-size: 14px;
+		padding-left: 2px;
 	}
 	.navbar ul li::after {
 		content: '';
