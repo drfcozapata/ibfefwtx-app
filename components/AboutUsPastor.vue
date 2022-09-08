@@ -1,11 +1,11 @@
 <template>
 	<div class="pastor">
-		<div class="pastor__background">
+		<!-- <div class="pastor__background">
 			<img
 				src="../assets/images/ibfe-c.png"
 				alt="Logo Color Iglesia Bautista Fe"
 			/>
-		</div>
+		</div> -->
 		<div class="pastor__image">
 			<img
 				class="rounded-lg"

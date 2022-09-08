@@ -1,8 +1,8 @@
 <template>
 	<div class="church">
-		<div class="church__background">
+		<!-- <div class="church__background">
 			<img src="../ibfe-c.png" alt="Logo Color Iglesia Bautista Fe" />
-		</div>
+		</div> -->
 		<div class="church__image">
 			<img
 				class="rounded-lg"
