@@ -1,14 +1,14 @@
 <template>
 	<div class="w-full grid grid-cols-1 bg-gray-100 banner">
 		<div class="flex flex-col justify-center">
-			<p class="leading-relaxed text-center mb-10">
+			<p class="leading-relaxed text-center">
 				{{
 					lang.spaOrEngLng
-						? '\u201cEl único nunca en el que deberías enfocarte es en el hecho de que Dios nunca te abandonará.\u201d'
-						: '\u201cThe only never you should focus on is that God will never let you down.\u201d'
+						? 'Desafiando personas a convertirse en influencers al permanecer en Dios'
+						: 'Challenging people to become influencers by remaining in God'
 				}}
 			</p>
-			<p class="text-right"><span>― Charles F. Stanley</span></p>
+			<!-- <p class="text-right"><span>― Charles F. Stanley</span></p> -->
 		</div>
 	</div>
 </template>
@@ -27,7 +27,7 @@
 		padding: 0 280px;
 	}
 	.banner p {
-		font-size: 30px;
+		font-size: 36px;
 	}
 	.banner p span {
 		font-size: 20px;

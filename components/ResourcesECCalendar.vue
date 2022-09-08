@@ -7,10 +7,10 @@
 			</h2>
 			<div>
 				<button class="hover:text-sky-700" @click="prev">
-					<ChevronLeft />
+					<i class="fa-solid fa-chevron-left"></i>
 				</button>
 				<button class="chevron-next hover:text-sky-700" @click="next">
-					<ChevronRigth />
+					<i class="fa-solid fa-chevron-right"></i>
 				</button>
 			</div>
 		</section>
@@ -144,6 +144,10 @@
 	}
 	.chevron-next {
 		margin-left: 24px;
+	}
+	i {
+		font-size: 23px;
+		margin-top: 6px;
 	}
 	.days,
 	.date {

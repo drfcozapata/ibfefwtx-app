@@ -2,12 +2,26 @@
 	<div class="sticky-slide">
 		<div class="slide">
 			<div class="mb-2 gallery">
-				<img src="../public/ibfe-bg-07.jpg" alt="" />
-				<img src="../public/ibfe-bg-08.jpg" alt="" />
-				<img src="../public/ibfe-bg-09.jpg" alt="" />
-				<img src="../public/ibfe-bg-10.jpg" alt="" />
-				<img src="../public/ibfe-bg-11.jpg" alt="" />
-				<img src="../public/ibfe-bg-12.jpg" alt="" />
+				<img src="../public/ibfe-events-20.jpg" alt="" />
+				<img src="../public/ibfe-events-01.jpg" alt="" />
+				<img src="../public/ibfe-events-02.jpg" alt="" />
+				<img src="../public/ibfe-events-03.jpg" alt="" />
+				<img src="../public/ibfe-events-04.jpg" alt="" />
+				<img src="../public/ibfe-events-05.jpg" alt="" />
+				<img src="../public/ibfe-events-06.jpg" alt="" />
+				<img src="../public/ibfe-events-07.jpg" alt="" />
+				<img src="../public/ibfe-events-08.jpg" alt="" />
+				<img src="../public/ibfe-events-09.jpg" alt="" />
+				<img src="../public/ibfe-events-10.jpg" alt="" />
+				<img src="../public/ibfe-events-11.jpg" alt="" />
+				<img src="../public/ibfe-events-12.jpg" alt="" />
+				<img src="../public/ibfe-events-13.jpg" alt="" />
+				<img src="../public/ibfe-events-14.jpg" alt="" />
+				<img src="../public/ibfe-events-15.jpg" alt="" />
+				<img src="../public/ibfe-events-16.jpg" alt="" />
+				<img src="../public/ibfe-events-17.jpg" alt="" />
+				<img src="../public/ibfe-events-18.jpg" alt="" />
+				<img src="../public/ibfe-events-19.jpg" alt="" />
 			</div>
 			<i class="fa-solid fa-angles-down"></i>
 		</div>
@@ -28,7 +42,7 @@
 		margin: 0 auto;
 	}
 	.gallery {
-		height: 400px;
+		height: 419px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;

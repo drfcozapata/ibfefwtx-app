@@ -23,7 +23,7 @@
 				rgba(16, 16, 16, 0.6),
 				rgba(16, 16, 16, 0.6)
 			),
-			url('../assets/images/concert.jpg');
+			url('../assets/images/ibfe-07.jpg');
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;

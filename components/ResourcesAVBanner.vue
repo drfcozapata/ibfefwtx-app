@@ -8,7 +8,7 @@
 	.banner-contact {
 		width: 100vw;
 		height: 580px;
-		background-image: url('../assets/images/ibfe-17.jpg');
+		background-image: url('../assets/images/ibfe-18.jpg');
 		background-repeat: no-repeat;
 		background-position: center top;
 		background-size: cover;

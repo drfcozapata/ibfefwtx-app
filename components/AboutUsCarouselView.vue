@@ -18,12 +18,17 @@
 	import Slide from '../components/Slide.vue';
 
 	const carouselSlides = reactive([
-		'ibfe-bg-01',
-		'ibfe-bg-02',
-		'ibfe-bg-03',
-		'ibfe-bg-04',
-		'ibfe-bg-05',
-		'ibfe-bg-06',
+		'ibfe-about-01',
+		'ibfe-about-02',
+		'ibfe-about-03',
+		'ibfe-about-04',
+		'ibfe-about-05',
+		'ibfe-about-06',
+		'ibfe-about-07',
+		'ibfe-about-08',
+		'ibfe-about-09',
+		'ibfe-about-10',
+		'ibfe-about-11',
 	]);
 </script>
 

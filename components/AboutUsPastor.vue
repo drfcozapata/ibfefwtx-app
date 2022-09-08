@@ -9,7 +9,7 @@
 		<div class="pastor__image">
 			<img
 				class="rounded-lg"
-				src="../assets/images/pastor.jpg"
+				src="../assets/images/ibfe-11.jpg"
 				alt="Pastor David Escalona"
 			/>
 		</div>
@@ -56,7 +56,7 @@
 					o
 					<nuxt-link
 						class="font-medium italic text-sky-600"
-						to="https://twitter.com/es_edavid"
+						to="https://twitter.com/edavidescalona"
 						target="_blank"
 						>Twitter</nuxt-link
 					></P
@@ -101,7 +101,7 @@
 					o
 					<nuxt-link
 						class="font-medium italic text-sky-600"
-						to="https://twitter.com/es_edavid"
+						to="https://twitter.com/edavidescalona"
 						target="_blank"
 						>Twitter</nuxt-link
 					>

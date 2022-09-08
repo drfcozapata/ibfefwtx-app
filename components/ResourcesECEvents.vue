@@ -9,9 +9,7 @@
 				class="focus:outline-none text-lg font-medium leading-5 text-gray-800 dark:text-gray-100 mt-2"
 				>Zoom call with design team</a
 			>
-			<p
-				class="text-sm pt-2 leading-4 leading-none text-gray-600 dark:text-gray-300"
-			>
+			<p class="text-sm pt-2 leading-4 text-gray-600 dark:text-gray-300">
 				Discussion on UX sprint and Wireframe review
 			</p>
 		</div>

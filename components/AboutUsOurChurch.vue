@@ -1,15 +1,12 @@
 <template>
 	<div class="church">
 		<div class="church__background">
-			<img
-				src="../assets/images/ibfe-c.png"
-				alt="Logo Color Iglesia Bautista Fe"
-			/>
+			<img src="../ibfe-c.png" alt="Logo Color Iglesia Bautista Fe" />
 		</div>
 		<div class="church__image">
 			<img
 				class="rounded-lg"
-				src="../assets/images/ibfe-07.jpg"
+				src="../assets/images/ibfe-10.jpg"
 				alt="La Santa Biblia"
 			/>
 		</div>

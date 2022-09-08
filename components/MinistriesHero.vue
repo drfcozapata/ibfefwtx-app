@@ -4,11 +4,11 @@
 			<h1 class="mb-16">
 				{{
 					lang.spaOrEngLng
-						? '“Siempre se pierden oportunidades cuando dejamos que el miedo invalide nuestra fe”'
-						: '“Opportunities are always lost when we let fear overrule our faith”'
+						? '“Espera grandes de cosas de Dios e intenta hacer grandes cosas por Dios”'
+						: '“Expect great things from God, attempt great things for God”'
 				}}
 			</h1>
-			<p>― Charles F. Stanley</p>
+			<p>― William Carey</p>
 			<!-- <nuxt-link to="/contact#contact-form" class="flex justify-center">
 				<button>
 					{{ lang.spaOrEngLng ? 'Conéctate' : 'Connect' }}

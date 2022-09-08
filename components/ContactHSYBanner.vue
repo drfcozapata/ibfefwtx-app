@@ -9,7 +9,7 @@
 		width: 100vw;
 		height: 580px;
 		/* padding-top: 96px; */
-		background-image: url('../assets/images/ibfe-27.jpg');
+		background-image: url('../assets/images/ibfe-16.jpg');
 		background-repeat: no-repeat;
 		background-position: center top;
 		background-size: cover;

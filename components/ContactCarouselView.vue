@@ -18,12 +18,13 @@
 	import Slide from '../components/Slide.vue';
 
 	const carouselSlides = reactive([
-		'ibfe-bg-13',
-		'ibfe-bg-14',
-		'ibfe-bg-15',
-		'ibfe-bg-16',
-		'ibfe-bg-17',
-		'ibfe-bg-18',
+		'ibfe-contact-01',
+		'ibfe-contact-02',
+		'ibfe-contact-03',
+		'ibfe-contact-04',
+		'ibfe-contact-05',
+		'ibfe-contact-06',
+		'ibfe-contact-07',
 	]);
 </script>
 
@@ -37,7 +38,7 @@
 	}
 	.carousel-contact {
 		width: 100%;
-		background-color: #f9fafb;
+		background-color: #f3f4f6;
 	}
 	.contact {
 		width: 84%;

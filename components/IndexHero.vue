@@ -1,18 +1,14 @@
 <template>
 	<div class="showcase">
 		<div class="video-container">
-			<video
-				src="../assets/videos/temp-video-for-share.mp4"
-				autoplay
-				muted
-				loop
-			></video>
+			<video src="../assets/videos/ibfe-cover.mp4" autoplay muted loop></video>
 		</div>
 		<div class="content">
 			<h1 class="mb-16">
-				{{ lang.spaOrEngLng ? 'Somos' : 'We are' }}
+				{{ lang.spaOrEngLng ? 'Un lugar donde' : 'A place where' }}
+				<br />
 				<span>
-					{{ lang.spaOrEngLng ? 'iglesia' : 'church' }}
+					{{ lang.spaOrEngLng ? 'eres aceptado' : 'you are accepted' }}
 				</span>
 			</h1>
 			<nuxt-link to="/about/our-church" class="flex justify-center">
@@ -46,7 +42,7 @@
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
-		background: #3a4052 url('../assets/images/cover.png') no-repeat center
+		background: #3a4052 url('../assets/images/ibfe-00.png') no-repeat center
 			center/cover;
 		z-index: -2;
 	}
@@ -73,26 +69,47 @@
 	}
 	.showcase h1 {
 		font-family: 'Open Sans', sans-serif;
-		font-size: 100px;
+		font-size: 90px;
 		font-weight: 700;
-		line-height: 80px;
+		line-height: 90px;
 		color: transparent;
-		-webkit-text-stroke: 2px white;
+		-webkit-text-stroke: 2.5px white;
 	}
 	.showcase h1 span {
 		color: transparent;
-		-webkit-text-stroke: 2px rgb(255, 196, 0);
+		-webkit-text-stroke: 2.5px rgb(255, 196, 0);
 	}
 	@media screen and (max-width: 992px) {
 		.showcase h1 {
-			font-size: 90px;
+			font-size: 80px;
 			text-align: center;
-			line-height: 90px;
+			line-height: 80px;
 		}
 	}
 	@media screen and (max-width: 768px) {
 		.showcase h1 {
-			font-size: 80px;
+			font-size: 70px;
+			line-height: 70px;
+			-webkit-text-stroke: 2px white;
+		}
+		.showcase h1 span {
+			-webkit-text-stroke: 2px rgb(255, 196, 0);
+		}
+	}
+	@media screen and (max-width: 576px) {
+		.showcase h1 {
+			font-size: 55px;
+			line-height: 55px;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.showcase h1 {
+			font-size: 45px;
+			line-height: 45px;
+			-webkit-text-stroke: 1.5px white;
+		}
+		.showcase h1 span {
+			-webkit-text-stroke: 1.5px rgb(255, 196, 0);
 		}
 	}
 

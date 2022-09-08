@@ -3,7 +3,7 @@
 		<div class="w-10/12 mx-auto mb-8 flex flex-col justify-start">
 			<h1>
 				{{
-					lang.spaOrEngLng ? '¿Cómo podemos servirte?' : 'How can we serve you?'
+					lang.spaOrEngLng ? '¿Cómo involucrarme?' : 'How to become involved?'
 				}}
 			</h1>
 			<div v-if="lang.spaOrEngLng === true" class="spanish">

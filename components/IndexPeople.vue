@@ -2,22 +2,22 @@
 	<div class="w-full people">
 		<img
 			class="w-full h-full object-cover"
-			src="../assets/images/ibfe-02.jpg"
+			src="../assets/images/ibfe-01.jpg"
 			alt="La gente de nuestar iglesia"
 		/>
 		<div class="bg-sky-700 text-slate-100 flex flex-col justify-center">
 			<h3 class="text-3xl font-medium uppercase mb-6">
 				{{
 					lang.spaOrEngLng
-						? 'La iglesia no es un edificio; ¡son las personas!'
-						: "The church is not a building; it's the people!"
+						? 'Estamos comprometidos con la causa y los unos a los otros'
+						: 'We are committed to the cause and to each other'
 				}}
 			</h3>
 			<p class="text-xl mb-10">
 				{{
 					lang.spaOrEngLng
-						? 'Jesús dijo que vino por la gente, por las personas. Siendo el buen pastor, vino a buscar a quienes se habían extraviado. Su grandeza no puede ser contenida por un edificio.'
-						: 'Jesus said that he came for the people, for the individuals. Being the good shepherd, he came to seek those who had gone lost their way. His greatness cannot be contained by a building.'
+						? 'Jesús nos envía a hacer discípulos, en todas las naciones. Por esto deseamos que cada persona pueda escuchar la voz De Dios, involucrándose en un proceso de transformación y aprenda a compartir lo que aprende.'
+						: 'Jesus sends us to make disciples in all nations. This is why we want each person to be able to hear the voice of God, engage in a process of transformation and learn to share what they learn.'
 				}}
 			</p>
 			<nuxt-link to="/ministries" class="hover:bg-light-50 hover:text-dark-800">

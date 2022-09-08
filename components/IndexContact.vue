@@ -24,7 +24,7 @@
 		</div>
 		<img
 			class="w-full h-full object-cover"
-			src="../assets/images/ibfe-11.jpg"
+			src="../assets/images/ibfe-03.jpg"
 			alt="La gente de nuestar iglesia"
 		/>
 	</div>

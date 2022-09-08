@@ -61,7 +61,7 @@
 	const messages = reactive([
 		{
 			id: 1,
-			img: 'audio-video-08',
+			img: 'audio-video-01',
 			titleEs: 'Sabiduría para Tiempos Difíciles',
 			titleEn: 'Wisdom for Difficult Times',
 			speaker: 'Charles Stanley',
@@ -76,7 +76,7 @@
 		},
 		{
 			id: 2,
-			img: 'audio-video-07',
+			img: 'audio-video-02',
 			titleEs: 'Renovarse... Otra Vez',
 			titleEn: 'Renew yourself... Again',
 			speaker: 'Dante Gebel',
@@ -91,7 +91,7 @@
 		},
 		{
 			id: 3,
-			img: 'audio-video-09',
+			img: 'audio-video-03',
 			titleEs: 'La Vida es Corta',
 			titleEn: 'Life is Short',
 			speaker: 'Billy Graham',
@@ -106,7 +106,7 @@
 		},
 		{
 			id: 4,
-			img: 'ibfe-videos',
+			img: 'audio-video-04',
 			titleEs: 'Leyendo la Palabra de Dios',
 			titleEn: 'Reading the God’s Word',
 			speaker: 'David Escalona',
@@ -121,7 +121,7 @@
 		},
 		{
 			id: 5,
-			img: 'audio-video-04',
+			img: 'audio-video-05',
 			titleEs: '¿Cambia Dios de opinión alguna vez?',
 			titleEn: 'Does God Ever Change His Mind?',
 			speaker: 'Boanerges Jr. De Armas',
@@ -136,7 +136,7 @@
 		},
 		{
 			id: 6,
-			img: 'audio-video-01',
+			img: 'audio-video-06',
 			titleEs: '5 Pasos para el Perdón',
 			titleEn: '5 Steps to Forgiveness',
 			speaker: 'Suely Escalona',
@@ -151,7 +151,7 @@
 		},
 		{
 			id: 7,
-			img: 'audio-video-06',
+			img: 'audio-video-07',
 			titleEs: 'La Prueba de Nuestra Fe',
 			titleEn: 'The Testing of Our Faith',
 			speaker: 'David Escalona',

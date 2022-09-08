@@ -92,31 +92,31 @@
 		opacity: 0.6;
 	}
 	#slide1 {
-		background-image: url('../ibfe-bg-19.jpg');
+		background-image: url('../ibfe-ministries-01.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
 	}
 	#slide2 {
-		background-image: url('../ibfe-bg-20.jpg');
+		background-image: url('../ibfe-ministries-04.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
 	}
 	#slide3 {
-		background-image: url('../ibfe-bg-21.jpg');
+		background-image: url('../ibfe-ministries-02.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
 	}
 	#slide4 {
-		background-image: url('../ibfe-bg-22.jpg');
+		background-image: url('../ibfe-ministries-03.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
 	}
 	#slide5 {
-		background-image: url('../ibfe-bg-23.jpg');
+		background-image: url('../ibfe-ministries-05.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;

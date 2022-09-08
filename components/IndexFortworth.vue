@@ -2,7 +2,7 @@
 	<div class="w-full flex flex-col justify-center items-center fort-worth">
 		<img
 			class="mb-10"
-			src="../assets/images/fort-worth-map.png"
+			src="../assets/images/ibfe-02.png"
 			alt="Mapa de Fort Worth"
 		/>
 		<div class="animated">

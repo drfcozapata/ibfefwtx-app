@@ -8,7 +8,7 @@
 					<div class="parallax1a__img">
 						<img
 							class="rounded-t-lg img1"
-							src="../assets/images/family.jpg"
+							src="../assets/images/ibfe-04.jpg"
 							alt="{{ lang.spaOrEngLng ? 'Familia pastoral' : 'Pastoral Family' }}"
 						/>
 						<div class="rounded-t-lg overlay">
@@ -62,7 +62,7 @@
 					<div class="parallax1a__img">
 						<img
 							class="rounded-t-lg"
-							src="../assets/images/fathers-day.jpg"
+							src="../assets/images/ibfe-05.jpg"
 							alt="{{ lang.spaOrEngLng ? 'Celebración del Día del Padre 2022' : '2022 Father\'s Day Celebration' }}"
 						/>
 						<div class="rounded-t-lg overlay">
@@ -109,7 +109,7 @@
 					<div class="parallax1a__img">
 						<img
 							class="rounded-t-lg"
-							src="../assets/images/ibfe-05.jpg"
+							src="../assets/images/ibfe-06.jpg"
 							alt="{{ lang.spaOrEngLng ? '' : '' }}Nuestra edificación"
 						/>
 						<div class="rounded-t-lg overlay">

@@ -8,7 +8,7 @@
 				<div class="about__image">
 					<img
 						class="rounded-lg"
-						src="../assets/images/ibfe-01a.jpg"
+						src="../assets/images/ibfe-09.jpg"
 						alt="Iglesia Bautista Fe"
 					/>
 				</div>
