@@ -20,6 +20,8 @@
 
 <style scoped>
 	.calendar-a {
+		min-height: 420px;
+		max-height: 480px;
 		margin: 40px 0;
 		padding: 0 24px;
 		background-color: white;
@@ -44,8 +46,7 @@
 		grid-template-rows: auto;
 		grid-template-areas: 'a a a a a a b b b b b b';
 		margin-bottom: 64px;
-		box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-			0 8px 10px -6px rgb(0 0 0 / 0.1);
+		box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 	}
 	@media screen and (max-width: 768px) {
 		.calendar {

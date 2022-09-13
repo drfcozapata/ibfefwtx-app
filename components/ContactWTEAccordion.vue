@@ -59,7 +59,6 @@
 
 <script setup>
 	import { useLangStore } from '../stores/LangStore';
-	import { Accordion } from '../.nuxt/components';
 
 	const lang = useLangStore();
 </script>

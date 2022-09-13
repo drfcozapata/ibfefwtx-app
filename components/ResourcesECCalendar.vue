@@ -75,17 +75,13 @@
 		let calendarDate = new Date(actualYear.value, actualMonth.value, date);
 		let today = new Date();
 
-		console.log(calendarDate, today);
+		// console.log(calendarDate, today);
 
 		return calendarDate < today;
 	};
 	// Día actual
 	const actualDay = date => {
-		let calendarDate = new Date(
-			actualYear.value,
-			actualMonth.value,
-			date
-		).toDateString();
+		let calendarDate = new Date(actualYear.value, actualMonth.value, date).toDateString();
 		let today = new Date().toDateString();
 
 		return calendarDate === today;
@@ -115,18 +111,16 @@
 
 	// Obtiene el nombre del mes en español
 	const ActualMonthName = computed(() => {
-		let str = new Date(actualYear.value, actualMonth.value).toLocaleString(
-			'es-Es',
-			{ month: 'long' }
-		);
+		let str = new Date(actualYear.value, actualMonth.value).toLocaleString('es-Es', {
+			month: 'long',
+		});
 		return str.charAt(0).toUpperCase() + str.slice(1);
 	});
 	// Obtiene el nombre del mes en inglés
 	const ActualMonthNameEn = computed(() => {
-		return new Date(actualYear.value, actualMonth.value).toLocaleString(
-			'en-US',
-			{ month: 'long' }
-		);
+		return new Date(actualYear.value, actualMonth.value).toLocaleString('en-US', {
+			month: 'long',
+		});
 	});
 </script>
 

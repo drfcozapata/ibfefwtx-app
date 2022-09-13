@@ -15,7 +15,7 @@
 		"@iconify-json/fa6-solid": "^1.1.6",
 		"@nuxtjs/tailwindcss": "^5.3.1",
 		"@pinia/nuxt": "^0.4.0",
-		"nuxt": "3.0.0-rc.6",
+		"nuxt": "3.0.0-rc.9",
 		"unplugin-icons": "^0.14.8"
 	},
 	"keywords": [
