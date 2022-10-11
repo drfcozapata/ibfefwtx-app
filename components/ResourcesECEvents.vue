@@ -55,7 +55,9 @@
 							{{ event.date.slice(8) }}
 						</td>
 						<td class="pl-4">
-							<h4 class="text-lg font-medium">{{ event.title }}</h4>
+							<h4 class="text-lg font-medium">
+								{{ lang.spaOrEngLng ? event.titleEs : event.titleEn }}
+							</h4>
 							<p>{{ event.content }}</p>
 						</td>
 					</tr>
@@ -67,78 +69,160 @@
 
 <script setup>
 	import { reactive } from 'vue';
+	import jsonData from '../helper/events.json';
+	import { useLangStore } from '../stores/LangStore';
+
+	const lang = useLangStore();
+
+	const data = jsonData;
+	console.log(data);
 
 	const events = reactive([
 		{
-			date: '2022-09-4',
-			title: 'Santa Cena',
+			date: '2022-10-2',
+			titleEs: 'Reunión Dominical',
+			titleEn: 'Sunday Meeting',
 			content: '11:00am - 12:00pm',
 			isPrev: true,
 		},
 		{
-			date: '2022-09-7',
-			title: 'Orar los unos por los otros',
+			date: '2022-10-2',
+			titleEs: 'Reunión de Grupos Pequeños',
+			titleEn: 'Small Groups Meeting',
+			content: '12:00 - 1:00pm',
+			isPrev: true,
+		},
+		{
+			date: '2022-10-5',
+			titleEs: 'Orar los unos por los otros',
+			titleEn: 'Praying for each other',
 			content: '8:00 - 9:30pm',
 			isPrev: true,
 		},
 		{
-			date: '2022-09-11',
-			title: 'Reunión Dominical',
+			date: '2022-10-5',
+			titleEs: 'Tiempo de oración y reflexión bíblica',
+			titleEn: 'Time for prayer and biblical reflection',
+			content: '8:00 - 9:30 pm',
+			isPrev: true,
+		},
+		{
+			date: '2022-10-8',
+			titleEs: 'Celebración de la Herencia Hispana',
+			titleEn: 'Hispanic Heritage Celebration',
+			content: '4:00 - 7:00 pm',
+			isPrev: true,
+		},
+		{
+			date: '2022-10-9',
+			titleEs: 'Reunión Dominical',
+			titleEn: 'Sunday Meeting',
 			content: '11:00am - 12:00pm',
 			isPrev: true,
 		},
 		{
-			date: '2022-09-11',
-			title: 'Reunión de Grupos Pequeños',
+			date: '2022-10-9',
+			titleEs: 'Reunión de Grupos Pequeños',
+			titleEn: 'Small Groups Meeting',
 			content: '12:00 - 1:00pm',
 			isPrev: true,
 		},
 		{
-			date: '2022-09-14',
-			title: 'Orar por la iglesia',
+			date: '2022-10-12',
+			titleEs: 'Tiempo de oración y reflexión bíblica',
+			titleEn: 'Time for prayer and biblical reflection',
 			content: '8:00 - 9:30 pm',
 			isPrev: false,
 		},
 		{
-			date: '2022-09-18',
-			title: 'Reunión Dominical',
+			date: '2022-10-12',
+			titleEs: 'Orar por la iglesia',
+			titleEn: 'Praying for the Church',
+			content: '8:00 - 9:30 pm',
+			isPrev: false,
+		},
+		{
+			date: '2022-10-16',
+			titleEs: 'Reunión Dominical',
+			titleEn: 'Sunday Meeting',
 			content: '11:00am - 12:00pm',
 			isPrev: false,
 		},
 		{
-			date: '2022-09-18',
-			title: 'Reunión de Grupos Pequeños',
+			date: '2022-10-16',
+			titleEs: 'Reunión de Grupos Pequeños',
+			titleEn: 'Small Groups Meeting',
 			content: '12:00 - 1:00pm',
 			isPrev: false,
 		},
 		{
-			date: '2022-09-18',
-			title: 'FE Youth Group',
-			content: '2:00 - 6:00pm',
-			isPrev: false,
-		},
-		{
-			date: '2022-09-21',
-			title: 'Orar por las necesidades de otros',
+			date: '2022-10-19',
+			titleEs: 'Orar por las necesidades de otros',
+			titleEn: 'Praying for the needs of others',
 			content: '8:00 - 9:30 pm',
 			isPrev: false,
 		},
 		{
-			date: '2022-09-24',
-			title: 'Fiesta en la Calle',
-			content: 'Todo el día',
-			isPrev: false,
-		},
-		{
-			date: '2022-09-25',
-			title: 'IBFE en el parque',
-			content: '11:00am - 2:00pm',
-			isPrev: false,
-		},
-		{
-			date: '2022-09-28',
-			title: 'Tiempo de oración y reflexión bíblica',
+			date: '2022-10-19',
+			titleEs: 'Tiempo de oración y reflexión bíblica',
+			titleEn: 'Time for prayer and biblical reflection',
 			content: '8:00 - 9:30 pm',
+			isPrev: false,
+		},
+		{
+			date: '2022-10-23',
+			titleEs: 'Santa Cena',
+			titleEn: 'Holly Supper',
+			content: '11:00am - 12:00pm',
+			isPrev: false,
+		},
+		{
+			date: '2022-10-23',
+			titleEs: 'Reunión Dominical',
+			titleEn: 'Sunday Meeting',
+			content: '11:00am - 12:00pm',
+			isPrev: false,
+		},
+		{
+			date: '2022-10-23',
+			titleEs: 'Reunión de Grupos Pequeños',
+			titleEn: 'Small Groups Meeting',
+			content: '12:00 - 1:00pm',
+			isPrev: false,
+		},
+		{
+			date: '2022-10-26',
+			titleEs: 'Tiempo de oración y reflexión bíblica',
+			titleEn: 'Time for prayer and biblical reflection',
+			content: '8:00 - 9:30 pm',
+			isPrev: false,
+		},
+		{
+			date: '2022-10-28',
+			titleEs: 'Proyecto de Servicio Hospital',
+			titleEn: 'Hospital Service Project',
+			content: '(Horario a publicar)',
+			isPrev: false,
+		},
+		{
+			date: '2022-10-29',
+			titleEs: 'Apoyo misionero a la Iglesia Joshua',
+			titleEn: 'Missionary support to Joshua Church',
+			content: '9:00am - 5:00 pm',
+			isPrev: false,
+		},
+		{
+			date: '2022-10-30',
+			titleEs: 'Reunión Dominical',
+			titleEn: 'Sunday Meeting',
+			content: '11:00am - 12:00pm',
+			isPrev: false,
+		},
+		{
+			date: '2022-10-30',
+			titleEs: 'Reunión de Grupos Pequeños',
+			titleEn: 'Small Groups Meeting',
+			content: '12:00 - 1:00pm',
 			isPrev: false,
 		},
 	]);

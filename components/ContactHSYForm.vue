@@ -1,57 +1,62 @@
 <template>
-	<div
-		class="w-full grid grid-cols-1 bg-slate-50 mb-20 contact"
-		id="contact-form"
-	>
+	<div class="w-full grid grid-cols-1 bg-slate-50 mb-20 contact" id="contact-form">
 		<div class="w-10/12 mx-auto flex flex-col justify-start">
 			<!-- <h1>
 				{{
 					lang.spaOrEngLng ? '¿Cómo podemos servirte?' : 'How can we serve you?'
 				}}
 			</h1> -->
-			<form class="w-full py-10 px-20 rounded-xl bg-gray-100">
+			<form
+				action="https://formsubmit.co/drfcozapata@gmail.com"
+				method="POST"
+				class="w-full py-10 px-20 rounded-xl bg-gray-100"
+			>
 				<div class="flex gap-10 mb-4 wrap">
+					<input
+						type="hidden"
+						name="_autoresponse"
+						value="Su mensaje fue recibido exitosamente / Your message was successfully received"
+					/>
+					<input type="hidden" name="_template" value="box" />
 					<div class="w-full flex flex-col">
-						<label for="name">{{ lang.spaOrEngLng ? 'Nombre' : 'Name' }}</label>
+						<label for="name-serve">{{ lang.spaOrEngLng ? 'Nombre' : 'Name' }}</label>
 						<input
 							type="text"
 							id=""
-							name=""
+							name="name-serve"
 							:placeholder="lang.spaOrEngLng ? 'Nombre' : 'Name'"
 						/>
 					</div>
 					<div class="w-full flex flex-col">
-						<label for="lastname">{{
+						<label for="lastname-serve">{{
 							lang.spaOrEngLng ? 'Apellido' : 'Lastname'
 						}}</label>
 						<input
 							type="text"
 							id="lastname"
-							name="lastname"
+							name="lastname-serve"
 							:placeholder="lang.spaOrEngLng ? 'Apellido' : 'Lastname'"
 						/>
 					</div>
 				</div>
 				<div class="flex gap-10 mb-4 wrap">
 					<div class="w-full flex flex-col">
-						<label for="email">{{
+						<label for="email-serve">{{
 							lang.spaOrEngLng ? 'Correo Electrónico' : 'Email'
 						}}</label>
 						<input
 							type="email"
 							id=""
-							name="email"
+							name="email-serve"
 							:placeholder="lang.spaOrEngLng ? 'Correo Electrónico' : 'Email'"
 						/>
 					</div>
 					<div class="w-full flex flex-col">
-						<label for="phone">{{
-							lang.spaOrEngLng ? 'Teléfono' : 'Phone'
-						}}</label>
+						<label for="phone-serve">{{ lang.spaOrEngLng ? 'Teléfono' : 'Phone' }}</label>
 						<input
 							type="text"
 							id="phone"
-							name="phone"
+							name="phone-serve"
 							:placeholder="lang.spaOrEngLng ? 'Teléfono' : 'Phone'"
 						/>
 					</div>
@@ -66,26 +71,28 @@
 					</p>
 					<div class="flex">
 						<div class="flex gap-2 items-baseline ml-16">
-							<input type="radio" id="asist-yes" name="assistent" />
-							<label for="asist-yes">{{
-								lang.spaOrEngLng ? 'Sí' : 'Yes'
-							}}</label>
+							<label for="asist-yes">
+								<input type="radio" id="asist-yes" name="assistent-serve" value="yes" />
+								{{ lang.spaOrEngLng ? 'Sí' : 'Yes' }}
+							</label>
 						</div>
 						<div class="flex gap-2 items-baseline ml-16">
-							<input type="radio" id="asist-no" name="assistent" />
-							<label for="asist-no">No</label>
+							<label for="asist-no">
+								<input type="radio" id="asist-no" name="assistent-serve" value="no" />
+								No
+							</label>
 						</div>
 					</div>
 				</div>
 				<div class="flex flex-col mb-10">
-					<label for="message">{{
+					<label for="message-serve">{{
 						lang.spaOrEngLng
 							? 'Indícanos de qué manera podemos servirte'
 							: 'Let us know how we can be of service to you.'
 					}}</label>
 					<textarea
 						id="message"
-						name="message"
+						name="message-serve"
 						:placeholder="
 							lang.spaOrEngLng
 								? '¿De qué manera podemos servirte?'
@@ -94,12 +101,7 @@
 					/>
 				</div>
 				<div class="flex items-end">
-					<input
-						@click.prevent="sendForm"
-						class="uppercase font-medium"
-						type="submit"
-						value="Enviar"
-					/>
+					<input class="uppercase font-medium" type="submit" value="Enviar" />
 				</div>
 			</form>
 		</div>
@@ -110,9 +112,6 @@
 	import { useLangStore } from '../stores/LangStore';
 
 	const lang = useLangStore();
-	const sendForm = () => {
-		console.log('Formulario enviado');
-	};
 </script>
 
 <style scoped>

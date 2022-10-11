@@ -1,0 +1,404 @@
+{
+	"aug": [
+		{
+			"date": "2022-08-10",
+			"titleEs": "Orar los unos por los otros",
+			"titleEn": "Praying for each other",
+			"content": "8:00 - 9:30pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-08-17",
+			"titleEs": "Orar por la Iglesia",
+			"titleEn": "Praying for the Church",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-08-19",
+			"titleEs": "Hombres de Fe",
+			"titleEn": "Men of Faith",
+			"content": "6:00am - 11:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-08-20",
+			"titleEs": "Hombres de Fe",
+			"titleEn": "Men of Faith",
+			"content": "6:00am - 11:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-08-24",
+			"titleEs": "Orar por las necesidades de otros",
+			"titleEn": "Praying for the needs of others",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-08-27",
+			"titleEs": "Estudio Biblico Mujeres de FE",
+			"titleEn": "Women of FE Bible Study",
+			"content": "Todo el día",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-08-27",
+			"titleEs": "Proyecto de Servicio - Entrega de Folletos",
+			"titleEn": "Service Project - Brochure Delivery",
+			"content": "7:00 - 8:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-08-31",
+			"titleEs": "Tiempo de oración y reflexión bíblica",
+			"titleEn": "Time for prayer and biblical reflection",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		}
+	],
+	"sep": [
+		{
+			"date": "2022-09-4",
+			"titleEs": "Santa Cena",
+			"titleEn": "Holly Supper",
+			"content": "11:00am - 12:00pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-09-7",
+			"titleEs": "Orar los unos por los otros",
+			"titleEn": "Praying for each other",
+			"content": "8:00 - 9:30pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-09-11",
+			"titleEs": "Reunión Dominical",
+			"titleEn": "Sunday Meeting",
+			"content": "11:00am - 12:00pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-09-11",
+			"titleEs": "Reunión de Grupos Pequeños",
+			"titleEn": "Small Groups Meeting",
+			"content": "12:00 - 1:00pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-09-14",
+			"titleEs": "Orar por la Iglesia",
+			"titleEn": "Praying for the Church",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-09-18",
+			"titleEs": "Reunión Dominical",
+			"titleEn": "Sunday Meeting",
+			"content": "11:00am - 12:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-09-18",
+			"titleEs": "Reunión de Grupos Pequeños",
+			"titleEn": "Small Groups Meeting",
+			"content": "12:00 - 1:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-09-18",
+			"titleEs": "Grupo de Jóvenes FE",
+			"titleEn": "FE Youth Group",
+			"content": "2:00 - 6:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-09-21",
+			"titleEs": "Orar por las necesidades de otros",
+			"titleEn": "Praying for the needs of others",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-09-24",
+			"titleEs": "Fiesta en la Calle",
+			"titleEn": "Street Party",
+			"content": "Todo el día",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-09-25",
+			"titleEs": "IBFE en el parque",
+			"titleEn": "IBFE in the park",
+			"content": "11:00am - 2:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-09-28",
+			"titleEs": "Tiempo de oración y reflexión bíblica",
+			"titleEn": "Time for prayer and biblical reflection",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		}
+	],
+	"oct": [
+		{
+			"date": "2022-10-4",
+			"titleEs": "Santa Cena",
+			"titleEn": "Holy Supper",
+			"content": "11:00am - 12:00pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-10-7",
+			"titleEs": "Orar los unos por los otros",
+			"titleEn": "Praying for each other",
+			"content": "8:00 - 9:30pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-10-11",
+			"titleEs": "Reunión Dominical",
+			"titleEn": "Sunday Meeting",
+			"content": "11:00am - 12:00pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-10-11",
+			"titleEs": "Reunión de Grupos Pequeños",
+			"titleEn": "Small Groups Meeting",
+			"content": "12:00 - 1:00pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-10-14",
+			"titleEs": "Orar por la Iglesia",
+			"titleEn": "Praying for the Church",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-10-18",
+			"titleEs": "Reunión Dominical",
+			"titleEn": "Sunday Meeting",
+			"content": "11:00am - 12:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-10-18",
+			"titleEs": "Reunión de Grupos Pequeños",
+			"titleEn": "Small Groups Meeting",
+			"content": "12:00 - 1:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-10-18",
+			"titleEs": "Grupo de Jóvenes FE",
+			"titleEn": "FE Youth Group",
+			"content": "2:00 - 6:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-10-21",
+			"titleEs": "Orar por las necesidades de otros",
+			"titleEn": "Praying for the needs of others",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-10-24",
+			"titleEs": "Fiesta en la Calle",
+			"titleEn": "Street Party",
+			"content": "Todo el día",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-10-25",
+			"titleEs": "IBFE en el parque",
+			"titleEn": "IBFE in the park",
+			"content": "11:00am - 2:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-10-28",
+			"titleEs": "Tiempo de oración y reflexión bíblica",
+			"titleEn": "Time for prayer and biblical reflection",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		}
+	],
+	"nov": [
+		{
+			"date": "2022-11-4",
+			"titleEs": "Santa Cena",
+			"titleEn": "Holy Supper",
+			"content": "11:00am - 12:00pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-11-7",
+			"titleEs": "Orar los unos por los otros",
+			"titleEn": "Praying for each other",
+			"content": "8:00 - 9:30pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-11-11",
+			"titleEs": "Reunión Dominical",
+			"titleEn": "Sunday Meeting",
+			"content": "11:00am - 12:00pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-11-11",
+			"titleEs": "Reunión de Grupos Pequeños",
+			"titleEn": "Small Groups Meeting",
+			"content": "12:00 - 1:00pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-11-14",
+			"titleEs": "Orar por la Iglesia",
+			"titleEn": "Praying for the Church",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-11-18",
+			"titleEs": "Reunión Dominical",
+			"titleEn": "Sunday Meeting",
+			"content": "11:00am - 12:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-11-18",
+			"titleEs": "Reunión de Grupos Pequeños",
+			"titleEn": "Small Groups Meeting",
+			"content": "12:00 - 1:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-11-18",
+			"titleEs": "Grupo de Jóvenes FE",
+			"titleEn": "FE Youth Group",
+			"content": "2:00 - 6:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-11-21",
+			"titleEs": "Orar por las necesidades de otros",
+			"titleEn": "Praying for the needs of others",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-11-24",
+			"titleEs": "Fiesta en la Calle",
+			"titleEn": "Street Party",
+			"content": "Todo el día",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-11-25",
+			"titleEs": "IBFE en el parque",
+			"titleEn": "IBFE in the park",
+			"content": "11:00am - 2:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-11-28",
+			"titleEs": "Tiempo de oración y reflexión bíblica",
+			"titleEn": "Time for prayer and biblical reflection",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		}
+	],
+	"dec": [
+		{
+			"date": "2022-12-4",
+			"titleEs": "Santa Cena",
+			"titleEn": "Holy Supper",
+			"content": "11:00am - 12:00pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-12-7",
+			"titleEs": "Orar los unos por los otros",
+			"titleEn": "Praying for each other",
+			"content": "8:00 - 9:30pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-12-11",
+			"titleEs": "Reunión Dominical",
+			"titleEn": "Sunday Meeting",
+			"content": "11:00am - 12:00pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-12-11",
+			"titleEs": "Reunión de Grupos Pequeños",
+			"titleEn": "Small Groups Meeting",
+			"content": "12:00 - 1:00pm",
+			"isPrev": "true"
+		},
+		{
+			"date": "2022-12-14",
+			"titleEs": "Orar por la Iglesia",
+			"titleEn": "Praying for the Church",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-12-18",
+			"titleEs": "Reunión Dominical",
+			"titleEn": "Sunday Meeting",
+			"content": "11:00am - 12:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-12-18",
+			"titleEs": "Reunión de Grupos Pequeños",
+			"titleEn": "Small Groups Meeting",
+			"content": "12:00 - 1:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-12-18",
+			"titleEs": "Grupo de Jóvenes FE",
+			"titleEn": "FE Youth Group",
+			"content": "2:00 - 6:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-12-21",
+			"titleEs": "Orar por las necesidades de otros",
+			"titleEn": "Praying for the needs of others",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-12-24",
+			"titleEs": "Fiesta en la Calle",
+			"titleEn": "Street Party",
+			"content": "Todo el día",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-12-25",
+			"titleEs": "IBFE en el parque",
+			"titleEn": "IBFE in the park",
+			"content": "11:00am - 2:00pm",
+			"isPrev": "false"
+		},
+		{
+			"date": "2022-12-28",
+			"titleEs": "Tiempo de oración y reflexión bíblica",
+			"titleEn": "Time for prayer and biblical reflection",
+			"content": "8:00 - 9:30 pm",
+			"isPrev": "false"
+		}
+	]
+}

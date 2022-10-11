@@ -6,49 +6,53 @@
 					lang.spaOrEngLng ? '¿Cómo podemos servirte?' : 'How can we serve you?'
 				}}
 			</h1> -->
-			<form class="w-full py-10 px-20 rounded-xl bg-gray-100">
+			<form
+				action="https://formsubmit.co/drfcozapata@gmail.com"
+				method="POST"
+				class="w-full py-10 px-20 rounded-xl bg-gray-100"
+			>
 				<div class="flex gap-10 mb-4 wrap">
 					<div class="w-full flex flex-col">
-						<label for="name">{{ lang.spaOrEngLng ? 'Nombre' : 'Name' }}</label>
+						<label for="name-involve">{{ lang.spaOrEngLng ? 'Nombre' : 'Name' }}</label>
 						<input
 							type="text"
 							id=""
-							name=""
+							name="name-involve"
 							:placeholder="lang.spaOrEngLng ? 'Nombre' : 'Name'"
 						/>
 					</div>
 					<div class="w-full flex flex-col">
-						<label for="lastname">{{
+						<label for="lastname-involve">{{
 							lang.spaOrEngLng ? 'Apellido' : 'Lastname'
 						}}</label>
 						<input
 							type="text"
 							id="lastname"
-							name="lastname"
+							name="lastname-involve"
 							:placeholder="lang.spaOrEngLng ? 'Apellido' : 'Lastname'"
 						/>
 					</div>
 				</div>
 				<div class="flex gap-10 mb-4 wrap">
 					<div class="w-full flex flex-col">
-						<label for="email">{{
+						<label for="email-involve">{{
 							lang.spaOrEngLng ? 'Correo Electrónico' : 'Email'
 						}}</label>
 						<input
 							type="email"
 							id=""
-							name="email"
+							name="email-involve"
 							:placeholder="lang.spaOrEngLng ? 'Correo Electrónico' : 'Email'"
 						/>
 					</div>
 					<div class="w-full flex flex-col">
-						<label for="phone">{{
+						<label for="phone-involve">{{
 							lang.spaOrEngLng ? 'Teléfono' : 'Phone'
 						}}</label>
 						<input
 							type="text"
 							id="phone"
-							name="phone"
+							name="phone-involved"
 							:placeholder="lang.spaOrEngLng ? 'Teléfono' : 'Phone'"
 						/>
 					</div>
@@ -63,26 +67,28 @@
 					</p>
 					<div class="flex">
 						<div class="flex gap-2 items-baseline ml-16">
-							<input type="radio" id="asist-yes" name="assistent" />
-							<label for="asist-yes">{{
-								lang.spaOrEngLng ? 'Sí' : 'Yes'
-							}}</label>
+							<label for="asist-yes">
+								<input type="radio" id="asist-yes" name="assistent-involve" value="yes" />
+								{{ lang.spaOrEngLng ? 'Sí' : 'Yes' }}
+							</label>
 						</div>
 						<div class="flex gap-2 items-baseline ml-16">
-							<input type="radio" id="asist-no" name="assistent" />
-							<label for="asist-no">No</label>
+							<label for="asist-no">
+								<input type="radio" id="asist-no" name="assistent-involve" value="no" />
+								No
+							</label>
 						</div>
 					</div>
 				</div>
 				<div class="flex flex-col mb-10">
-					<label for="message">{{
+					<label for="message-involve">{{
 						lang.spaOrEngLng
 							? 'Indícanos de qué manera te gustaría involucrarte para servir junto a nosotros'
 							: 'Let us know how you would like to get involved in serving with us'
 					}}</label>
 					<textarea
 						id="message"
-						name="message"
+						name="message-involve"
 						:placeholder="
 							lang.spaOrEngLng
 								? '¿De qué manera te gustaría involucrarte para servir junto a nosotros?'
@@ -91,12 +97,7 @@
 					/>
 				</div>
 				<div class="flex items-end">
-					<input
-						@click.prevent="sendForm"
-						class="uppercase font-medium"
-						type="submit"
-						value="Enviar"
-					/>
+					<input class="uppercase font-medium" type="submit" value="Enviar" />
 				</div>
 			</form>
 		</div>
@@ -107,9 +108,9 @@
 	import { useLangStore } from '../stores/LangStore';
 
 	const lang = useLangStore();
-	const sendForm = () => {
-		console.log('Formulario enviado');
-	};
+	// const sendForm = () => {
+	// 	console.log('Formulario enviado');
+	// };
 </script>
 
 <style scoped>

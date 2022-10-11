@@ -1,23 +1,20 @@
 import { defineStore } from 'pinia';
 
-export const useLangStore = defineStore({
-	id: 'lang',
-	state: () => ({
-		langEs: true,
-	}),
-	actions: {
-		setLangEs() {
-			this.langEs = !this.langEs;
-		},
-	},
-	getters: {
-		spaOrEngAlt: state => {
-			if (state.langEs === true) return 'english';
-			return 'español';
-		},
-		spaOrEngLng: state => {
-			if (state.langEs === true) return true;
-			return false;
-		},
-	},
+export const useLangStore = defineStore('lang', () => {
+	const langEs = ref(true);
+
+	const spaOrEngAlt = computed(() => {
+		if (langEs.value === true) return 'english';
+		return 'español';
+	});
+	const spaOrEngLng = computed(() => {
+		if (langEs.value === true) return true;
+		return false;
+	});
+
+	function setLangEs() {
+		langEs.value = !langEs.value;
+	}
+
+	return { langEs, spaOrEngAlt, spaOrEngLng, setLangEs };
 });

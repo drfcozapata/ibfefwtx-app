@@ -4,21 +4,23 @@
 			<h1>
 				{{ lang.spaOrEngLng ? 'Conectarme' : 'Connect Me' }}
 			</h1>
-			<form class="w-full py-10 px-20 rounded-xl bg-slate-50">
+			<form
+				action="https://formsubmit.co/drfcozapata@gmail.com"
+				method="POST"
+				class="w-full py-10 px-20 rounded-xl bg-slate-50"
+			>
 				<div class="flex gap-10 mb-4 wrap">
 					<div class="w-full flex flex-col">
 						<label for="name">{{ lang.spaOrEngLng ? 'Nombre' : 'Name' }}</label>
 						<input
 							type="text"
 							id=""
-							name=""
+							name="name"
 							:placeholder="lang.spaOrEngLng ? 'Nombre' : 'Name'"
 						/>
 					</div>
 					<div class="w-full flex flex-col">
-						<label for="lastname">{{
-							lang.spaOrEngLng ? 'Apellido' : 'Lastname'
-						}}</label>
+						<label for="lastname">{{ lang.spaOrEngLng ? 'Apellido' : 'Lastname' }}</label>
 						<input
 							type="text"
 							id="lastname"
@@ -40,9 +42,7 @@
 						/>
 					</div>
 					<div class="w-full flex flex-col">
-						<label for="phone">{{
-							lang.spaOrEngLng ? 'Teléfono' : 'Phone'
-						}}</label>
+						<label for="phone">{{ lang.spaOrEngLng ? 'Teléfono' : 'Phone' }}</label>
 						<input
 							type="text"
 							id="phone"
@@ -61,21 +61,21 @@
 					</p>
 					<div class="flex">
 						<div class="flex gap-2 items-baseline ml-16">
-							<input type="radio" id="asist-yes" name="assistent" />
-							<label for="asist-yes">{{
-								lang.spaOrEngLng ? 'Sí' : 'Yes'
-							}}</label>
+							<label for="asist-yes">
+								<input type="radio" id="asist-yes" name="assistent" value="yes" />
+								{{ lang.spaOrEngLng ? 'Sí' : 'Yes' }}
+							</label>
 						</div>
 						<div class="flex gap-2 items-baseline ml-16">
-							<input type="radio" id="asist-no" name="assistent" />
-							<label for="asist-no">No</label>
+							<label for="asist-no">
+								<input type="radio" id="asist-no" name="assistent" value="no" />
+								No
+							</label>
 						</div>
 					</div>
 				</div>
 				<div class="flex flex-col mb-10">
-					<label for="message">{{
-						lang.spaOrEngLng ? 'Mensaje' : 'Message'
-					}}</label>
+					<label for="message">{{ lang.spaOrEngLng ? 'Mensaje' : 'Message' }}</label>
 					<textarea
 						id="message"
 						name="message"
@@ -83,12 +83,7 @@
 					/>
 				</div>
 				<div class="flex items-end">
-					<input
-						@click.prevent="sendForm"
-						class="uppercase font-medium"
-						type="submit"
-						value="Enviar"
-					/>
+					<input class="uppercase font-medium" type="submit" value="Enviar" />
 				</div>
 			</form>
 		</div>
@@ -99,9 +94,9 @@
 	import { useLangStore } from '../stores/LangStore';
 
 	const lang = useLangStore();
-	const sendForm = () => {
-		console.log('Formulario enviado');
-	};
+	// const sendForm = () => {
+	// 	console.log('Formulario enviado');
+	// };
 </script>
 
 <style scoped>
