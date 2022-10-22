@@ -49,16 +49,16 @@
 					<tr :class="{ prevDay: event.isPrev === true }">
 						<td
 							width="45px"
-							class="text-3xl font-medium text-right"
+							class="text-3xl font-medium text-right event-date"
 							:class="{ nextDay: event.isPrev === false }"
 						>
 							{{ event.date.slice(8) }}
 						</td>
 						<td class="pl-4">
-							<h4 class="text-lg font-medium">
+							<h4 class="text-lg font-medium event-title">
 								{{ lang.spaOrEngLng ? event.titleEs : event.titleEn }}
 							</h4>
-							<p>{{ event.content }}</p>
+							<p class="event-time">{{ event.content }}</p>
 						</td>
 					</tr>
 				</tbody>
@@ -132,42 +132,42 @@
 			titleEs: 'Tiempo de oración y reflexión bíblica',
 			titleEn: 'Time for prayer and biblical reflection',
 			content: '8:00 - 9:30 pm',
-			isPrev: false,
+			isPrev: true,
 		},
 		{
 			date: '2022-10-12',
 			titleEs: 'Orar por la iglesia',
 			titleEn: 'Praying for the Church',
 			content: '8:00 - 9:30 pm',
-			isPrev: false,
+			isPrev: true,
 		},
 		{
 			date: '2022-10-16',
 			titleEs: 'Reunión Dominical',
 			titleEn: 'Sunday Meeting',
 			content: '11:00am - 12:00pm',
-			isPrev: false,
+			isPrev: true,
 		},
 		{
 			date: '2022-10-16',
 			titleEs: 'Reunión de Grupos Pequeños',
 			titleEn: 'Small Groups Meeting',
 			content: '12:00 - 1:00pm',
-			isPrev: false,
+			isPrev: true,
 		},
 		{
 			date: '2022-10-19',
 			titleEs: 'Orar por las necesidades de otros',
 			titleEn: 'Praying for the needs of others',
 			content: '8:00 - 9:30 pm',
-			isPrev: false,
+			isPrev: true,
 		},
 		{
 			date: '2022-10-19',
 			titleEs: 'Tiempo de oración y reflexión bíblica',
 			titleEn: 'Time for prayer and biblical reflection',
 			content: '8:00 - 9:30 pm',
-			isPrev: false,
+			isPrev: true,
 		},
 		{
 			date: '2022-10-23',
@@ -234,5 +234,15 @@
 	}
 	.nextDay {
 		color: #0369a1;
+	}
+	@media screen and (max-width: 360px) {
+		.event-day,
+		.event-time {
+			font-size: 80%;
+		}
+		.event-title {
+			font-style: 90%;
+			line-height: 1.3;
+		}
 	}
 </style>

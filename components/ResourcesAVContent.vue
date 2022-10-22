@@ -19,7 +19,7 @@
 						</nuxt-link>
 						<i
 							class="fa-solid fa-headphones"
-							:title="lang.spaOrEngLng ? 'Escuchar audio' : 'Listen audio'"
+							:title="lang.spaOrEngLng ? 'Descargar audio' : 'Download audio'"
 						></i>
 						<!-- <i
 							class="fa-regular fa-circle-down"
@@ -60,7 +60,7 @@
 						</nuxt-link>
 						<i
 							class="fa-solid fa-headphones"
-							:title="lang.spaOrEngLng ? 'Escuchar audio' : 'Listen audio'"
+							:title="lang.spaOrEngLng ? 'Descargar audio' : 'Download audio'"
 						></i>
 						<!-- <i
 							class="fa-regular fa-circle-down"
@@ -101,7 +101,7 @@
 						</nuxt-link>
 						<i
 							class="fa-solid fa-headphones"
-							:title="lang.spaOrEngLng ? 'Escuchar audio' : 'Listen audio'"
+							:title="lang.spaOrEngLng ? 'Descargar audio' : 'Download audio'"
 						></i>
 						<!-- <i
 							class="fa-regular fa-circle-down"
@@ -230,8 +230,12 @@
 			dateEs: '28 de Agosto, 2022',
 			dateEn: 'August 28, 2022',
 			video: 'https://www.youtube.com/embed/yJcxnagu7yA&',
-			audio:
-				'https://drive.google.com/drive/u/0/folders/1kyjR_wHUrRWOLQbCZ2ZZJ7QjXzLfLSTs',
+			audio: `<iframe
+				frameborder="0"
+				width="400"	
+				height="200"
+				src="https://drive.google.com/file/d/1JSZyN9iCDTQbiqRlwlrIRmxwFGk86YOQ/preview">   
+			</iframe>`,
 			descriptionEs:
 				'La semilla que cayó en buena tierra representa a aquel que escucha lo que Dios dice por medio de su palabra, la retiene y es constante en ponerla en práctica; estas cualidades lo llevan a vivir vidas productivas.',
 			descriptionEn:

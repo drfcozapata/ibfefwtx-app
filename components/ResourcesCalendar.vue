@@ -48,13 +48,23 @@
 		margin-bottom: 64px;
 		box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 	}
-	@media screen and (max-width: 768px) {
+
+	@media screen and (max-width: 1024px) {
+		.calendar {
+			grid-template-areas: 'a a a a a a a a a a a a' 'b b b b b b b b b b b';
+			padding: 0 20px;
+			grid-gap: 20px;
+		}
+	}
+	@media screen and (max-width: 820px) {
 		.calendar {
 			grid-template-areas: 'a a a a a a a a a a a a' 'b b b b b b b b b b b b';
 			padding: 0 30px;
+			grid-gap: 30px;
 		}
 		.calendar-a {
 			padding: 0 45px;
+			margin-bottom: 0;
 		}
 	}
 	@media screen and (max-width: 576px) {
@@ -63,21 +73,42 @@
 			padding: 0 10px;
 		}
 	}
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 420px) {
 		.calendar {
 			grid-template-areas: 'a a a a a a a' 'b b b b b b b';
 			padding: 0 10px;
 			margin: 0 auto;
 		}
 		.calendar-a {
-			width: 80vw;
+			width: 82vw;
 			margin: 20px auto 0 auto;
 			padding: 0 15px;
+			min-height: 320px !important;
 		}
 		.calendar-b {
-			width: 80vw;
+			width: 82vw;
 			margin: 0 auto 20px auto;
 			padding: 0 15px;
+		}
+	}
+	@media screen and (max-width: 360px) {
+		.calendar-a {
+			width: 81vw;
+		}
+		.calendar-b {
+			width: 81vw;
+		}
+	}
+
+	@media screen and (max-width: 320px) {
+		.calendar {
+			padding: 0 6px;
+		}
+		.calendar-a {
+			width: 91vw;
+		}
+		.calendar-b {
+			width: 91vw;
 		}
 	}
 </style>

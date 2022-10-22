@@ -34,9 +34,7 @@
 							</ul>
 						</li>
 						<li>
-							<nuxt-link
-								class="block relative hover:bg-slate-800"
-								to="/ministries"
+							<nuxt-link class="block relative hover:bg-slate-800" to="/ministries"
 								>{{ lang.spaOrEngLng ? 'Ministerios' : 'Ministries' }}
 								<!-- <i class="fa-solid fa-chevron-down"></i> -->
 							</nuxt-link>
@@ -76,16 +74,12 @@
 								</li> -->
 								<li>
 									<nuxt-link to="/contact/get-involved">{{
-										lang.spaOrEngLng
-											? '¿Cómo involucrarme?'
-											: 'How to Get Involved?'
+										lang.spaOrEngLng ? '¿Cómo involucrarme?' : 'How to Get Involved?'
 									}}</nuxt-link>
 								</li>
 								<li>
 									<nuxt-link to="/contact/serve-you">{{
-										lang.spaOrEngLng
-											? '¿Cómo podemos servirte?'
-											: 'How Can We Serve You?'
+										lang.spaOrEngLng ? '¿Cómo podemos servirte?' : 'How Can We Serve You?'
 									}}</nuxt-link>
 								</li>
 							</ul>
@@ -98,16 +92,12 @@
 							<ul>
 								<li>
 									<nuxt-link to="/resources">{{
-										lang.spaOrEngLng
-											? 'Calendario de Eventos'
-											: 'Events Calendar'
+										lang.spaOrEngLng ? 'Calendario de Eventos' : 'Events Calendar'
 									}}</nuxt-link>
 								</li>
 								<li>
 									<nuxt-link to="/resources/audio-video">{{
-										lang.spaOrEngLng
-											? 'Mensajes Audio / Video'
-											: 'Audio & Video Messages'
+										lang.spaOrEngLng ? 'Mensajes Audio / Video' : 'Audio & Video Messages'
 									}}</nuxt-link>
 								</li>
 							</ul>
@@ -166,16 +156,12 @@
 						</p> -->
 						<p>
 							<nuxt-link to="/contact/get-involved">{{
-								lang.spaOrEngLng
-									? '¿Cómo Involucrarme?'
-									: 'How to Get Involved?'
+								lang.spaOrEngLng ? '¿Cómo Involucrarme?' : 'How to Get Involved?'
 							}}</nuxt-link>
 						</p>
 						<p>
 							<nuxt-link to="/contact/serve-you">{{
-								lang.spaOrEngLng
-									? '¿Cómo Podemos Servirte?'
-									: 'How Can We Serve You?'
+								lang.spaOrEngLng ? '¿Cómo Podemos Servirte?' : 'How Can We Serve You?'
 							}}</nuxt-link>
 						</p>
 						<h3>
@@ -190,9 +176,7 @@
 						</p>
 						<p>
 							<nuxt-link to="/resources/audio-video">{{
-								lang.spaOrEngLng
-									? 'Mensajes Audio / Video'
-									: 'Audio & Video Messages'
+								lang.spaOrEngLng ? 'Mensajes Audio / Video' : 'Audio & Video Messages'
 							}}</nuxt-link>
 						</p>
 					</div>
@@ -253,14 +237,14 @@
 	}
 	@media (max-width: 768px) {
 		.header-all {
-			width: 92%;
+			width: 88%;
 		}
 	}
-	@media (max-width: 576px) {
+	/* @media (max-width: 576px) {
 		.header-all {
 			width: 96%;
 		}
-	}
+	} */
 	nav {
 		position: relative;
 		flex-direction: row;

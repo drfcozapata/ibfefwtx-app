@@ -75,7 +75,23 @@
 	}
 	@media screen and (max-width: 576px) {
 		.slide {
-			max-width: 88%;
+			max-width: 90%;
+		}
+		.gallery {
+			height: 380px;
+		}
+	}
+	@media screen and (max-width: 420px) {
+		.gallery {
+			height: 280px;
+		}
+	}
+	@media screen and (max-width: 320px) {
+		.slide {
+			max-width: 94%;
+		}
+		.gallery {
+			height: 230px;
 		}
 	}
 </style>

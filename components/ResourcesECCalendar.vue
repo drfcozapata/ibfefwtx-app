@@ -208,20 +208,53 @@
 		}
 	}
 	@media screen and (max-width: 576px) {
+		.calendar-head {
+			align-items: center;
+			margin-top: 20px;
+		}
 		.calendar-head h2 {
 			margin-left: 0;
 			font-size: 24px;
 			line-height: 30px;
 		}
-		.date button {
+		.calendar-head button {
 			padding: 7px 10px;
+		}
+		.calendar-head button i {
+			margin-top: 0;
+			font-size: 16px;
 		}
 		.days {
 			font-size: 17px;
 			grid-gap: 15px;
 		}
 	}
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 420px) {
+		.calendar-head {
+			margin-bottom: 20px;
+		}
+		.calendar-head h2 {
+			margin-left: 0;
+			font-size: 20px;
+			line-height: 24px;
+		}
+		.chevron-next {
+			margin-left: 16px;
+			margin-top: 0;
+		}
+		.date {
+			grid-gap: 0;
+		}
+		.date button {
+			padding: 5px 7px;
+			font-size: 16px;
+		}
+		.days {
+			font-size: 14px;
+			grid-gap: 14px;
+		}
+	}
+	@media screen and (max-width: 320px) {
 		.calendar-head h2 {
 			margin-left: 0;
 			font-size: 20px;
