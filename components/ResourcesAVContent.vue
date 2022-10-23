@@ -41,7 +41,7 @@
 							{{
 								lang.spaOrEngLng
 									? 'Lo que haces con lo que escuchas o lees de la Biblia influirá en gran manera en la productividad en tu vida. La semilla junto al camino, representa a personas que no prestan ninguna atención a lo que la Biblia dice; estas son personas improductivas.'
-									: 'What you do with what you hear or read from the Bible will greatly influence the productivity in your life. The seed by the roadside represents people who pay no attention to what the Bible says; these are unproductive people.'
+									: 'What you do with what you hear or read from the Bible will greatly influence the productivity in your life. The seed by the roadside represents people who pay no attention to what the Bible says; finally, these are unproductive people.'
 							}}
 						</p>
 					</div>
@@ -122,7 +122,7 @@
 							<span>{{ lang.spaOrEngLng ? 'Descripción' : 'Description' }}:</span>
 							{{
 								lang.spaOrEngLng
-									? 'La semilla que cayó entre espinos, representa a personas que igual que los anteriores oyen pero no escuchan con atención. Así que las preocupaciones de la vida, deseos de riquezas y deseos de placer ahogan lo poco que retuvieron; por esta razón son improductivos.'
+									? 'La semilla que cayó entre espinos representa a personas que oyen pero no escuchan con atención. Así, las preocupaciones de la vida, deseos de riquezas y deseos de placer ahogan lo poco que retuvieron y por esto son improductivos.'
 									: 'The seed that fell among thorns represents people who, like the above, hear but do not listen carefully. So the worries of life, desires for riches and desires for pleasure choke what little they have retained; for this reason they are unproductive.'
 							}}
 						</p>

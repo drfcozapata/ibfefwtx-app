@@ -36,25 +36,7 @@
 						<li>
 							<nuxt-link class="block relative hover:bg-slate-800" to="/ministries"
 								>{{ lang.spaOrEngLng ? 'Ministerios' : 'Ministries' }}
-								<!-- <i class="fa-solid fa-chevron-down"></i> -->
 							</nuxt-link>
-							<!-- <ul>
-								<li>
-									<nuxt-link to="/ministries#teaching">{{
-										lang.spaOrEngLng ? 'Enseñanza' : 'Teaching'
-									}}</nuxt-link>
-								</li>
-								<li>
-									<nuxt-link to="/ministries#missions">{{
-										lang.spaOrEngLng ? 'Misiones' : 'Misions'
-									}}</nuxt-link>
-								</li>
-								<li>
-									<nuxt-link to="/ministries#marriages">{{
-										lang.spaOrEngLng ? 'Matrimonios' : 'Marriages'
-									}}</nuxt-link>
-								</li>
-							</ul> -->
 						</li>
 						<li>
 							<nuxt-link class="block hover:bg-slate-800" to="/contact"
@@ -67,11 +49,6 @@
 										lang.spaOrEngLng ? '¿Qué esperar?' : 'What to Expect?'
 									}}</nuxt-link>
 								</li>
-								<!-- <li>
-									<nuxt-link to="/contact#first-steps">{{
-										lang.spaOrEngLng ? 'Primeros Pasos' : 'First Steps'
-									}}</nuxt-link>
-								</li> -->
 								<li>
 									<nuxt-link to="/contact/get-involved">{{
 										lang.spaOrEngLng ? '¿Cómo involucrarme?' : 'How to Get Involved?'
@@ -124,21 +101,6 @@
 								lang.spaOrEngLng ? 'Ministerios' : 'Ministries'
 							}}</nuxt-link>
 						</h3>
-						<!-- <p>
-							<nuxt-link to="/ministries#teaching">{{
-								lang.spaOrEngLng ? 'Enseñanza' : 'Teaching'
-							}}</nuxt-link>
-						</p>
-						<p>
-							<nuxt-link to="/ministries#missions">{{
-								lang.spaOrEngLng ? 'Misiones' : 'Missions'
-							}}</nuxt-link>
-						</p>
-						<p>
-							<nuxt-link to="/ministries#marriages">{{
-								lang.spaOrEngLng ? 'Matrimonios' : 'Marriages'
-							}}</nuxt-link>
-						</p> -->
 						<h3>
 							<nuxt-link to="/contact">{{
 								lang.spaOrEngLng ? 'Conectarme' : 'Connect Me'
@@ -149,11 +111,6 @@
 								lang.spaOrEngLng ? '¿Qué esperar?' : 'What to Expect?'
 							}}</nuxt-link>
 						</p>
-						<!-- <p>
-							<nuxt-link to="/contact#first-steps">{{
-								lang.spaOrEngLng ? 'Primeros Pasos' : 'First Steps'
-							}}</nuxt-link>
-						</p> -->
 						<p>
 							<nuxt-link to="/contact/get-involved">{{
 								lang.spaOrEngLng ? '¿Cómo Involucrarme?' : 'How to Get Involved?'
@@ -189,9 +146,6 @@
 					@click="lang.setLangEs"
 				>
 					English
-					<!-- <abbr :title="lang.spaOrEngAlt">
-						<Usa />
-					</abbr> -->
 				</button>
 				<button
 					v-else
@@ -199,9 +153,6 @@
 					@click="lang.setLangEs"
 				>
 					Español
-					<!-- <abbr :title="lang.spaOrEngAlt">
-						<Mexico />
-					</abbr> -->
 				</button>
 			</div>
 		</div>
@@ -240,11 +191,6 @@
 			width: 88%;
 		}
 	}
-	/* @media (max-width: 576px) {
-		.header-all {
-			width: 96%;
-		}
-	} */
 	nav {
 		position: relative;
 		flex-direction: row;
