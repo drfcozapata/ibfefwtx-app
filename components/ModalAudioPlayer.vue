@@ -1,5 +1,5 @@
 <template>
-	<div v-if="show" class="modal-mask">
+	<div v-if="showAudio" class="modal-mask">
 		<div class="modal-container">
 			<header class="flex justify-end">
 				<button @click="$emit('close')">
@@ -7,7 +7,7 @@
 				</button>
 			</header>
 			<main>
-				<slot name="main" />
+				<slot name="mainAudio" />
 			</main>
 		</div>
 	</div>
@@ -15,7 +15,7 @@
 
 <script setup>
 	defineProps({
-		show: Boolean,
+		showAudio: Boolean,
 	});
 </script>
 

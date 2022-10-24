@@ -1,5 +1,5 @@
 <template>
-	<div v-if="show" class="modal-mask">
+	<div v-if="show" class="modal-mask" @click="$emit('close')">
 		<div class="modal-container">
 			<header class="flex justify-end">
 				<button @click="$emit('close')">
@@ -7,7 +7,7 @@
 				</button>
 			</header>
 			<main>
-				<slot name="main" />
+				<slot name="mainVideo" />
 			</main>
 		</div>
 	</div>

@@ -17,14 +17,15 @@
 							>
 							</i>
 						</nuxt-link>
-						<i
-							class="fa-solid fa-headphones"
-							:title="lang.spaOrEngLng ? 'Descargar audio' : 'Download audio'"
-						></i>
-						<!-- <i
-							class="fa-regular fa-circle-down"
-							:title="lang.spaOrEngLng ? 'Descargar' : 'Download'"
-						></i> -->
+						<nuxt-link
+							to="https://drive.google.com/file/d/1QzMNTvRS6So_groFMCPmfj6zRXgR7kki/preview"
+							target="_blank"
+						>
+							<i
+								class="fa-solid fa-headphones"
+								:title="lang.spaOrEngLng ? 'Descargar audio' : 'Download audio'"
+							></i>
+						</nuxt-link>
 					</div>
 					<div class="card-content">
 						<h3>{{ lang.spaOrEngLng ? 'Productividad 1' : 'Productivity 1' }}</h3>
@@ -41,7 +42,7 @@
 							{{
 								lang.spaOrEngLng
 									? 'Lo que haces con lo que escuchas o lees de la Biblia influirá en gran manera en la productividad en tu vida. La semilla junto al camino, representa a personas que no prestan ninguna atención a lo que la Biblia dice; estas son personas improductivas.'
-									: 'What you do with what you hear or read from the Bible will greatly influence the productivity in your life. The seed by the roadside represents people who pay no attention to what the Bible says; finally, these are unproductive people.'
+									: 'What you do with what you hear or read from the Bible will greatly influence the productivity in your life. The seed by the roadside represents people who pay no attention to what the Bible says; these are unproductive people.'
 							}}
 						</p>
 					</div>
@@ -58,14 +59,15 @@
 							>
 							</i>
 						</nuxt-link>
-						<i
-							class="fa-solid fa-headphones"
-							:title="lang.spaOrEngLng ? 'Descargar audio' : 'Download audio'"
-						></i>
-						<!-- <i
-							class="fa-regular fa-circle-down"
-							:title="lang.spaOrEngLng ? 'Descargar' : 'Download'"
-						></i> -->
+						<nuxt-link
+							to="https://drive.google.com/file/d/1UuU_CJinLYye0mG4NjL7GFsjb_qhUaRp/preview"
+							target="_blank"
+						>
+							<i
+								class="fa-solid fa-headphones"
+								:title="lang.spaOrEngLng ? 'Descargar audio' : 'Download audio'"
+							></i>
+						</nuxt-link>
 					</div>
 					<div class="card-content">
 						<h3>{{ lang.spaOrEngLng ? 'Productividad 2' : 'Productivity 2' }}</h3>
@@ -99,14 +101,15 @@
 							>
 							</i>
 						</nuxt-link>
-						<i
-							class="fa-solid fa-headphones"
-							:title="lang.spaOrEngLng ? 'Descargar audio' : 'Download audio'"
-						></i>
-						<!-- <i
-							class="fa-regular fa-circle-down"
-							:title="lang.spaOrEngLng ? 'Descargar' : 'Download'"
-						></i> -->
+						<nuxt-link
+							to="https://drive.google.com/file/d/1ozDyvTXyV2HKug6iJQ0uBxSFzVhFZrve/preview"
+							target="_blank"
+						>
+							<i
+								class="fa-solid fa-headphones"
+								:title="lang.spaOrEngLng ? 'Descargar audio' : 'Download audio'"
+							></i>
+						</nuxt-link>
 					</div>
 					<div class="card-content">
 						<h3>{{ lang.spaOrEngLng ? 'Productividad 3' : 'Productivity 3' }}</h3>
@@ -122,14 +125,56 @@
 							<span>{{ lang.spaOrEngLng ? 'Descripción' : 'Description' }}:</span>
 							{{
 								lang.spaOrEngLng
-									? 'La semilla que cayó entre espinos representa a personas que oyen pero no escuchan con atención. Así, las preocupaciones de la vida, deseos de riquezas y deseos de placer ahogan lo poco que retuvieron y por esto son improductivos.'
+									? 'La semilla que cayó entre espinos, representa a personas que igual que los anteriores oyen pero no escuchan con atención. Así que las preocupaciones de la vida, deseos de riquezas y deseos de placer ahogan lo poco que retuvieron; por esta razón son improductivos.'
 									: 'The seed that fell among thorns represents people who, like the above, hear but do not listen carefully. So the worries of life, desires for riches and desires for pleasure choke what little they have retained; for this reason they are unproductive.'
 							}}
 						</p>
 					</div>
 				</div>
+				<div class="card">
+					<div class="card-img">
+						<img src="../public/productividad.jpg" alt="Imagen del video" />
+					</div>
+					<div class="card-icons">
+						<nuxt-link to="https://www.youtube.com/watch?v=yJcxnagu7yA&" target="_blank">
+							<i
+								class="fa-regular fa-circle-play"
+								:title="lang.spaOrEngLng ? 'Ver video' : 'Watch video'"
+							>
+							</i>
+						</nuxt-link>
+						<nuxt-link
+							to="https://drive.google.com/file/d/1JSZyN9iCDTQbiqRlwlrIRmxwFGk86YOQ/preview"
+							target="_blank"
+						>
+							<i
+								class="fa-solid fa-headphones"
+								:title="lang.spaOrEngLng ? 'Descargar audio' : 'Download audio'"
+							></i>
+						</nuxt-link>
+					</div>
+					<div class="card-content">
+						<h3>{{ lang.spaOrEngLng ? 'Productividad 4' : 'Productivity 4' }}</h3>
+						<p>
+							<span>{{ lang.spaOrEngLng ? 'Predicador' : 'Speaker' }}:</span>
+							David Escalona
+						</p>
+						<p>
+							<span>{{ lang.spaOrEngLng ? 'Fecha' : 'Date' }}:</span>
+							{{ lang.spaOrEngLng ? '28 de Agosto, 2022' : 'August 28, 2022' }}
+						</p>
+						<p>
+							<span>{{ lang.spaOrEngLng ? 'Descripción' : 'Description' }}:</span>
+							{{
+								lang.spaOrEngLng
+									? 'La semilla que cayó en buena tierra representa a aquel que escucha lo que Dios dice por medio de su palabra, la retiene y es constante en ponerla en práctica; estas cualidades lo llevan a vivir vidas productivas.'
+									: 'The seed that fell on good soil represents the one who listens to what God says through his word, retains it and is constant in putting it into practice; these qualities lead to productive lives.'
+							}}
+						</p>
+					</div>
+				</div>
 
-				<AudioVideoMessages
+				<!-- <AudioVideoMessages
 					@add="showModal = true"
 					v-for="message in messages"
 					:key="message.id"
@@ -148,10 +193,10 @@
 					<template #description>{{
 						lang.spaOrEngLng ? message.descriptionEs : message.descriptionEn
 					}}</template>
-				</AudioVideoMessages>
+				</AudioVideoMessages> -->
 
 				<!-- Video Modal -->
-				<ModalVideoPlayer :show="showModal" :video="showVideo" @close="showModal = false">
+				<!-- <ModalVideoPlayer :show="showModal" :video="showVideo" @close="showModal = false">
 					<template #main>
 						<iframe
 							width="560"
@@ -163,132 +208,87 @@
 							allowfullscreen
 						></iframe>
 					</template>
-				</ModalVideoPlayer>
+				</ModalVideoPlayer> -->
 			</div>
 		</div>
 	</div>
 </template>
 
 <script setup>
-	import { reactive, ref } from 'vue';
+	// import { reactive, ref } from 'vue';
 	import { useLangStore } from '../stores/LangStore';
 
 	const lang = useLangStore();
-	const messages = reactive([
-		// {
-		// 	id: 1,
-		// 	img: 'productividad',
-		// 	titleEs: 'Productividad 1',
-		// 	titleEn: 'Productivity 1',
-		// 	speaker: 'David Escalona',
-		// 	dateEs: '7 de Agosto, 2022',
-		// 	dateEn: 'August 7, 2022',
-		// 	video: 'https://www.youtube.com/embed/hMNazSmidag',
-		// 	audio: '',
-		// 	descriptionEs:
-		// 		'Lo que haces con lo que escuchas o lees de la Biblia influirá en gran manera en la productividad en tu vida. La semilla junto al camino, representa a personas que no prestan ninguna atención a lo que la Biblia dice; estas son personas improductivas.',
-		// 	descriptionEn:
-		// 		'What you do with what you hear or read from the Bible will greatly influence the productivity in your life. The seed by the roadside represents people who pay no attention to what the Bible says; these are unproductive people.',
-		// },
-		// {
-		// 	id: 2,
-		// 	img: 'productividad',
-		// 	titleEs: 'Productividad 2',
-		// 	titleEn: 'Productivity 2',
-		// 	speaker: 'David Escalona',
-		// 	dateEs: '14 de Agosto, 2022',
-		// 	dateEn: 'August 14, 2022',
-		// 	video: 'https://www.youtube.com/embed/RtddIDmnTlw',
-		// 	audio: '',
-		// 	descriptionEs:
-		// 		'La semilla que cayó en las piedras, representa a personas que oyen y podrían emocionarse por un poco de tiempo pero no buscan profundizar en conocer más de Dios y su palabra, así que la emoción se va y por falta de profundidad no es productivo.',
-		// 	descriptionEn:
-		// 		'The seed that fell on the stones, represents people who hear and might get excited for a little while but do not seek to go deeper in knowing more about God and his word, so the excitement goes away and for lack of depth it is not productive.',
-		// },
-		// {
-		// 	id: 3,
-		// 	img: 'productividad',
-		// 	titleEs: 'Productividad 3',
-		// 	titleEn: 'Productivity 3',
-		// 	speaker: 'David Escalona',
-		// 	dateEs: '21 de Agosto, 2022',
-		// 	dateEn: 'August 21, 2022',
-		// 	video: 'https://www.youtube.com/embed/p_s0GF73w0I',
-		// 	audio:
-		// 		'https://doc-00-bs-docs.googleusercontent.com/docs/securesc/91esn652jfh5sigieel8bsqe52nk6vim/tq9elo5o1o5sahqn5lk1ljo1efer3e32/1664798250000/05086046920343273477/08809574515513452285/1ozDyvTXyV2HKug6iJQ0uBxSFzVhFZrve?e=download&ax=ALW9-sD9UjrSIAaEmXHhj9leEOs8IcBo-jVXFTM1ALonZUpDKfcz5Xdk3QjDWluab8N9kVgbxeitudpOS0qwWeJDVZxo7FvBEcaPDxy9xrqRKzystOW71jHXtSEZvtWsrrF9Pd7dK-GAnchuStLJ8XAMKq7KVRCTlr_6gXdc6somHHbP9qxFje5dgt72h2ki3_i_HGfmpzZAv2A7tqTNjnS-i9OppSnU-3H-fv5zeL1xx_AYeP8cYQVWLGTr-6JjBwRszwmnvpDkLt1fRTMEwi1kctmYjywqbl62jblTxmRy0Nl0lo3dWL7XtWgoeEr0xE3HLol3TVbjjjw5KzBVBRpWWlAnEYAmOUy0ai6SOcbMFa7UnobrRUB02TXx9EW7aLzBfaInoZRfLrVu2YRBKdf_po0LaHUMbL5-DpmCq2p-ucxxI3kWdWTQZlGyd-HKPSy2fvjRgonEITaJVNbQLFeEMZIznsmLkDCSDIFWeQjBuTkqlrs31GZkdNoOVXFZ_DN5S-XSUyQATUqApos6a0pHD1dc1YfdctsNbTRrUrqoD-TQMeZaifl94QfE6uBESnZAzq7IqRfTAs8Lh9GhaLlYbWyrPkfkxjQa6F6tJGyyriO7XZkPX88bYlBvUVd22G7RyDxam-MUK2opQxlyXCHIHYCQ8Jk2P-nhz8BOnSMeWxVxiwC2CRoKud5GD13aaBoi88VcmmoPchDOGAC1XCR1WGcUct1SEZCIf1BrUgFlgDnqWXSiTfs8PU1ALV4ZFxCPVEVvZuFlbO5LN8rHzKgmfVLPriI9p4U_CocbQep9S7LI6Ds46vDayD89GoHbnX8i0o8MTvKA6ZFlfT9dXYaZekrZNd1sfPgnHgdpK-n5u4zzKhrj0NGEzL4iePqkpFHPqMXkO7M2e3y3xdOm2I04U9AgYT7jg04QjNTNygeD8hCzVyrd0NRBdOYZ7UM52W6ngHKgPitwlmq29tD2yVRNDUg1Ym_5Mw_Wz-10A2tf9k1TL9NTgzZHdux7U1d813fnoaLJ41MrRg&uuid=a11a7ede-ba83-41b3-a5f3-ecaaf6410ace&authuser=0',
-		// 	descriptionEs:
-		// 		'La semilla que cayó entre espinos, representa a personas que igual que los anteriores oyen pero no escuchan con atención. Así que las preocupaciones de la vida, deseos de riquezas y deseos de placer ahogan lo poco que retuvieron; por esta razón son improductivos.',
-		// 	descriptionEn:
-		// 		'The seed that fell among thorns represents people who, like the above, hear but do not listen carefully. So the worries of life, desires for riches and desires for pleasure choke what little they have retained; for this reason they are unproductive.',
-		// },
-		{
-			id: 4,
-			img: 'productividad',
-			titleEs: 'Productividad 4',
-			titleEn: 'Productivity 4',
-			speaker: 'David Escalona',
-			dateEs: '28 de Agosto, 2022',
-			dateEn: 'August 28, 2022',
-			video: 'https://www.youtube.com/embed/yJcxnagu7yA&',
-			audio: `<iframe
-				frameborder="0"
-				width="400"	
-				height="200"
-				src="https://drive.google.com/file/d/1JSZyN9iCDTQbiqRlwlrIRmxwFGk86YOQ/preview">   
-			</iframe>`,
-			descriptionEs:
-				'La semilla que cayó en buena tierra representa a aquel que escucha lo que Dios dice por medio de su palabra, la retiene y es constante en ponerla en práctica; estas cualidades lo llevan a vivir vidas productivas.',
-			descriptionEn:
-				'The seed that fell on good soil represents the one who listens to what God says through his word, retains it and is constant in putting it into practice; these qualities lead to productive lives.',
-		},
-		// {
-		// 	id: 5,
-		// 	img: 'audio-video-05',
-		// 	titleEs: '¿Cambia Dios de opinión alguna vez?',
-		// 	titleEn: 'Does God Ever Change His Mind?',
-		// 	speaker: 'Boanerges Jr. De Armas',
-		// 	dateEs: '14 de Agosto, 2022',
-		// 	dateEn: 'August 14, 2022',
-		// 	video: '',
-		// 	audio: '',
-		// 	descriptionEs:
-		// 		'Alias cumque ipsam quis repellat et porro dolore ut nostrum soluta. Dolor harum itaque quae beatae doloremque provident.',
-		// 	descriptionEn:
-		// 		'Minima, sunt dolore ipsa aliquam cumque eaque dolores doloremque maxime modi mollitia vel ad dolor dolorem laborum.',
-		// },
-		// {
-		// 	id: 6,
-		// 	img: 'audio-video-06',
-		// 	titleEs: '5 Pasos para el Perdón',
-		// 	titleEn: '5 Steps to Forgiveness',
-		// 	speaker: 'Suely Escalona',
-		// 	dateEs: '21 de Agosto, 2022',
-		// 	dateEn: 'August 21, 2022',
-		// 	video: '',
-		// 	audio: '',
-		// 	descriptionEs:
-		// 		'Fugiat tempore, dolorem necessitatibus velit optio distinctio ipsum ea quas mollitia dolore suscipit, beatae itaque.',
-		// 	descriptionEn:
-		// 		'Laboriosam saepe quae dolor labore autem pariatur magnam quos. Voluptas minima deserunt esse, asperiores consectetur nulla?',
-		// },
-		// {
-		// 	id: 7,
-		// 	img: 'audio-video-07',
-		// 	titleEs: 'La Prueba de Nuestra Fe',
-		// 	titleEn: 'The Testing of Our Faith',
-		// 	speaker: 'David Escalona',
-		// 	dateEs: '28 de Agosto, 2022',
-		// 	dateEn: 'August 28, 2022',
-		// 	video: '',
-		// 	audio: '',
-		// 	descriptionEs:
-		// 		'Non beatae tenetur quod maiores fugiat? Aliquam nemo maxime doloribus odio ratione expedita reprehenderit at placeat!',
-		// 	descriptionEn:
-		// 		'Quas voluptatibus cum temporibus, repellat tempore eius pariatur numquam explicabo facilis officia, vel error.',
-		// },
-	]);
+	// const messages = reactive([
+	// {
+	// 	id: 1,
+	// 	img: 'productividad',
+	// 	titleEs: 'Productividad 1',
+	// 	titleEn: 'Productivity 1',
+	// 	speaker: 'David Escalona',
+	// 	dateEs: '7 de Agosto, 2022',
+	// 	dateEn: 'August 7, 2022',
+	// 	video: 'https://www.youtube.com/embed/hMNazSmidag',
+	// 	audio: '',
+	// 	descriptionEs:
+	// 		'Lo que haces con lo que escuchas o lees de la Biblia influirá en gran manera en la productividad en tu vida. La semilla junto al camino, representa a personas que no prestan ninguna atención a lo que la Biblia dice; estas son personas improductivas.',
+	// 	descriptionEn:
+	// 		'What you do with what you hear or read from the Bible will greatly influence the productivity in your life. The seed by the roadside represents people who pay no attention to what the Bible says; these are unproductive people.',
+	// },
+	// {
+	// 	id: 2,
+	// 	img: 'productividad',
+	// 	titleEs: 'Productividad 2',
+	// 	titleEn: 'Productivity 2',
+	// 	speaker: 'David Escalona',
+	// 	dateEs: '14 de Agosto, 2022',
+	// 	dateEn: 'August 14, 2022',
+	// 	video: 'https://www.youtube.com/embed/RtddIDmnTlw',
+	// 	audio: '',
+	// 	descriptionEs:
+	// 		'La semilla que cayó en las piedras, representa a personas que oyen y podrían emocionarse por un poco de tiempo pero no buscan profundizar en conocer más de Dios y su palabra, así que la emoción se va y por falta de profundidad no es productivo.',
+	// 	descriptionEn:
+	// 		'The seed that fell on the stones, represents people who hear and might get excited for a little while but do not seek to go deeper in knowing more about God and his word, so the excitement goes away and for lack of depth it is not productive.',
+	// },
+	// {
+	// 	id: 3,
+	// 	img: 'productividad',
+	// 	titleEs: 'Productividad 3',
+	// 	titleEn: 'Productivity 3',
+	// 	speaker: 'David Escalona',
+	// 	dateEs: '21 de Agosto, 2022',
+	// 	dateEn: 'August 21, 2022',
+	// 	video: 'https://www.youtube.com/embed/p_s0GF73w0I',
+	// 	audio:
+	// 		'',
+	// 	descriptionEs:
+	// 		'La semilla que cayó entre espinos, representa a personas que igual que los anteriores oyen pero no escuchan con atención. Así que las preocupaciones de la vida, deseos de riquezas y deseos de placer ahogan lo poco que retuvieron; por esta razón son improductivos.',
+	// 	descriptionEn:
+	// 		'The seed that fell among thorns represents people who, like the above, hear but do not listen carefully. So the worries of life, desires for riches and desires for pleasure choke what little they have retained; for this reason they are unproductive.',
+	// },
+	// {
+	// 	id: 4,
+	// 	img: 'productividad',
+	// 	titleEs: 'Productividad 4',
+	// 	titleEn: 'Productivity 4',
+	// 	speaker: 'David Escalona',
+	// 	dateEs: '28 de Agosto, 2022',
+	// 	dateEn: 'August 28, 2022',
+	// 	video: 'https://www.youtube.com/embed/yJcxnagu7yA&',
+	// 	audio: `<iframe
+	// 		frameborder="0"
+	// 		width="400"
+	// 		height="200"
+	// 		src="https://drive.google.com/file/d/1JSZyN9iCDTQbiqRlwlrIRmxwFGk86YOQ/preview">
+	// 	</iframe>`,
+	// 	descriptionEs:
+	// 		'La semilla que cayó en buena tierra representa a aquel que escucha lo que Dios dice por medio de su palabra, la retiene y es constante en ponerla en práctica; estas cualidades lo llevan a vivir vidas productivas.',
+	// 	descriptionEn:
+	// 		'The seed that fell on good soil represents the one who listens to what God says through his word, retains it and is constant in putting it into practice; these qualities lead to productive lives.',
+	// },
+	// ]);
 
-	let showModal = ref(false);
+	// let showModal = ref(false);
 </script>
 
 <style scoped>
