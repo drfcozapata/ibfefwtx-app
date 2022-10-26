@@ -5,7 +5,7 @@
 				{{ lang.spaOrEngLng ? 'Conectarme' : 'Connect Me' }}
 			</h1>
 			<form
-				action="https://formsubmit.co/drfcozapata@gmail.com"
+				action="https://formsubmit.co/iglesiabautistafe20@gmail.com"
 				method="POST"
 				class="w-full py-10 px-20 rounded-xl bg-slate-50"
 			>
